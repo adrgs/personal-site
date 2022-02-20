@@ -1,8 +1,8 @@
 {
-  "site_name": "Starter",
-  "title": "Eleventy Starter Boilerplate",
-  "description": "Starter code for your 11ty blog Boilerplate",
-  "url": "https://example.com",
+  "site_name": "adragos.ro - A hacker's personal blog - Albastroiu Dragos",
+  "title": "adragos.ro",
+  "description": "Security engineer, hacker, CTF player with team @WreckTheLine",
+  "url": "https://adragos.ro",
   "locale": "en",
-  "author": "Anonymous"
+  "author": "adragos"
 }
