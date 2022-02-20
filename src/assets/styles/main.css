@@ -84,3 +84,36 @@ a:hover {
 .content th {
   @apply bg-gray-100;
 }
+
+code {
+  white-space: pre-line;
+}
+
+pre {
+  overflow: auto;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+p {
+  word-break: break-word;
+  text-align: justify;
+}
+
+p > img {
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
