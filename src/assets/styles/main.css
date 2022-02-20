@@ -117,3 +117,9 @@ p > img {
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 767px) {
+  body {
+    padding: 1rem;
+  }
+}
