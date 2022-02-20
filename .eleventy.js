@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPlugin(lazyImagesPlugin, {
+    imgSelector: 'p > img',
     transformImgPath: (imgPath) => {
       if (imgPath.startsWith('http://') || imgPath.startsWith('https://')) {
         // Handle remote file
