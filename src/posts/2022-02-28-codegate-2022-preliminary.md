@@ -1074,9 +1074,19 @@ The flag is `codegate2022{bcbbc8d6c8f7ea1924ee108f38cc000f}`
 Description:
 
 ```
-I made a blog. Please check the security.
+NFT should work as having a deeply interaction with third-party like https://opensea.io/
 
-http://3.39.79.180
+We all know that blockchain is opened to all, which give us some guaranty thus it will work as we expected, however can we trust all this things?
+
+contract: 0x4e2daa29B440EdA4c044b3422B990C718DF7391c
+
+service: http://13.124.97.208:1234
+
+rpc: http://13.124.97.208:8545/
+
+faucet: http://13.124.97.208:8080
+
+network info: mainnet, petersburg
 ```
 
 Blockchain + web challenge. The actual vulnerability is web-related, but exploiting the vulnerability is done through minting a NFT that has a specific URI.
