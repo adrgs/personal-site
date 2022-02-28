@@ -1,10 +1,10 @@
 ---
 title: 'Codegate CTF 2022 Preliminary'
-description: Codegate CTF 2022 Preliminary
+description: Codegate CTF 2022 Preliminary write-ups
 date: 2022-02-28T00:00:00Z
 ---
 
-Writeups:
+Write-ups:
 * [superbee - Web](#superbee)
 * [babyFirst - Web](#babyfirst)
 * [myblog - Web](#myblog)
