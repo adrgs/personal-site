@@ -5,6 +5,8 @@ description: Achievements
 
 ## 2022
 
+* 🥇 1st place RSTCon CTF #2
+* 🥇 1st place Intigriti 1337UP LIVE CTF
 * 🥇 1st place DefCamp CTF 21-22 
 
 ## 2021
