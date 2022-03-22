@@ -3,6 +3,8 @@ title: 'Achievements'
 description: Achievements
 ---
 
+A mix of CTFs, Hackathons and Olympiads 
+
 ## 2022
 
 * 🥇 1st place RSTCon CTF #2
