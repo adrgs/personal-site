@@ -1,6 +1,8 @@
 ---
 title: 'About me'
 description: About me
+date: 2000-02-20T00:00:00Z
+eleventyExcludeFromCollections: true
 ---
 
 Hello, I'm Dragos. At the moment I'm a student at the University of Bucharest, doing my bachelors in Computers & Information Technology. 

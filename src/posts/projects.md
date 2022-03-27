@@ -1,6 +1,7 @@
 ---
 title: 'Projects'
 description: Projects
+eleventyExcludeFromCollections: true
 ---
 
 ### requestrepo.com

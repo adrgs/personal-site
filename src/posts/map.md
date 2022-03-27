@@ -1,6 +1,7 @@
 ---
 title: 'Map'
 description: Map
+eleventyExcludeFromCollections: true
 ---
 
 <div id="map"></div>
