@@ -1,7 +1,6 @@
 ---
 title: 'About me'
 description: About me
-date: 2000-02-20T00:00:00Z
 eleventyExcludeFromCollections: true
 ---
 
