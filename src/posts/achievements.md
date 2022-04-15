@@ -8,6 +8,8 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
+* 🥇 1st place ACS IXIA CTF 2022
+* 🥉 3rd place Securinets CTF Quals 2022
 * 🥇 1st place RSTCon CTF #2
 * 🥇 1st place Intigriti 1337UP LIVE CTF
 * 🥇 1st place DefCamp CTF 21-22 
