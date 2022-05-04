@@ -8,7 +8,8 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
-* 🥈 2nd place Meta BountyConEDU, qualified for Singapore event 🇸🇬
+* 🇸🇬 Qualified for BountyCon in Singapore
+* 🥈 2nd place Meta BountyConEDU
 * 🥇 1st place ACS IXIA CTF 2022
 * 🥉 3rd place Securinets CTF Quals 2022
 * 🥇 1st place RSTCon CTF #2
