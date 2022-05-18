@@ -8,6 +8,9 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
+* 🇪🇺 member of Team Europe for International Cybersecurity Challenge (ICC)
+* 🥇 1st place Securinets CTF Finals 2022
+* 🥇 1st place Securinets CTF Finals 2022
 * 🥇 1st place ACS IXIA CTF 2022
 * 🥉 3rd place Securinets CTF Quals 2022
 * 🥇 1st place RSTCon CTF #2
