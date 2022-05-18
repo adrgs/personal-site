@@ -8,7 +8,7 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
-* 🇪🇺 member of Team Europe for International Cybersecurity Challenge (ICC)
+* 🇪🇺 Member of Team Europe @ International Cybersecurity Challenge
 * 🥇 1st place Securinets CTF Finals 2022
 * 🇸🇬 Qualified for BountyCon in Singapore
 * 🥈 2nd place Meta BountyConEDU
@@ -26,7 +26,7 @@ A mix of CTFs, Hackathons and Olympiads
 * ☠️ DEFCON CTF Finalist
 * 🇸🇪 Midnight Sun CTF Finalist
 * 🥇 1st place RoCSC
-* 🇷🇴 Member of Team Romania for ECSC
+* 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 
 ## 2020
 
@@ -44,7 +44,7 @@ A mix of CTFs, Hackathons and Olympiads
 ## 2019
 
 * 🥇 1st place RoCSC
-* 🇷🇴 Member of Team Romania for ECSC
+* 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 * 🇷🇴 🥇 🇪🇺 🏆 ECSC Winners
 * 🥇 1st place X-MAS CTF
 * 🥇 1st place redpwn CTF
@@ -64,6 +64,6 @@ A mix of CTFs, Hackathons and Olympiads
 * 🥇 1st place Brainsvault.ro
 * 🥈 3rd place Accenture CTF
 * 🥇 1st place RoCSC
-* 🇷🇴 Member of Team Romania for ECSC
+* 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 * 🥇 1st place Timisoara CTF
 * 🥇 Gold Medal, National Olympiad of Information Technology - C#
