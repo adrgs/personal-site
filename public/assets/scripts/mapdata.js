@@ -124,7 +124,7 @@ var simplemaps_worldmap_mapdata={
     AT: {
       name: "Austria",
       description: "default",
-      color: "default",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
@@ -474,7 +474,7 @@ var simplemaps_worldmap_mapdata={
     GR: {
       name: "Greece",
       description: "default",
-      color: "default",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
@@ -1111,7 +1111,7 @@ var simplemaps_worldmap_mapdata={
     TN: {
       name: "Tunisia",
       description: "default",
-      color: "default",
+      color: "#dd54b1",
       hover_color: "default",
       url: "default"
     },
