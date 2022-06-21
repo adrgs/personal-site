@@ -8,7 +8,7 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
-* 🇪🇺 International Cybersecurity Challenge champion 🇪🇺
+* 🏆 International Cybersecurity Challenge champion 🇪🇺
 * ☠️ DEFCON CTF Finalist
 * 🇪🇺 Member of Team Europe @ International Cybersecurity Challenge
 * 🥇 1st place Securinets CTF Finals 2022
