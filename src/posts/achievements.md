@@ -45,9 +45,9 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2019
 
-* 🥇 1st place RoCSC
+* 🏆 European Cyber Security Challenge champion 🇷🇴
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
-* 🇷🇴 🥇 🇪🇺 🏆 ECSC Winners
+* 🥇 1st place RoCSC
 * 🥇 1st place X-MAS CTF
 * 🥇 1st place redpwn CTF
 * 🥇 1st place WPICTF
