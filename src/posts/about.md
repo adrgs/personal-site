@@ -4,7 +4,7 @@ description: About me
 eleventyExcludeFromCollections: true
 ---
 
-Hello, I'm Dragos. At the moment I'm a student at the University of Bucharest, doing my bachelors in Computers & Information Technology. 
+Hello, my name is Dragos Albastroiu. At the moment I'm a student at the University of Bucharest, doing my bachelors in Computers & Information Technology. 
 
 I'm also working as a Security Engineer - Incident Responder at Adobe.
 

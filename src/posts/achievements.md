@@ -8,6 +8,7 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
+* 🥇 1st place RoCSC 🇷🇴 (online)
 * 🏆 International Cybersecurity Challenge champion 🇪🇺
 * ☠️ DEFCON CTF Finalist
 * 🇪🇺 Member of Team Europe @ International Cybersecurity Challenge
@@ -27,7 +28,7 @@ A mix of CTFs, Hackathons and Olympiads
 * 🥈 2nd place Reply Cyber CTF
 * ☠️ DEFCON CTF Finalist
 * 🇸🇪 Midnight Sun CTF Finalist
-* 🥇 1st place RoCSC
+* 🥇 1st place RoCSC 🇷🇴
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 
 ## 2020
@@ -39,7 +40,7 @@ A mix of CTFs, Hackathons and Olympiads
 * 🥈 2nd place NahamCon CTF
 * 🥈 2nd place Reply Cyber CTF
 * 🥇 1st place FireShell CTF
-* 🥇 1st place RoCSC
+* 🥇 1st place RoCSC 🇷🇴
 * 🥈 2nd place CDDC Cyber Defenders Discovery Camp - DSTA
 * 🇷🇴 No ECSC in 2020
 
@@ -47,7 +48,7 @@ A mix of CTFs, Hackathons and Olympiads
 
 * 🏆 European Cyber Security Challenge champion 🇷🇴
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
-* 🥇 1st place RoCSC
+* 🥇 1st place RoCSC 🇷🇴
 * 🥇 1st place X-MAS CTF
 * 🥇 1st place redpwn CTF
 * 🥇 1st place WPICTF
@@ -65,7 +66,7 @@ A mix of CTFs, Hackathons and Olympiads
 * 🥇 1st place BSides Bucharest
 * 🥇 1st place Brainsvault.ro
 * 🥈 3rd place Accenture CTF
-* 🥇 1st place RoCSC
+* 🥇 1st place RoCSC 🇷🇴
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 * 🥇 1st place Timisoara CTF
 * 🥇 Gold Medal, National Olympiad of Information Technology - C#
