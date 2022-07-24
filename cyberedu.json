@@ -1,0 +1,832 @@
+[
+  {
+    "id": "aeafc0f0-0430-11ed-98b6-e3273e8f7e3d",
+    "title": "leaky",
+    "description": "Get the flag by knowing that the data provided is the flag (length of 69 bytes) encrypted 1000 times with different keys.\n\nNote: The probability of the challenge being solvable is granted.",
+    "difficulty": "Easy",
+    "difficulty_score": 1,
+    "points": 320,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "2ac23140-aeed-11ea-b3c0-61699138a1f9",
+      "name": "Ephvuln",
+      "name_acronym": "E",
+      "country": "Romania",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-06-15 09:47:03",
+        "timestamp": 1592214423,
+        "for_humans": "2 years ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 12,
+        "name": "Cryptography",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 19
+    }
+  },
+  {
+    "id": "4d85f400-0432-11ed-a1c9-69b8f679c86d",
+    "title": "weird-noise",
+    "description": "We have received this message, but unfortunately, we can’t understand anything. \n\nThe only thing we know is that the message has the following tag: ROBOT 36  Slow Something.",
+    "difficulty": "Easy",
+    "difficulty_score": 1,
+    "points": 50,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "53b0ccb0-7f21-11ea-9207-e5b2776fa6ac",
+      "name": "Volf",
+      "name_acronym": "V",
+      "country": "Romania",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-02-24 16:05:25",
+        "timestamp": 1582560325,
+        "for_humans": "2 years ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 7,
+        "name": "Forensics",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 77
+    }
+  },
+  {
+    "id": "58c70c40-0433-11ed-93a8-f31338dc4546",
+    "title": "test-site",
+    "description": "The developers are pretty lazy, they haven't finished anything!\nHint: Everything is running on localhost. (optional/it costs points)\n\nFlag format: CTF{sha256}",
+    "difficulty": "Entry Level",
+    "difficulty_score": 0,
+    "points": 310,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "f5e70a10-0657-11ec-a00b-c3def6968822",
+      "name": "Joker",
+      "name_acronym": "J",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2021-08-26 10:25:39",
+        "timestamp": 1629973539,
+        "for_humans": "10 months ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 1,
+        "name": "Web",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 20
+    }
+  },
+  {
+    "id": "8fb89610-0433-11ed-848e-c7a1d79c6849",
+    "title": "i-am-root",
+    "description": "We need the following information ASAP, a Linux workstation within our organization is manifesting weird behavior. \n\n_NOTE! The present challenge contains documents infected with real malware. \n\nBe cautious and solve this challenge in a virtual environment only.",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 540,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "53b0ccb0-7f21-11ea-9207-e5b2776fa6ac",
+      "name": "Volf",
+      "name_acronym": "V",
+      "country": "Romania",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-02-24 16:05:25",
+        "timestamp": 1582560325,
+        "for_humans": "2 years ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 7,
+        "name": "Forensics",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 37
+    }
+  },
+  {
+    "id": "3d78e160-0434-11ed-a72e-9de78b5cb099",
+    "title": "secure-notekeeper",
+    "description": "This is just an API that helps you implement an application to take notes efficiently.\n\nFlag format: CTF{sha256}",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 370,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "df2d31a0-e8be-11ea-a95c-afd09515493e",
+      "name": "trollzorftw",
+      "name_acronym": "T",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-08-27 23:41:47",
+        "timestamp": 1598571707,
+        "for_humans": "1 year ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 1,
+        "name": "Web",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 14
+    }
+  },
+  {
+    "id": "c6049fe0-0434-11ed-bfa3-29a099902786",
+    "title": "bday-card",
+    "description": "Generate a birthday card for your friends!\n\nFlag format: CTF{sha256}",
+    "difficulty": "Hard",
+    "difficulty_score": 3,
+    "points": 490,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "53e16e80-7f21-11ea-8017-354b622fe661",
+      "name": "nytr0gen",
+      "name_acronym": "N",
+      "country": "Romania",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-03-31 09:57:46",
+        "timestamp": 1585648666,
+        "for_humans": "2 years ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 1,
+        "name": "Web",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 2
+    }
+  },
+  {
+    "id": "3dcdb4a0-0435-11ed-b79b-79dabf9f83be",
+    "title": "Exfil",
+    "description": "Masina unui utilizator a fost compromisa si banuim ca atacatorul a exfiltrat date insa nu stim cum. Din fericire s-a obtinut o captura a traficului de retea si speram sa verificam ce date au fost furate, datele confidentiale fiind un hash SHA256. \n\nFlag-ul este de forma ROCSC{sha256}.",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 210,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
+      "name": "Nytro",
+      "name_acronym": "N",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2021-09-14 11:27:59",
+        "timestamp": 1631618879,
+        "for_humans": "10 months ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 2,
+        "name": "Network",
+        "type": "default"
+      },
+      {
+        "id": 7,
+        "name": "Forensics",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 30
+    }
+  },
+  {
+    "id": "0a56de80-0436-11ed-94d5-39b3a09c4c67",
+    "title": "keygeneric",
+    "description": "Pe darkweb a aparut un tool care rezolva automat exercitii CTF in cateva secunde insa o licenta este necesara. Pentru a-l putea folosi va trebui sa il crackuim si sa facem rost de un cod de licenta. \n\nFormatul final al licentei va fi ROCSC{cod_licenta}.",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 350,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
+      "name": "Nytro",
+      "name_acronym": "N",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2021-09-14 11:27:59",
+        "timestamp": 1631618879,
+        "for_humans": "10 months ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 8,
+        "name": "Reverse Engineering",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 16
+    }
+  },
+  {
+    "id": "19511570-0436-11ed-b4c5-dd16d9510d01",
+    "title": "malicious-internet-traffic",
+    "description": "During a cybersecurity incident, some malicious network traffic was captured. \nWe need to find answers related to the following questions. \n\n**NOTE! The present challenge contains documents infected with real malware. \nBe cautious and solve this challenge in a virtual environment only.**",
+    "difficulty": "Easy",
+    "difficulty_score": 1,
+    "points": 200,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "53b0ccb0-7f21-11ea-9207-e5b2776fa6ac",
+      "name": "Volf",
+      "name_acronym": "V",
+      "country": "Romania",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-02-24 16:05:25",
+        "timestamp": 1582560325,
+        "for_humans": "2 years ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 2,
+        "name": "Network",
+        "type": "default"
+      },
+      {
+        "id": 7,
+        "name": "Forensics",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 53
+    }
+  },
+  {
+    "id": "415f1350-0437-11ed-ae04-eb0081fd59e2",
+    "title": "pwn1",
+    "description": "This is just a regular pwn!\n\nFlag format: CTF{sha256}",
+    "difficulty": "Easy",
+    "difficulty_score": 1,
+    "points": 320,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "d9cd9c00-152d-11eb-a554-e359926319b4",
+      "name": "shad",
+      "name_acronym": "S",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-10-23 12:47:03",
+        "timestamp": 1603457223,
+        "for_humans": "1 year ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 9,
+        "name": "Pwn",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 19
+    }
+  },
+  {
+    "id": "cdc1e220-0437-11ed-9331-bdc0ee4e320e",
+    "title": "open-rest",
+    "description": "Sometimes we also have modern applications that are vulnerable to binary exploitation techniques even if they are written in a difficult-to-understand framework.\n\nFlag Format: CTF{sha256}",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 100,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "a21ad8b0-03d7-11eb-bcac-95ba23dd33d8",
+      "name": "T3jv1l",
+      "name_acronym": "T",
+      "country": "Romania",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-10-01 11:17:03",
+        "timestamp": 1601551023,
+        "for_humans": "1 year ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 9,
+        "name": "Pwn",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 41
+    }
+  },
+  {
+    "id": "30c92000-0439-11ed-bdd4-b70005baa2f8",
+    "title": "misc",
+    "description": "Test your knowledge in artificial intelligence!\n\nFlag Format: CTF{sha256}",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 70,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "d9cd9c00-152d-11eb-a554-e359926319b4",
+      "name": "shad",
+      "name_acronym": "S",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-10-23 12:47:03",
+        "timestamp": 1603457223,
+        "for_humans": "1 year ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 11,
+        "name": "Misc",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 44
+    }
+  },
+  {
+    "id": "e43a56f0-0439-11ed-ab2f-efc8d59e82be",
+    "title": "dolphin-exfiltration",
+    "description": "All the information you need is in the attachment file. \n\n- The format of the flag is CTF{sha256}\n- The flag must be submitted in full, including the CTF and curly bracket parts.",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 240,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "b71c7190-7669-11eb-9fba-7fffaff6ff29",
+      "name": "Octavian",
+      "name_acronym": "O",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2021-02-24 06:29:58",
+        "timestamp": 1614148198,
+        "for_humans": "1 year ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 2,
+        "name": "Network",
+        "type": "default"
+      },
+      {
+        "id": 22,
+        "name": "Programming",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 27
+    }
+  },
+  {
+    "id": "be8674b0-043a-11ed-b0c2-19951e7579b1",
+    "title": "its-all-about-pickles",
+    "description": "All the information you need is in the attachment file. \n\n- The format of the flag is CTF{sha256}\n- The flag must be submitted in full, including the CTF and curly bracket parts.",
+    "difficulty": "Easy",
+    "difficulty_score": 1,
+    "points": 420,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "b71c7190-7669-11eb-9fba-7fffaff6ff29",
+      "name": "Octavian",
+      "name_acronym": "O",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2021-02-24 06:29:58",
+        "timestamp": 1614148198,
+        "for_humans": "1 year ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 8,
+        "name": "Reverse Engineering",
+        "type": "default"
+      },
+      {
+        "id": 22,
+        "name": "Programming",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 9
+    }
+  },
+  {
+    "id": "b5aa57e0-0444-11ed-ad28-57bca6fbc309",
+    "title": "dashboard",
+    "description": "Not a fan of elastic but kibana looks good!\n\nFlag format CTF{sha256}.",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 170,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "53b6d7d0-7f21-11ea-8730-a36e60fdfc85",
+      "name": "Betaflash",
+      "name_acronym": "B",
+      "country": "Romania",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-03-11 10:18:57",
+        "timestamp": 1583921937,
+        "for_humans": "2 years ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 1,
+        "name": "Web",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 34
+    }
+  },
+  {
+    "id": "bd5d2030-0431-11ed-8785-01bc750fd31d",
+    "title": "cryptofun",
+    "description": "You have some encrypted files and a binary proving the functionality of the encryption algorithm and implementing all the required decryption parameters. \nCan you find the flags if you know that the password is C0mpl3xP@ss ?\n\n**Multiple Flags!**\n\nFlag format: CTF{sha256}",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 900,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "53ae7220-7f21-11ea-968c-993283711138",
+      "name": "CertSIGN",
+      "name_acronym": "C",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-02-23 10:28:08",
+        "timestamp": 1582453688,
+        "for_humans": "2 years ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 12,
+        "name": "Cryptography",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 1
+    }
+  },
+  {
+    "id": "9218be50-0812-11ed-988c-3715ae0012b3",
+    "title": "life-of-the-packets",
+    "description": "They are born, live and then die.\n\nFlag format: CTF{sha256}",
+    "difficulty": "Easy",
+    "difficulty_score": 1,
+    "points": 300,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "53ae7220-7f21-11ea-968c-993283711138",
+      "name": "CertSIGN",
+      "name_acronym": "C",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-02-23 10:28:08",
+        "timestamp": 1582453688,
+        "for_humans": "2 years ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 2,
+        "name": "Network",
+        "type": "default"
+      },
+      {
+        "id": 12,
+        "name": "Cryptography",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 21
+    }
+  },
+  {
+    "id": "5bec97e0-0813-11ed-b91b-ed3ab3c38114",
+    "title": "networkaround",
+    "description": "A fost descoperita infrastructura unui atacator: vps-357f002c.vps.ovh.net (54.37.153.147) si incercam sa obtinem acces la ea pentru a ne proteja de atacurile sale. \n\nFlag Format: ROCSC{message}",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 450,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
+      "name": "Nytro",
+      "name_acronym": "N",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2021-09-14 11:27:59",
+        "timestamp": 1631618879,
+        "for_humans": "10 months ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 2,
+        "name": "Network",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 6
+    }
+  },
+  {
+    "id": "1012e5a0-0814-11ed-9a59-fb1e84a667e0",
+    "title": "cover-the-basics",
+    "description": "Maybe it's malware, maybe not!\n\nFlag format: CTF{sha256}",
+    "difficulty": "Easy",
+    "difficulty_score": 1,
+    "points": 410,
+    "type": "standalone",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "f5e70a10-0657-11ec-a00b-c3def6968822",
+      "name": "Joker",
+      "name_acronym": "J",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2021-08-26 10:25:39",
+        "timestamp": 1629973539,
+        "for_humans": "10 months ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 8,
+        "name": "Reverse Engineering",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 10
+    }
+  },
+  {
+    "id": "b6536dd0-0814-11ed-9b02-69bd955ac335",
+    "title": "rubies",
+    "description": "If you like jewelry you will be okay\n\nFlag format: CTF{sha256}",
+    "difficulty": "Medium",
+    "difficulty_score": 2,
+    "points": 290,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "df2d31a0-e8be-11ea-a95c-afd09515493e",
+      "name": "trollzorftw",
+      "name_acronym": "T",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-08-27 23:41:47",
+        "timestamp": 1598571707,
+        "for_humans": "1 year ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 1,
+        "name": "Web",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 22
+    }
+  },
+  {
+    "id": "10402060-0816-11ed-93a1-1ba68952facf",
+    "title": "minipwn",
+    "description": "Desi pare o aplicatie simpla suspectam ca autorul a introdus un backdoor. Trebuie sa aflam daca acesta exista si daca il putem exploata pentru a obtine acces la steag (/flag.txt).\n\nFlag format: ROCSC{sha256}",
+    "difficulty": "Easy",
+    "difficulty_score": 1,
+    "points": 50,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
+      "name": "Nytro",
+      "name_acronym": "N",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2021-09-14 11:27:59",
+        "timestamp": 1631618879,
+        "for_humans": "10 months ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 9,
+        "name": "Pwn",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 46
+    }
+  },
+  {
+    "id": "73d52170-08ee-11ed-aead-910f77583309",
+    "title": "echo",
+    "description": "Just an echo server!\n\nFlag Format: CTF{sha256}",
+    "difficulty": "Hard",
+    "difficulty_score": 3,
+    "points": 410,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "a21ad8b0-03d7-11eb-bcac-95ba23dd33d8",
+      "name": "T3jv1l",
+      "name_acronym": "T",
+      "country": "Romania",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2020-10-01 11:17:03",
+        "timestamp": 1601551023,
+        "for_humans": "1 year ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 9,
+        "name": "Pwn",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 10
+    }
+  },
+  {
+    "id": "923a5860-099f-11ed-aaf6-eb70a2a382b9",
+    "title": "minipwn2",
+    "description": "Just a regular pwn!\n\nFlag Format: ROCSC{sha256}",
+    "difficulty": "Easy",
+    "difficulty_score": 1,
+    "points": 370,
+    "type": "one-to-many",
+    "status": "hidden",
+    "is_owned": true,
+    "author": {
+      "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
+      "name": "Nytro",
+      "name_acronym": "N",
+      "country": "",
+      "roles": ["challenges_author", "player"],
+      "type": "user",
+      "trashed": false,
+      "created_at": {
+        "date": "2021-09-14 11:27:59",
+        "timestamp": 1631618879,
+        "for_humans": "10 months ago"
+      }
+    },
+    "tags": [
+      {
+        "id": 9,
+        "name": "Pwn",
+        "type": "default"
+      }
+    ],
+    "counts": {
+      "owned": 14
+    }
+  }
+]
