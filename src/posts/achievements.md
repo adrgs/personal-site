@@ -8,7 +8,8 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
-* 🥇 1st place RoCSC 🇷🇴 (online)
+* 🥇 1st place RoCSC finals 🇷🇴
+* 🥇 1st place RoCSC qualifiers 🇷🇴 (online)
 * 🏆 International Cybersecurity Challenge champion 🇪🇺
 * ☠️ DEFCON CTF Finalist
 * 🇪🇺 Member of Team Europe @ International Cybersecurity Challenge
