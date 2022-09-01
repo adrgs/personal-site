@@ -13,7 +13,7 @@ A mix of CTFs, Hackathons and Olympiads
 * 🥇 1st place RoCSC finals 🇷🇴
 * 🥇 1st place RoCSC qualifiers 🇷🇴 (online)
 * 🏆 International Cybersecurity Challenge champion 🇪🇺
-* ☠️ DEFCON CTF Finalist
+* ☠️ 6th place DEFCON CTF Qualifiers
 * 🇪🇺 Member of Team Europe @ International Cybersecurity Challenge
 * 🥇 1st place Securinets CTF Finals 2022
 * 🇸🇬 Qualified for BountyCon in Singapore
@@ -30,7 +30,7 @@ A mix of CTFs, Hackathons and Olympiads
 * 🥈 2nd place Google CTF Finals (Hackceler8)
 * 🥉 3rd place CSAW CTF Finals (Europe)
 * 🥈 2nd place Reply Cyber CTF
-* ☠️ DEFCON CTF Finalist
+* ☠️ 6th place DEFCON CTF Qualifiers
 * 🇸🇪 Midnight Sun CTF Finalist
 * 🥇 1st place RoCSC 🇷🇴
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
