@@ -257,7 +257,7 @@ var simplemaps_worldmap_mapdata={
     CH: {
       name: "Switzerland",
       description: "default",
-      color: "default",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
@@ -1160,7 +1160,7 @@ var simplemaps_worldmap_mapdata={
     US: {
       name: "United States",
       description: "default",
-      color: "#dd54b1",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
