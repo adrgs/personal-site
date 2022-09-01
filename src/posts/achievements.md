@@ -8,6 +8,8 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
+* 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
+* ☠️ 8th place DEFCON CTF Finals
 * 🥇 1st place RoCSC finals 🇷🇴
 * 🥇 1st place RoCSC qualifiers 🇷🇴 (online)
 * 🏆 International Cybersecurity Challenge champion 🇪🇺
@@ -24,6 +26,7 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2021
 
+* ☠️ 8th place DEFCON CTF Finals
 * 🥈 2nd place Google CTF Finals (Hackceler8)
 * 🥉 3rd place CSAW CTF Finals (Europe)
 * 🥈 2nd place Reply Cyber CTF
