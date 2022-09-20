@@ -8,6 +8,7 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
+* 🇷🇴 8th place European Cyber Security Challenge 2022
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 * ☠️ 8th place DEFCON CTF Finals
 * 🥇 1st place RoCSC finals 🇷🇴
