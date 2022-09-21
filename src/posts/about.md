@@ -10,7 +10,7 @@ University of Bucharest - Computers and Information Technology alumni, finished 
 
 Doing bug bounty on Meta products in my free time.
 
-In my free time I enjoy playing the guitar, video games and of course participating in CTF competitions.
+I enjoy playing the guitar, video games, travelling and of course participating in CTF competitions.
 
 You can contact me at adragos [@] protonmail.com
 
