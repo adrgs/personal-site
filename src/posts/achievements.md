@@ -46,7 +46,6 @@ A mix of CTFs, Hackathons and Olympiads
 * 🥇 1st place SmartHack - Autodesk
 * 🥈 2nd place Reply Cyber CTF
 * 🥈 2nd place NahamCon CTF
-* 🥈 2nd place Reply Cyber CTF
 * 🥇 1st place FireShell CTF
 * 🥇 1st place RoCSC 🇷🇴
 * 🥈 2nd place CDDC Cyber Defenders Discovery Camp - DSTA
