@@ -8,6 +8,7 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
+* 🥇 1st place DefCamp CTF Finals
 * 🥇 1st place Reply Cyber Security Challenge 2022
 * 🥈 2nd place Orange Break The Bank
 * 🥈 2nd place DefCamp CTF Qualifiers
