@@ -334,7 +334,7 @@ var simplemaps_worldmap_mapdata={
     DE: {
       name: "Germany",
       description: "default",
-      color: "default",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
@@ -635,7 +635,7 @@ var simplemaps_worldmap_mapdata={
     KR: {
       name: "Republic of Korea",
       description: "default",
-      color: "default",
+      color: "#dd54b1",
       hover_color: "default",
       url: "default"
     },
