@@ -8,6 +8,7 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2022
 
+* 🥇 NahamCon EU 2022 CTF
 * 🥇 1st place Hacker Things CTF 2022
 * 🥇 1st place DefCamp CTF Finals
 * 🥇 1st place Reply Cyber Security Challenge 2022
