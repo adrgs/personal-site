@@ -6,8 +6,13 @@ eleventyExcludeFromCollections: true
 
 A mix of CTFs, Hackathons and Olympiads 
 
+## 2023
+
+* 🐉 7th place Real World CTF
+
 ## 2022
 
+* 🐛 #19 Meta Bug Bounty leaderboard
 * 🥇 1st place NahamCon EU 2022 CTF
 * 🥇 1st place Hacker Things CTF 2022
 * 🥇 1st place DefCamp CTF Finals
