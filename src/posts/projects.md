@@ -4,7 +4,9 @@ description: Projects
 eleventyExcludeFromCollections: true
 ---
 
-<img src="https://svgshare.com/i/pSP.svg" alt="requestrepo.com" width="420">
+### requestrepo.com
+
+<a href="https://requestrepo.com"><img src="https://svgshare.com/i/pSP.svg" alt="requestrepo.com" width="420"></a>
 
 Analyze HTTP and DNS requests and create custom DNS records for your subdomain.
 
