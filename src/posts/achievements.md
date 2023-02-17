@@ -8,6 +8,7 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2023
 
+* 💀 6th place Insomni'hack teaser 2023
 * 🐉 7th place Real World CTF
 
 ## 2022
