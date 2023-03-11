@@ -4,7 +4,7 @@ description: Achievements
 eleventyExcludeFromCollections: true
 ---
 
-A mix of CTFs, Hackathons and Olympiads 
+A mix of CTFs, Hackathons, Bug Bounties and Olympiads 
 
 ## 2023
 
