@@ -8,12 +8,14 @@ A mix of CTFs, Hackathons and Olympiads
 
 ## 2023
 
+* 🐛 [#4 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🥇 1st place Nullcon Berlin HackIM 2023 CTF 🇩🇪
 * 💀 6th place Insomni'hack teaser 2023
 * 🐉 7th place Real World CTF
 
 ## 2022
 
-* 🐛 #19 Meta Bug Bounty leaderboard
+* 🐛 [#16 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
 * 🥇 1st place NahamCon EU 2022 CTF
 * 🥇 1st place Hacker Things CTF 2022
 * 🥇 1st place DefCamp CTF Finals
