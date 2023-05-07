@@ -9,6 +9,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 ## 2023
 
 * 🐛 [#5 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🥉 3rd place PwnMe Quals
 * 🥇 1st place Midnight Sun CTF 2023 Quals
 * 🇨🇭 5th place Insomni'hack finals 2023
 * 🥇 1st place Nullcon Berlin HackIM 2023 CTF 🇩🇪
@@ -85,7 +86,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🏅 4th place DefCamp CTF
 * 🥇 1st place BSides Bucharest
 * 🥇 1st place Brainsvault.ro
-* 🥈 3rd place Accenture CTF
+* 🥉 3rd place Accenture CTF
 * 🥇 1st place RoCSC 🇷🇴
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 * 🥇 1st place Timisoara CTF
