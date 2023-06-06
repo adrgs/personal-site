@@ -8,7 +8,9 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2023
 
-* 🐛 [#6 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🐛 [#10 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🥉 3rd place PwnMe Finals
+* 🥇 1st place RoCSC qualifiers 🇷🇴 (online)
 * 🥉 3rd place PwnMe Quals
 * 🥇 1st place Midnight Sun CTF 2023 Quals
 * 🇨🇭 5th place Insomni'hack finals 2023
