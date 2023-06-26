@@ -8,7 +8,8 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2023
 
-* 🐛 [#10 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🐛 [#8 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🇯🇵 5th place Google CTF - qualified for Hackceler8
 * 🥉 3rd place PwnMe Finals
 * 🥇 1st place RoCSC qualifiers 🇷🇴 (online)
 * 🥉 3rd place PwnMe Quals
