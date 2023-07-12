@@ -922,7 +922,7 @@ var simplemaps_worldmap_mapdata={
     PT: {
       name: "Portugal",
       description: "default",
-      color: "default",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
