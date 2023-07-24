@@ -11,7 +11,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🐛 [#10 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
 * 🇪🇺 Member of Team Europe @ International Cybersecurity Challenge - San Diego 🇺🇸
 * 🥇 1st place RoCSC Finals 🇷🇴 (1st place A/D, 1st place Jeopardy)
-* 🇯🇵 5th place Google CTF - Qualified for Hackceler8
+* 🇯🇵 5th place Google CTF - Qualified for Hackceler8 - Tokyo
 * 🥉 3rd place PwnMe Finals
 * 🥇 1st place RoCSC Qualifiers 🇷🇴 (online)
 * 🥉 3rd place PwnMe Quals
