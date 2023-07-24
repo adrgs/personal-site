@@ -8,13 +8,15 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2023
 
-* 🐛 [#8 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
-* 🇯🇵 5th place Google CTF - qualified for Hackceler8
+* 🐛 [#10 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🇪🇺 Member of Team Europe @ International Cybersecurity Challenge - San Diego 🇺🇸
+* 🥇 1st place RoCSC Finals 🇷🇴 (1st place A/D, 1st place Jeopardy)
+* 🇯🇵 5th place Google CTF - Qualified for Hackceler8
 * 🥉 3rd place PwnMe Finals
-* 🥇 1st place RoCSC qualifiers 🇷🇴 (online)
+* 🥇 1st place RoCSC Qualifiers 🇷🇴 (online)
 * 🥉 3rd place PwnMe Quals
 * 🥇 1st place Midnight Sun CTF 2023 Quals
-* 🇨🇭 5th place Insomni'hack finals 2023
+* 🇨🇭 5th place Insomni'hack Finals 2023
 * 🥇 1st place Nullcon Berlin HackIM 2023 CTF 🇩🇪
 * 💀 6th place Insomni'hack teaser 2023
 * 🐉 7th place Real World CTF
@@ -31,11 +33,11 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🇷🇴 8th place European Cyber Security Challenge 2022
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 * ☠️ 8th place DEFCON CTF Finals
-* 🥇 1st place RoCSC finals 🇷🇴
-* 🥇 1st place RoCSC qualifiers 🇷🇴 (online)
+* 🥇 1st place RoCSC Finals 🇷🇴
+* 🥇 1st place RoCSC Qualifiers 🇷🇴 (online)
 * 🏆 1st place International Cybersecurity Challenge @ Team Europe 🇪🇺
 * ☠️ 6th place DEFCON CTF Qualifiers
-* 🇪🇺 Member of Team Europe @ International Cybersecurity Challenge
+* 🇪🇺 Member of Team Europe @ International Cybersecurity Challenge  - Athens 🇬🇷
 * 🥇 1st place Securinets CTF Finals 2022
 * 🇸🇬 Qualified for BountyCon in Singapore
 * 🥈 2nd place Meta BountyConEDU
@@ -53,7 +55,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🥈 2nd place Reply Cyber CTF
 * ☠️ 6th place DEFCON CTF Qualifiers
 * 🇸🇪 Midnight Sun CTF Finalist
-* 🥇 1st place RoCSC 🇷🇴
+* 🥇 1st place RoCSC Finals 🇷🇴 
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 
 ## 2020
@@ -64,7 +66,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🥈 2nd place Reply Cyber CTF
 * 🥈 2nd place NahamCon CTF
 * 🥇 1st place FireShell CTF
-* 🥇 1st place RoCSC 🇷🇴
+* 🥇 1st place RoCSC Finals 🇷🇴
 * 🥈 2nd place CDDC Cyber Defenders Discovery Camp - DSTA
 * 🇷🇴 No ECSC in 2020
 
@@ -72,7 +74,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 * 🏆 European Cyber Security Challenge champion 🇷🇴
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
-* 🥇 1st place RoCSC 🇷🇴
+* 🥇 1st place ECSC Qualifiers 🇷🇴
 * 🥇 1st place X-MAS CTF
 * 🥇 1st place redpwn CTF
 * 🥇 1st place WPICTF
@@ -90,7 +92,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🥇 1st place BSides Bucharest
 * 🥇 1st place Brainsvault.ro
 * 🥉 3rd place Accenture CTF
-* 🥇 1st place RoCSC 🇷🇴
+* 🥇 1st place ECSC Qualifiers 🇷🇴
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 * 🥇 1st place Timisoara CTF
 * 🥇 Gold Medal, National Olympiad of Information Technology - C#
