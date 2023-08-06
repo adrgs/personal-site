@@ -4,14 +4,12 @@ description: About me
 eleventyExcludeFromCollections: true
 ---
 
-Hello, my name is Dragos Albastroiu. At the moment I'm a student at ETH Zürich, doing my Master's in Cyber Security, with a minor in Machine Intelligence. 
+Hello, my name is Dragoș Albăstroiu.
 
-University of Bucharest - Computers and Information Technology alumni, finished with overall grade 10.
+At the moment I'm a student at ETH Zürich, doing my Master's in Cyber Security with a minor in Machine Intelligence.
 
 Doing bug bounty on Meta products in my free time.
 
-I enjoy playing the guitar, video games, travelling and of course participating in CTF competitions.
+I enjoy playing the guitar, video games, travelling and of course participating in CTF competitions with my awesome team, [WreckTheLine](https://twitter.com/WreckTheLine).
 
 You can contact me at adragos [@] protonmail.com
-
-I'm also on [LinkedIn](https://www.linkedin.com/in/dragosalbastroiu/)
