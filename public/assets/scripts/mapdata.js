@@ -1048,7 +1048,7 @@ var simplemaps_worldmap_mapdata={
     SE: {
       name: "Sweden",
       description: "default",
-      color: "#dd54b1",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
