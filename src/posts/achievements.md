@@ -8,14 +8,15 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2023
 
-* 🐛 [#10 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🐛 [#11 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🇯🇵 5th place Google CTF Finals (Hackceler8)
 * 🥇 1st place CyberSecurityRumble CTF Finals 🇩🇪
 * 🥇 1st place Midnight Sun CTF Finals 🇸🇪
 * 🥇 1st place Red Team CTF @ DEF CON 31 ☠️
 * 🏆 [1st place International Cybersecurity Challenge @ Team Europe 🇪🇺](https://www.ic3.games/)
 * 🇪🇺 [Member of Team Europe @ IC3 - San Diego 🇺🇸](https://teameurope.site/)
 * 🥇 1st place RoCSC Finals 🇷🇴 (1st place A/D, 1st place Jeopardy)
-* 🇯🇵 5th place Google CTF - Qualified for Hackceler8 - Tokyo
+* 🏁 5th place Google CTF - Qualified for Hackceler8
 * 🥉 3rd place PwnMe Finals
 * 🥇 1st place RoCSC Qualifiers 🇷🇴 (online)
 * 🥉 3rd place PwnMe Quals
