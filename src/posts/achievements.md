@@ -8,7 +8,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2023
 
-* 🐛 [#11 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🐛 [#10 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
 * 🥇 1st place Reply Cyber Security Challenge 2023
 * 🇯🇵 5th place Google CTF Finals (Hackceler8)
 * 🥇 1st place CyberSecurityRumble CTF Finals 🇩🇪
