@@ -845,7 +845,7 @@ var simplemaps_worldmap_mapdata={
     NO: {
       name: "Norway",
       description: "default",
-      color: "default",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
