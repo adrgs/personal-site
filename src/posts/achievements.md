@@ -8,7 +8,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2023
 
-* 🐛 [#10 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🐛 [#11 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
 * 🥉 3rd place saarCTF 2023
 * 🇷🇴 8th place European Cyber Security Challenge (Team Captain)
 * 🥇 1st place Reply Cyber Security Challenge 2023
