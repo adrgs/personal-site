@@ -11,13 +11,13 @@
   <title>
     <%= title %>
   </title>
-  <meta name="description" content="<%= (!!locals.description) ? description : site.description %>" />
+  <meta name="description" content="Security engineer, hacker, CTF player with team WreckTheLine" />
   <meta name="author" content="<%= site.author %>" />
   <meta property="og:title" content="<%= title %>" />
   <meta property="og:description" content="<%= (!!locals.description) ? description : site.description %>" />
   <meta property="og:locale" content="<%= site.locale %>" />
   <meta property="og:site_name" content="<%= site.site_name %>" />
-  <meta property="og:image" content="https://adragos.ro/assets/images/posts/meta.png">
+  <meta property="og:image" content="https://adragos.ro/assets/images/meta.png">
   <meta name="referrer" content="unsafe-url" />
   <% if (locals.tags=="posts" && typeof date !=='undefined' ) { %>
     <meta property="og:type" content="article" />
@@ -67,16 +67,18 @@
   <div class="max-w-screen-md mx-auto">
     <div class="border-b border-gray-300">
       <div class="pt-8 pb-8">
-        <a href="/"><img src="/assets/images/posts/logo-main.png" alt="adragos-logo" /></a>
-        <h1 class="font-semibold text-3xl text-gray-800" style="margin-top:1rem">
+        <a href="/">
+          <img src="/assets/images/logo-main.svg" style="margin:auto; margin-bottom:20px; max-height:80px;">
+        </a>
+        <h1 class="font-semibold text-2xl text-gray-800" style="margin-top:1rem">
           <%= site.title %>
         </h1>
-        <div class="text-xl">
-          <%= site.description %>
+        <div>
+          <%- site.description -%>
         </div>
       </div>
       <nav>
-        <ul class="flex flex-wrap text-xl">
+        <ul class="flex flex-wrap">
           <li class="mr-6">
             <a class="text-gray-700 border-none hover:no-underline hover:text-gray-800" href="/">Blog</a>
           </li>
@@ -97,7 +99,7 @@
       </nav>
     </div>
 
-    <div class="text-xl py-5">
+    <div class="py-5">
       <%- content %>
     </div>
 

@@ -13,7 +13,7 @@ a:hover {
 @tailwind utilities;
 
 .content {
-  @apply tracking-wider leading-8 text-xl;
+  
 }
 
 .content p {
@@ -21,15 +21,15 @@ a:hover {
 }
 
 .content h1 {
-  @apply text-5xl font-bold mt-12 mb-5 leading-10;
+  @apply text-3xl font-bold mt-3 mb-3;
 }
 
 .content h2 {
-  @apply text-4xl font-bold mt-10 mb-5;
+  @apply text-2xl font-bold mt-3 mb-3;
 }
 
 .content h3 {
-  @apply text-3xl font-bold mt-10 mb-5;
+  @apply text-xl font-bold mt-3 mb-3;
 }
 
 .content h4 {
@@ -70,6 +70,10 @@ a:hover {
 
 .content pre[class*='language-'] {
   @apply my-8;
+}
+
+.content pre {
+  font-size: 0.8rem;
 }
 
 .content table {
