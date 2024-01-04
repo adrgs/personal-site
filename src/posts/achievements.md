@@ -6,6 +6,10 @@ eleventyExcludeFromCollections: true
 
 A mix of CTFs, Hackathons, Bug Bounties and Olympiads 
 
+## 2024
+
+* Soon™
+
 ## 2023
 
 * 🐛 [#11 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
