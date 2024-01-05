@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 a {
   @apply text-blue-700;
@@ -6,14 +8,6 @@ a {
 
 a:hover {
   @apply underline;
-}
-
-@tailwind components;
-
-@tailwind utilities;
-
-.content {
-  
 }
 
 .content p {
@@ -101,7 +95,6 @@ pre {
 
 p {
   word-break: break-word;
-  text-align: justify;
 }
 
 p > img {
@@ -126,8 +119,64 @@ pre {
   background: rgba(0, 0, 0, 0.1);
 }
 
+.nav-link {
+  @apply text-gray-700;
+  @apply border-none;
+  @apply hover:no-underline;
+  @apply hover:text-gray-800;
+}
+
 @media (max-width: 767px) {
   body {
     padding: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-gray-900 text-gray-100;
+  }
+
+  a {
+    @apply text-blue-300;
+  }
+
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    @apply text-white;
+  }
+  h1 {
+    @apply text-white;
+  }
+
+  p {
+    @apply text-gray-100;
+  }
+
+  pre {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  div {
+    @apply text-white;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-link {
+    @apply text-gray-300;
+    @apply border-none;
+    @apply hover:no-underline;
+    @apply hover:text-white;
   }
 }
