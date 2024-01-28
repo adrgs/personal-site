@@ -8,7 +8,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2024
 
-* Soon™
+* 🐉 7th place Real World CTF
 
 ## 2023
 
