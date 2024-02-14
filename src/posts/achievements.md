@@ -8,6 +8,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2024
 
+* 🐛 [#4 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
 * 🐉 7th place Real World CTF
 
 ## 2023
