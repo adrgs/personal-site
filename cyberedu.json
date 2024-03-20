@@ -1,832 +1,3413 @@
-[
-  {
-    "id": "aeafc0f0-0430-11ed-98b6-e3273e8f7e3d",
-    "title": "leaky",
-    "description": "Get the flag by knowing that the data provided is the flag (length of 69 bytes) encrypted 1000 times with different keys.\n\nNote: The probability of the challenge being solvable is granted.",
-    "difficulty": "Easy",
-    "difficulty_score": 1,
-    "points": 320,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "2ac23140-aeed-11ea-b3c0-61699138a1f9",
-      "name": "Ephvuln",
-      "name_acronym": "E",
-      "country": "Romania",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-06-15 09:47:03",
-        "timestamp": 1592214423,
-        "for_humans": "2 years ago"
-      }
+{
+  "id": 146,
+  "name": "ROCSC 2024 - Qualification",
+  "subdomain": "rocsc24-quals",
+  "domain": "rocsc24-quals.cyber-edu.co",
+  "description": "In perioada 08 - 10 martie are loc faza de calificari online pentru Romanian Cyber Security Challenge \u2013 RoCSC, un eveniment anual de tip CTF ce urm\u0103re\u0219te s\u0103 descopere tinere talente \u00een domeniul securit\u0103\u021bii cibernetice. \r\n\r\nLa competi\u021bie pot participa tineri dornici s\u0103 \u00ee\u0219i demonstreze abilit\u0103\u021bile, ce se pot \u00eenscrie online p\u00e2n\u0103 \u00een ziua concursului. Participan\u021bii se vor \u00eentrece pe 3 categorii de concurs: Juniori (pana in 20 ani), Seniori (21 - 25 de ani) \u0219i Open (disponibil indiferent de v\u00e2rst\u0103). \r\n\r\nParticiparea este gratuit\u0103. Tinerii vor trebui s\u0103-\u0219i demonstreze abilit\u0103\u021bile \u00een domenii precum mobile & web security, crypto, reverse engineering \u0219i forensics. \r\n\r\nPrimii clasa\u021bi la RoCSC24 vor avea oportunitatea de a reprezenta Rom\u00e2nia la Campionatul European de Securitate Cibernetic\u0103 - ECSC24.\r\n\r\nCalendar eveniment:\r\n\r\n1. RoCSC24 - Faza online de calificari: 08 - 10 martie\r\n2. RoCSC24 - Faza finala (on-site, Bucuresti): 23 - 24 mai - o zi Jeopardy si o zi Attack Defence, in paralel cu Olimpiada Nationala de Securitate Cibernetica 2024\r\n3. RoCSC24 - Bootcamp (on-site, Bran): perioada iulie - august (selectionati din finalistii RoCSC 2024 si OSC 2024)\r\n4. ECSC 2024 - Finala (on-site, Torino, Italia): 08 - 11 octombrie (lotul national selectionat in Bootcamp, format din 10 persoane + 2 rezerve)\r\n\r\nCompeti\u021bia este organizat\u0103 de Centrul Na\u021bional Cyberint din cadrul Serviciului Rom\u00e2n de Informa\u021bii, Directoratul Na\u021bional de Securitate Cibernetic\u0103 - DNSC \u0219i Asocia\u021bia Na\u021bional\u0103 pentru Securitatea Sistemelor Informatice - ANSSI, al\u0103turi de partenerii:\r\n\r\n- Gold: Bit Sentinel, Orange Rom\u00e2nia \u0219i CertSIGN\r\n- Silver: Deloitte Romania \u0219i UIPath\r\n- Bronze: Clico",
+  "prizes": "#### Premii la ROCSC 2024 (faza finala)\r\n\r\nFiecare din categoriile Juniori si Seniori vor primi premii in bani. \r\n\r\n#### Categoria Juniori:\r\n\r\n- Locul I: 2,000 euro\r\n- Locul II: 1,000 euro\r\n- Locul III: 500 euro\r\n- Locurile 4-10: premii speciale\r\n\r\n#### Categoria Seniori:\r\n\r\n- Locul I: 2,000 euro\r\n- Locul II: 1,000 euro\r\n- Locul III: 500 euro\r\n- Locurile 4-10: premii speciale\r\n\r\n#### Categorii de varsta\r\n\r\n- Juniori (pana in 20 de ani)\r\n- Seniori (21-25 de ani)\r\n- Open \r\n\r\nCategoria Open este accesibila pentru oricine nu se incadreaza in categoriile Juniori si Seniori si NU este eligibila pentru premii.\r\n\r\nTop 20 de la Juniori si Seniori trebuie sa trimita Write-ups pana duminica 10.03.2024, ora 23:59 utilizand [acest formular](https://forms.gle/mPcgdrCadqeRtKBj8) si respectand template-ul indicat.",
+  "rules": "#### Cum te poti pregati pentru ROCSC 2024?\r\n\r\nPe CyberEDU exista o sectiune \"RoCSC\". \u00cen aceast\u0103 sec\u021biune sunt disponibile majoritatea exerci\u021biilor de la edi\u021biile anterioare ROCSC (faza na\u021bional\u0103 \u0219i etapa de calific\u0103ri), OSC \u0219i ECSC 2019. \r\n\r\nPa\u0219i pentru \u00eenregistrare\r\n1. Te \u00eenscrii pe pagina de \u00eenregistrare de pe site-ul cyber-edu.co. (daca nu ai deja cont)\r\n2. Vei primi un email pentru confirmarea contului. (daca nu ai deja cont)\r\n3. Dup\u0103 validarea contului, trebuie s\u0103 accesezi [acest link](https://cyber-edu.co/register?token=cab73775b5507da4599ddb42eb3a1013cd91126fc03de4ed20bda076aa57ece450b6f83f1beb69ed). \r\n4. Dup\u0103 accesarea linkului de la pasul 3, vei ob\u021bine acces la sec\u021biunea RoCSC, iar exerci\u021biile de la edi\u021biile anterioare vor deveni vizibile \u00een sec\u021biunea Challenges - ca \u00een fotografia [aceasta](https://unbreakable.ro/wp-content/uploads/2024/02/Screenshot-2024-02-08-at-16.38.07.png).",
+  "terms_and_conditions": null,
+  "status": {
+    "value": "ended",
+    "key": "Ended",
+    "description": "Ended"
+  },
+  "logo": "https://api.cyber-edu.co/images/contests/236IW07k9EuVgWpP.png",
+  "mechanism": "jeopardy",
+  "ad_preex": null,
+  "ad_startex": null,
+  "ad_endex": null,
+  "ad_gamex": null,
+  "ad_rounds": 0,
+  "ad_current_round": 0,
+  "ad_sla_percentage": true,
+  "ad_defensive_points_positive": null,
+  "ad_defensive_points_negative": null,
+  "ad_offensive_points_positive": null,
+  "ad_offensive_points_negative": null,
+  "ad_stolen_flags": null,
+  "ad_lost_flags": null,
+  "is_hybrid": true,
+  "configuration": {
+    "tabs": ["ranks", "activity", "insights"],
+    "shared_secret": false,
+    "has_certificates": false,
+    "type": {
+      "value": "individual",
+      "key": "Individual",
+      "description": "Individual"
     },
-    "tags": [
-      {
-        "id": 12,
-        "name": "Cryptography",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 19
+    "timed": false,
+    "time_limit": 0,
+    "has_boxes": false,
+    "show_start_training_button": 1,
+    "starting_at": {
+      "date": "2024-03-08 10:00:00",
+      "timestamp": 1709892000,
+      "for_humans": "1 week ago"
+    },
+    "ending_at": {
+      "date": "2024-03-10 10:00:00",
+      "timestamp": 1710064800,
+      "for_humans": "1 week ago"
     }
   },
-  {
-    "id": "4d85f400-0432-11ed-a1c9-69b8f679c86d",
-    "title": "weird-noise",
-    "description": "We have received this message, but unfortunately, we can’t understand anything. \n\nThe only thing we know is that the message has the following tag: ROBOT 36  Slow Something.",
-    "difficulty": "Easy",
-    "difficulty_score": 1,
-    "points": 50,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "53b0ccb0-7f21-11ea-9207-e5b2776fa6ac",
-      "name": "Volf",
-      "name_acronym": "V",
-      "country": "Romania",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-02-24 16:05:25",
-        "timestamp": 1582560325,
-        "for_humans": "2 years ago"
-      }
-    },
-    "tags": [
+  "form": {
+    "attributes": [
       {
-        "id": 7,
-        "name": "Forensics",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 77
-    }
-  },
-  {
-    "id": "58c70c40-0433-11ed-93a8-f31338dc4546",
-    "title": "test-site",
-    "description": "The developers are pretty lazy, they haven't finished anything!\nHint: Everything is running on localhost. (optional/it costs points)\n\nFlag format: CTF{sha256}",
-    "difficulty": "Entry Level",
-    "difficulty_score": 0,
-    "points": 310,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "f5e70a10-0657-11ec-a00b-c3def6968822",
-      "name": "Joker",
-      "name_acronym": "J",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2021-08-26 10:25:39",
-        "timestamp": 1629973539,
-        "for_humans": "10 months ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 1,
-        "name": "Web",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 20
-    }
-  },
-  {
-    "id": "8fb89610-0433-11ed-848e-c7a1d79c6849",
-    "title": "i-am-root",
-    "description": "We need the following information ASAP, a Linux workstation within our organization is manifesting weird behavior. \n\n_NOTE! The present challenge contains documents infected with real malware. \n\nBe cautious and solve this challenge in a virtual environment only.",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 540,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "53b0ccb0-7f21-11ea-9207-e5b2776fa6ac",
-      "name": "Volf",
-      "name_acronym": "V",
-      "country": "Romania",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-02-24 16:05:25",
-        "timestamp": 1582560325,
-        "for_humans": "2 years ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 7,
-        "name": "Forensics",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 37
-    }
-  },
-  {
-    "id": "3d78e160-0434-11ed-a72e-9de78b5cb099",
-    "title": "secure-notekeeper",
-    "description": "This is just an API that helps you implement an application to take notes efficiently.\n\nFlag format: CTF{sha256}",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 370,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "df2d31a0-e8be-11ea-a95c-afd09515493e",
-      "name": "trollzorftw",
-      "name_acronym": "T",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-08-27 23:41:47",
-        "timestamp": 1598571707,
-        "for_humans": "1 year ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 1,
-        "name": "Web",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 14
-    }
-  },
-  {
-    "id": "c6049fe0-0434-11ed-bfa3-29a099902786",
-    "title": "bday-card",
-    "description": "Generate a birthday card for your friends!\n\nFlag format: CTF{sha256}",
-    "difficulty": "Hard",
-    "difficulty_score": 3,
-    "points": 490,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "53e16e80-7f21-11ea-8017-354b622fe661",
-      "name": "nytr0gen",
-      "name_acronym": "N",
-      "country": "Romania",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-03-31 09:57:46",
-        "timestamp": 1585648666,
-        "for_humans": "2 years ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 1,
-        "name": "Web",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 2
-    }
-  },
-  {
-    "id": "3dcdb4a0-0435-11ed-b79b-79dabf9f83be",
-    "title": "Exfil",
-    "description": "Masina unui utilizator a fost compromisa si banuim ca atacatorul a exfiltrat date insa nu stim cum. Din fericire s-a obtinut o captura a traficului de retea si speram sa verificam ce date au fost furate, datele confidentiale fiind un hash SHA256. \n\nFlag-ul este de forma ROCSC{sha256}.",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 210,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
-      "name": "Nytro",
-      "name_acronym": "N",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2021-09-14 11:27:59",
-        "timestamp": 1631618879,
-        "for_humans": "10 months ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 2,
-        "name": "Network",
-        "type": "default"
+        "id": 855,
+        "name": "Nume",
+        "slug": "nume_3",
+        "type": {
+          "value": "CyberEdu\\Contest\\SubmissionFormAttributes\\Input",
+          "key": "Input",
+          "description": "Input"
+        },
+        "url": null,
+        "source": null,
+        "placeholder": "Nume",
+        "show": false,
+        "validation_rules": ["required", "string"],
+        "values": null,
+        "created_at": {
+          "date": "2024-01-31 14:48:27",
+          "timestamp": 1706712507,
+          "for_humans": "1 month ago"
+        },
+        "updated_at": {
+          "date": "2024-01-31 14:48:27",
+          "timestamp": 1706712507,
+          "for_humans": "1 month ago"
+        }
       },
       {
-        "id": 7,
-        "name": "Forensics",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 30
-    }
-  },
-  {
-    "id": "0a56de80-0436-11ed-94d5-39b3a09c4c67",
-    "title": "keygeneric",
-    "description": "Pe darkweb a aparut un tool care rezolva automat exercitii CTF in cateva secunde insa o licenta este necesara. Pentru a-l putea folosi va trebui sa il crackuim si sa facem rost de un cod de licenta. \n\nFormatul final al licentei va fi ROCSC{cod_licenta}.",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 350,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
-      "name": "Nytro",
-      "name_acronym": "N",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2021-09-14 11:27:59",
-        "timestamp": 1631618879,
-        "for_humans": "10 months ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 8,
-        "name": "Reverse Engineering",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 16
-    }
-  },
-  {
-    "id": "19511570-0436-11ed-b4c5-dd16d9510d01",
-    "title": "malicious-internet-traffic",
-    "description": "During a cybersecurity incident, some malicious network traffic was captured. \nWe need to find answers related to the following questions. \n\n**NOTE! The present challenge contains documents infected with real malware. \nBe cautious and solve this challenge in a virtual environment only.**",
-    "difficulty": "Easy",
-    "difficulty_score": 1,
-    "points": 200,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "53b0ccb0-7f21-11ea-9207-e5b2776fa6ac",
-      "name": "Volf",
-      "name_acronym": "V",
-      "country": "Romania",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-02-24 16:05:25",
-        "timestamp": 1582560325,
-        "for_humans": "2 years ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 2,
-        "name": "Network",
-        "type": "default"
+        "id": 856,
+        "name": "Prenume",
+        "slug": "prenume_3",
+        "type": {
+          "value": "CyberEdu\\Contest\\SubmissionFormAttributes\\Input",
+          "key": "Input",
+          "description": "Input"
+        },
+        "url": null,
+        "source": null,
+        "placeholder": "Prenume",
+        "show": false,
+        "validation_rules": ["required", "string"],
+        "values": null,
+        "created_at": {
+          "date": "2024-01-31 14:48:37",
+          "timestamp": 1706712517,
+          "for_humans": "1 month ago"
+        },
+        "updated_at": {
+          "date": "2024-01-31 14:48:37",
+          "timestamp": 1706712517,
+          "for_humans": "1 month ago"
+        }
       },
       {
-        "id": 7,
-        "name": "Forensics",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 53
-    }
-  },
-  {
-    "id": "415f1350-0437-11ed-ae04-eb0081fd59e2",
-    "title": "pwn1",
-    "description": "This is just a regular pwn!\n\nFlag format: CTF{sha256}",
-    "difficulty": "Easy",
-    "difficulty_score": 1,
-    "points": 320,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "d9cd9c00-152d-11eb-a554-e359926319b4",
-      "name": "shad",
-      "name_acronym": "S",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-10-23 12:47:03",
-        "timestamp": 1603457223,
-        "for_humans": "1 year ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 9,
-        "name": "Pwn",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 19
-    }
-  },
-  {
-    "id": "cdc1e220-0437-11ed-9331-bdc0ee4e320e",
-    "title": "open-rest",
-    "description": "Sometimes we also have modern applications that are vulnerable to binary exploitation techniques even if they are written in a difficult-to-understand framework.\n\nFlag Format: CTF{sha256}",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 100,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "a21ad8b0-03d7-11eb-bcac-95ba23dd33d8",
-      "name": "T3jv1l",
-      "name_acronym": "T",
-      "country": "Romania",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-10-01 11:17:03",
-        "timestamp": 1601551023,
-        "for_humans": "1 year ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 9,
-        "name": "Pwn",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 41
-    }
-  },
-  {
-    "id": "30c92000-0439-11ed-bdd4-b70005baa2f8",
-    "title": "misc",
-    "description": "Test your knowledge in artificial intelligence!\n\nFlag Format: CTF{sha256}",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 70,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "d9cd9c00-152d-11eb-a554-e359926319b4",
-      "name": "shad",
-      "name_acronym": "S",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-10-23 12:47:03",
-        "timestamp": 1603457223,
-        "for_humans": "1 year ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 11,
-        "name": "Misc",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 44
-    }
-  },
-  {
-    "id": "e43a56f0-0439-11ed-ab2f-efc8d59e82be",
-    "title": "dolphin-exfiltration",
-    "description": "All the information you need is in the attachment file. \n\n- The format of the flag is CTF{sha256}\n- The flag must be submitted in full, including the CTF and curly bracket parts.",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 240,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "b71c7190-7669-11eb-9fba-7fffaff6ff29",
-      "name": "Octavian",
-      "name_acronym": "O",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2021-02-24 06:29:58",
-        "timestamp": 1614148198,
-        "for_humans": "1 year ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 2,
-        "name": "Network",
-        "type": "default"
+        "id": 857,
+        "name": "Telefon",
+        "slug": "telefon_4",
+        "type": {
+          "value": "CyberEdu\\Contest\\SubmissionFormAttributes\\Input",
+          "key": "Input",
+          "description": "Input"
+        },
+        "url": null,
+        "source": null,
+        "placeholder": "Telefon",
+        "show": false,
+        "validation_rules": ["required", "numeric"],
+        "values": null,
+        "created_at": {
+          "date": "2024-01-31 14:49:00",
+          "timestamp": 1706712540,
+          "for_humans": "1 month ago"
+        },
+        "updated_at": {
+          "date": "2024-01-31 14:49:00",
+          "timestamp": 1706712540,
+          "for_humans": "1 month ago"
+        }
       },
       {
-        "id": 22,
-        "name": "Programming",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 27
-    }
-  },
-  {
-    "id": "be8674b0-043a-11ed-b0c2-19951e7579b1",
-    "title": "its-all-about-pickles",
-    "description": "All the information you need is in the attachment file. \n\n- The format of the flag is CTF{sha256}\n- The flag must be submitted in full, including the CTF and curly bracket parts.",
-    "difficulty": "Easy",
-    "difficulty_score": 1,
-    "points": 420,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "b71c7190-7669-11eb-9fba-7fffaff6ff29",
-      "name": "Octavian",
-      "name_acronym": "O",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2021-02-24 06:29:58",
-        "timestamp": 1614148198,
-        "for_humans": "1 year ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 8,
-        "name": "Reverse Engineering",
-        "type": "default"
+        "id": 858,
+        "name": "Localitate",
+        "slug": "localitate_4",
+        "type": {
+          "value": "CyberEdu\\Contest\\SubmissionFormAttributes\\Input",
+          "key": "Input",
+          "description": "Input"
+        },
+        "url": null,
+        "source": null,
+        "placeholder": "Localitate",
+        "show": false,
+        "validation_rules": ["required", "string"],
+        "values": null,
+        "created_at": {
+          "date": "2024-01-31 14:49:22",
+          "timestamp": 1706712562,
+          "for_humans": "1 month ago"
+        },
+        "updated_at": {
+          "date": "2024-01-31 14:49:22",
+          "timestamp": 1706712562,
+          "for_humans": "1 month ago"
+        }
       },
       {
-        "id": 22,
-        "name": "Programming",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 9
-    }
-  },
-  {
-    "id": "b5aa57e0-0444-11ed-ad28-57bca6fbc309",
-    "title": "dashboard",
-    "description": "Not a fan of elastic but kibana looks good!\n\nFlag format CTF{sha256}.",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 170,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "53b6d7d0-7f21-11ea-8730-a36e60fdfc85",
-      "name": "Betaflash",
-      "name_acronym": "B",
-      "country": "Romania",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-03-11 10:18:57",
-        "timestamp": 1583921937,
-        "for_humans": "2 years ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 1,
-        "name": "Web",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 34
-    }
-  },
-  {
-    "id": "bd5d2030-0431-11ed-8785-01bc750fd31d",
-    "title": "cryptofun",
-    "description": "You have some encrypted files and a binary proving the functionality of the encryption algorithm and implementing all the required decryption parameters. \nCan you find the flags if you know that the password is C0mpl3xP@ss ?\n\n**Multiple Flags!**\n\nFlag format: CTF{sha256}",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 900,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "53ae7220-7f21-11ea-968c-993283711138",
-      "name": "CertSIGN",
-      "name_acronym": "C",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-02-23 10:28:08",
-        "timestamp": 1582453688,
-        "for_humans": "2 years ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 12,
-        "name": "Cryptography",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 1
-    }
-  },
-  {
-    "id": "9218be50-0812-11ed-988c-3715ae0012b3",
-    "title": "life-of-the-packets",
-    "description": "They are born, live and then die.\n\nFlag format: CTF{sha256}",
-    "difficulty": "Easy",
-    "difficulty_score": 1,
-    "points": 300,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "53ae7220-7f21-11ea-968c-993283711138",
-      "name": "CertSIGN",
-      "name_acronym": "C",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
-      "created_at": {
-        "date": "2020-02-23 10:28:08",
-        "timestamp": 1582453688,
-        "for_humans": "2 years ago"
-      }
-    },
-    "tags": [
-      {
-        "id": 2,
-        "name": "Network",
-        "type": "default"
+        "id": 859,
+        "name": "Data nasterii (DD-MM-YYYY)",
+        "slug": "data_nasterii_dd_mm_yyyy_3",
+        "type": {
+          "value": "CyberEdu\\Contest\\SubmissionFormAttributes\\Input",
+          "key": "Input",
+          "description": "Input"
+        },
+        "url": null,
+        "source": null,
+        "placeholder": "Data nasterii (DD-MM-YYYY)",
+        "show": false,
+        "validation_rules": ["required", "string"],
+        "values": null,
+        "created_at": {
+          "date": "2024-01-31 14:49:51",
+          "timestamp": 1706712591,
+          "for_humans": "1 month ago"
+        },
+        "updated_at": {
+          "date": "2024-01-31 14:49:51",
+          "timestamp": 1706712591,
+          "for_humans": "1 month ago"
+        }
       },
       {
-        "id": 12,
-        "name": "Cryptography",
-        "type": "default"
+        "id": 860,
+        "name": "Categorie",
+        "slug": "categorie_4",
+        "type": {
+          "value": "CyberEdu\\Contest\\SubmissionFormAttributes\\Select",
+          "key": "Select",
+          "description": "Select"
+        },
+        "url": null,
+        "source": null,
+        "placeholder": "Categorie",
+        "show": true,
+        "validation_rules": ["required", "string"],
+        "values": ["Juniori", "Seniori", "Open"],
+        "created_at": {
+          "date": "2024-01-31 14:50:17",
+          "timestamp": 1706712617,
+          "for_humans": "1 month ago"
+        },
+        "updated_at": {
+          "date": "2024-01-31 14:50:17",
+          "timestamp": 1706712617,
+          "for_humans": "1 month ago"
+        }
+      },
+      {
+        "id": 861,
+        "name": "Liceu",
+        "slug": "liceu_1",
+        "type": {
+          "value": "CyberEdu\\Contest\\SubmissionFormAttributes\\Select",
+          "key": "Select",
+          "description": "Select"
+        },
+        "url": null,
+        "source": null,
+        "placeholder": "Liceu",
+        "show": true,
+        "validation_rules": ["required", "string"],
+        "values": [
+          "N/A",
+          "COLEGIUL NATIONAL IASI",
+          "COLEGIUL NATIONAL \"SFANTUL SAVA\"",
+          "COLEGIUL NATIONAL \"EMIL RACOVITA\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"GHEORGHE LAZAR\"",
+          "COLEGIUL NATIONAL DE INFORMATICA \"TUDOR VIANU\"",
+          "LICEUL TEORETIC \"AVRAM IANCU\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"ANDREI SAGUNA\" BRASOV",
+          "COLEGIUL NATIONAL \"MIHAI VITEAZUL\"",
+          "LICEUL TEORETIC \"NICOLAE BALCESCU\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"UNIREA\" FOCSANI",
+          "COLEGIUL NATIONAL \"GHEORGHE SINCAI\"",
+          "COLEGIUL NATIONAL \"VASILE ALECSANDRI\" LOCALITATEA GALATI",
+          "COLEGIUL NATIONAL \"COSTACHE NEGRUZZI\" IASI",
+          "LICEUL TEORETIC \"GRIGORE MOISIL\" TIMISOARA",
+          "COLEGIUL NATIONAL \"GHEORGHE MUNTEANU MURGOCI\" BRAILA",
+          "COLEGIUL NATIONAL \"MIRCEA CEL BATRAN\" CONSTANTA",
+          "COLEGIUL NATIONAL \"FRATII BUZESTI\" CRAIOVA",
+          "COLEGIUL NATIONAL \"GRIGORE MOISIL\"",
+          "COLEGIUL NATIONAL \"EMANUIL GOJDU\" ORADEA",
+          "COLEGIUL NATIONAL \"B. P. HASDEU\" BUZAU",
+          "LICEUL TEORETIC \"OVIDIUS\" CONSTANTA",
+          "COLEGIUL NATIONAL \"COSTACHE NEGRI\" LOCALITATEA GALATI",
+          "COLEGIUL NATIONAL \"ION C. BRATIANU\" PITESTI",
+          "COLEGIUL NATIONAL \"GHEORGHE SINCAI\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"STEFAN CEL MARE\" SUCEAVA",
+          "COLEGIUL NATIONAL \"C.DIACONOVICI LOGA\" TIMISOARA",
+          "COLEGIUL NATIONAL \"DR. IOAN MESOTA\" BRASOV",
+          "COLEGIUL NATIONAL BILINGV \"GEORGE COSBUC\"",
+          "COLEGIUL NATIONAL \"PETRU RARES\" SUCEAVA",
+          "COLEGIUL NATIONAL \"MATEI BASARAB\"",
+          "COLEGIUL NATIONAL \"O.GOGA\" SIBIU",
+          "COLEGIUL NATIONAL \"SAMUEL VON BRUKENTHAL\" SIBIU",
+          "COLEGIUL NATIONAL \"CAROL I\" CRAIOVA",
+          "COLEGIUL NATIONAL \"MIHAI VITEAZUL\" PLOIESTI",
+          "COLEGIUL NATIONAL \"HOREA CLOSCA SI CRISAN\" ALBA IULIA",
+          "COLEGIUL NATIONAL DE INFORMATICA MATEI BASARAB RM. VALCEA",
+          "COLEGIUL NATIONAL \"MIHAI EMINESCU\" BOTOSANI",
+          "COLEGIUL NATIONAL \"GHEORGHE SINCAI\" BAIA MARE",
+          "COLEGIUL NATIONAL \"UNIREA\" TIRGU MURES",
+          "COLEGIUL NATIONAL \"PETRU RARES\" PIATRA-NEAMT",
+          "COLEGIUL NATIONAL \"NICOLAE GRIGORESCU\" CAMPINA",
+          "COLEGIUL NATIONAL \"SPIRU HARET\"",
+          "COLEGIUL NATIONAL \"ION CREANGA\"",
+          "COLEGIUL NATIONAL \"GHEORGHE VRANCEANU\" BACAU",
+          "COLEGIUL NATIONAL \"AL. I. CUZA\" FOCSANI",
+          "COLEGIUL NATIONAL DE INFORMATICA \"GRIGORE MOISIL\" BRASOV",
+          "LICEUL TEORETIC \"TRAIAN\" CONSTANTA",
+          "COLEGIUL NATIONAL \"MIHAI EMINESCU\" IASI",
+          "COLEGIUL NATIONAL \"MOISE NICOARA\" ARAD",
+          "COLEGIUL NATIONAL \"MIHAI VITEAZUL\" TURDA",
+          "COLEGIUL NATIONAL \"GH.LAZAR\" SIBIU",
+          "LICEUL DE INFORMATICA \"TIBERIU POPOVICIU\" CLUJ-NAPOCA",
+          "LICEUL TEOLOGIC BAPTIST \"ALEXA POPOVICI\" ARAD",
+          "COLEGIUL NATIONAL \"CONSTANTIN CARABELLA\" TARGOVISTE",
+          "COLEGIUL NATIONAL \"ELENA CUZA\" CRAIOVA",
+          "LICEUL TEORETIC \"ALEXANDRU IOAN CUZA\"",
+          "COLEGIUL NATIONAL \"MIHAIL KOGALNICEANU\" LOCALITATEA GALATI",
+          "COLEGIUL NATIONAL \"VASILE LUCACIU\" BAIA MARE",
+          "COLEGIUL NATIONAL \"PREPARANDIA-DIMITRIE TICHINDEAL\" ARAD",
+          "COLEGIUL NATIONAL \"ZINCA GOLESCU\" PITESTI",
+          "LICEUL TEOLOGIC BAPTIST \"EMANUEL\" ORADEA",
+          "LICEUL TEOLOGIC PENTICOSTAL \"BETEL\" ORADEA",
+          "COLEGIUL NATIONAL \"IENACHITA VACARESCU\" TARGOVISTE",
+          "LICEUL DE INFORMATICA \"GRIGORE MOISIL\" IASI",
+          "COLEGIUL NATIONAL \"IULIA HASDEU\"",
+          "COLEGIUL NATIONAL \"ELENA CUZA\"",
+          "LICEUL TEORETIC \"LUCIAN BLAGA\" CLUJ-NAPOCA",
+          "LICEUL UNITARIAN \"JANOS ZSIGMOND\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"CANTEMIR VODA\"",
+          "COLEGIUL NATIONAL \"TRAIAN LALESCU\" RESITA",
+          "COLEGIUL NATIONAL \"ION LUCA CARAGIALE\" PLOIESTI",
+          "COLEGIUL NATIONAL \"NICHITA STANESCU\" PLOIESTI",
+          "COLEGIUL NATIONAL \"TUDOR VLADIMIRESCU\" TG-JIU",
+          "COLEGIUL NATIONAL \"I. L. CARAGIALE\"",
+          "COLEGIUL NATIONAL \"ALEXANDRU IOAN CUZA\" PLOIESTI",
+          "COLEGIUL NATIONAL \"SILVANIA\" ZALAU",
+          "COLEGIUL NATIONAL \"ECATERINA TEODOROIU\" TG-JIU",
+          "COLEGIUL NATIONAL \"STEFAN VELOVAN\" CRAIOVA",
+          "COLEGIUL NATIONAL \"MIHAI VITEAZUL\" SLOBOZIA",
+          "COLEGIUL NATIONAL\"VASILE ALECSANDRI\" BACAU",
+          "LICEUL TEORETIC \"VASILE ALECSANDRI\" IASI",
+          "LICEUL TEORETIC \"MIHAIL KOGALNICEANU\" VASLUI",
+          "LICEUL TEORETIC \"NICOLAE IORGA\"",
+          "COLEGIUL NATIONAL \"CONSTANTIN CANTACUZINO\" TARGOVISTE",
+          "COLEGIUL NATIONAL \"LIVIU REBREANU\" BISTRITA",
+          "COLEGIUL NATIONAL \"GEORGE COSBUC\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"MIHAI EMINESCU\" PETROSANI",
+          "COLEGIUL NATIONAL \"EUDOXIU HURMUZACHI\" RADAUTI",
+          "LICEUL TEORETIC \"AUREL LAZAR\" ORADEA",
+          "COLEGIUL NATIONAL \"GEORGE BARITIU\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"CALISTRAT HOGAS\" PIATRA-NEAMT",
+          "COLEGIUL NATIONAL BANATEAN TIMISOARA",
+          "COLEGIUL NATIONAL \"DECEBAL\" DEVA",
+          "COLEGIUL NATIONAL \"ALEXANDRU PAPIU ILARIAN\" TIRGU MURES",
+          "COLEGIUL NATIONAL \"ION MINULESCU\" SLATINA",
+          "COLEGIUL NATIONAL \"GARABET IBRAILEANU\" IASI",
+          "COLEGIUL NATIONAL \"NICOLAE BALCESCU\" BRAILA",
+          "LICEUL TEORETIC \"GRIGORE MOISIL\" TULCEA",
+          "COLEGIUL NATIONAL \"MIRCEA CEL BATRIN\" RAMNICU VALCEA",
+          "COLEGIUL NATIONAL \"MIHAI EMINESCU\" SUCEAVA",
+          "COLEGIUL NATIONAL PEDAGOGIC \"CARMEN SYLVA\" TIMISARA",
+          "COLEGIUL ECONOMIC \"V. MADGEARU\"",
+          "COLEGIUL NATIONAL \"IOAN SLAVICI\" SATU MARE",
+          "COLEGIUL NATIONAL \"ROMAN-VODA\" ROMAN",
+          "COLEGIUL NATIONAL \"MIHAI EMINESCU\"",
+          "COLEGIUL NATIONAL \"NICU GANE\" FALTICENI",
+          "LICEUL TEORETIC \"DIMITRIE CANTEMIR\" IASI",
+          "COLEGIUL NATIONAL \"SPIRU HARET\" LOCALITATEA TECUCI",
+          "LICEUL TEORETIC \"BOLYAI FARKAS\" TIRGU MURES",
+          "COLEGIUL NATIONAL PEDAGOGIC \"GHEORGHE LAZAR\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"ALEXANDRU IOAN CUZA\" LOCALITATEA GALATI",
+          "LICEUL TEORETIC \"MIRON COSTIN\" IASI",
+          "COLEGIUL NATIONAL PEDAGOGIC \"REGINA MARIA\", MUNICIPIUL PLOIESTI",
+          "COLEGIUL NATIONAL \"MIHAI EMINESCU\" SATU MARE",
+          "COLEGIUL NATIONAL \"LUCIAN BLAGA\" SEBES",
+          "COLEGIUL NATIONAL \"DIMITRIE CANTEMIR\" ONESTI",
+          "COLEGIUL NATIONAL PEDAGOGIC \"REGINA MARIA\" DEVA",
+          "SCOALA SUPERIOARA COMERCIALA \"NICOLAE KRETZULESCU\"",
+          "LICEUL TEORETIC \"NIKOLAUS LENAU\" TIMISOARA",
+          "COLEGIUL NATIONAL \"VLAICU VODA\" CURTEA DE ARGES",
+          "COLEGIUL NATIONAL \"ANDREI MURESANU\" BISTRITA",
+          "COLEGIUL NATIONAL \"A. T. LAURIAN\" BOTOSANI",
+          "COLEGIUL GERMAN \"GOETHE\"",
+          "COLEGIUL NATIONAL \"UNIREA\" BRASOV",
+          "LICEUL TEORETIC \"JOHANNES HONTERUS\" BRASOV",
+          "LICEUL TEOLOGIC BAPTIST \"EMANUEL\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"MIHAI EMINESCU\" CONSTANTA",
+          "COLEGIUL NATIONAL \"GH. ROSCA CODREANU\" BARLAD",
+          "LICEUL PEDAGOGIC \"SPIRU HARET\" BUZAU",
+          "COLEGIUL NATIONAL \"ALEXANDRU LAHOVARI\" RAMNICU VALCEA",
+          "COLEGIUL NATIONAL \"ION NECULCE\"",
+          "COLEGIUL NATIONAL \"ANDREI MURESANU\" DEJ",
+          "LICEUL TEORETIC \"WILLIAM SHAKESPEARE\" TIMISOARA",
+          "COLEGIUL NATIONAL \"GHEORGHE TITEICA\"",
+          "COLEGIUL NATIONAL \"FERDINAND I\" BACAU",
+          "LICEUL TEORETIC \"NICOLAE IORGA\" BRAILA",
+          "COLEGIUL NATIONAL \"RADU NEGRU\" FAGARAS",
+          "COLEGIUL NATIONAL DE INFORMATICA PIATRA-NEAMT",
+          "COLEGIUL NATIONAL \"ANA ASLAN\" TIMISOARA",
+          "SCOALA CENTRALA",
+          "LICEUL TEORETIC \"JEAN MONNET\"",
+          "Colegiul NaTional \"Szekely Miko\" SfAntu Gheorghe",
+          "LICEUL PEDAGOGIC \"SPIRU HARET\" FOCSANI",
+          "LICEUL TEORETIC \"EMIL RACOVITA\" VASLUI",
+          "LICEUL TEORETIC BILINGV \"MIGUEL DE CERVANTES\"",
+          "LICEUL TEORETIC \"EMIL RACOVITA\" LOCALITATEA GALATI",
+          "COLEGIUL NATIONAL \"GEORGE COSBUC\" NASAUD",
+          "COLEGIUL DE STIINTE \"GRIGORE ANTIPA\" BRASOV",
+          "LICEUL TEORETIC \"MIHAI VITEAZUL\" CARACAL",
+          "LICEUL TEORETIC \"ALEXANDRU VLAHUTA\"",
+          "COLEGIUL NATIONAL PEDAGOGIC \"CONSTANTIN BRATESCU\" CONSTANTA",
+          "COLEGIUL NATIONAL \"ALEXANDRU ODOBESCU\" PITESTI",
+          "LICEUL TEORETIC \"ION BARBU\"",
+          "COLEGIUL NATIONAL \"M\u00c1RTON \u00c1RON\" MIERCUREA CIUC",
+          "LICEUL TEORETIC \"ONISIFOR GHIBU\" SIBIU",
+          "LICEUL TEOLOGIC ADVENTIST \"STEFAN DEMETRESCU\"",
+          "COLEGIUL NATIONAL \"MIHAI EMINESCU\" ORADEA",
+          "COLEGIUL NATIONAL \"CUZA VODA\" HUSI",
+          "COLEGIUL NATIONAL\"MIHAI EMINESCU\" BUZAU",
+          "COLEGIUL NATIONAL \"STEFAN CEL MARE\" TARGU NEAMT",
+          "LICEUL TEORETIC \"TUDOR VLADIMIRESCU\" BUCURESTI",
+          "LICEUL TEORETIC \"ONISIFOR GHIBU\" CLUJ-NAPOCA",
+          "LICEUL TEORETIC \"CONSTANTIN NOICA\" SIBIU",
+          "LICEUL PEDAGOGIC \"D. P. PERPESSICIUS\" BRAILA",
+          "LICEUL TEORETIC \"CALLATIS\" MANGALIA",
+          "LICEUL TEORETIC \"MIRON COSTIN\" PASCANI",
+          "COLEGIUL NATIONAL \"ALEXANDRU VLAHUTA\" RIMNICU SARAT",
+          "LICEUL TEORETIC \"APACZAI CSERE JANOS\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"EMIL RACOVITA\" IASI",
+          "LICEUL TEORETIC \"GEORGE CALINESCU\" CONSTANTA",
+          "COLEGIUL ECONOMIC \"MIHAIL KOGALNICEANU\" FOCSANI",
+          "LICEUL TEORETIC \"DECEBAL\" CONSTANTA",
+          "COLEGIUL NATIONAL \"ELENA GHIBA BIRTA\" ARAD",
+          "SEMINARUL TEOLOGIC ORTODOX CLUJ-NAPOCA",
+          "LICEUL TEORETIC \"ALEXANDRU IOAN CUZA\" IASI",
+          "COLEGIUL NATIONAL \"GHEORGHE ASACHI\" PIATRA-NEAMT",
+          "COLEGIUL NATIONAL \"BARBU STIRBEI\" CALARASI",
+          "LICEUL TEORETIC \"J.L.CALDERON\" TIMISOARA",
+          "COLEGIUL NATIONAL \"SPIRU HARET\" TG-JIU",
+          "LICEUL \"ANDREI MURESANU\" BRASOV",
+          "COLEGIUL NATIONAL \"NICOLAE TITULESCU\" CRAIOVA",
+          "COLEGIUL NATIONAL PEDAGOGIC \"A.SAGUNA\" SIBIU",
+          "LICEUL PEDAGOGIC \"BENEDEK ELEK\" ODORHEIU SECUIESC",
+          "COLEGIUL NATIONAL \"MIHAI EMINESCU\" BAIA MARE",
+          "LICEUL TEORETIC \"VLAD TEPES\" TIMISOARA",
+          "COLEGIUL NATIONAL \"ANA ASLAN\" BRAILA",
+          "COLEGIUL ROMANO-CATOLIC \"SFANTUL IOSIF\"",
+          "LICEUL TEORETIC \"LUCIAN BLAGA\" CONSTANTA",
+          "COLEGIUL NATIONAL \"TITU MAIORESCU\" AIUD",
+          "COLEGIUL NATIONAL \"GRIGORE C. MOISIL\" ONESTI",
+          "COLEGIUL NATIONAL \"RADU GRECEANU\" SLATINA",
+          "COLEGIUL DE STIINTE ALE NATURII \"EMIL RACOVITA\" BRASOV",
+          "COLEGIUL ECONOMIC \"VIRGIL MADGEARU\" PLOIESTI",
+          "SEMINARUL TEOLOGIC ORTODOX \"SFANTUL SIMION STEFAN\" ALBA IULIA",
+          "COLEGIUL NATIONAL \"VASILE GOLDIS\" ARAD",
+          "LICEUL TEORETIC \"MIHAI EMINESCU\" CALARASI",
+          "LICEUL TEORETIC \"INDEPENDENTA\" CALAFAT",
+          "COLEGIUL NATIONAL \"NICOLAE IORGA\" VALENII DE MUNTE",
+          "COLEGIUL NATIONAL \"IANCU DE HUNEDOARA\" HUNEDOARA",
+          "LICEUL TEORETIC CAREI",
+          "COLEGIUL NATIONAL PEDAGOGIC \"MIRCEA SCARLAT\" ALEXANDRIA",
+          "COLEGIUL NATIONAL \"IOSIF VULCAN\" ORADEA",
+          "LICEUL TEORETIC GERMAN \"JOHANN ETTINGER\" SATU MARE",
+          "LICEUL TEORETIC \"GHEORGHE MARINESCU\" TIRGU MURES",
+          "COLEGIUL NATIONAL \"TRAIAN\"",
+          "LICEUL TEORETIC \"ONISIFOR GHIBU\" ORADEA",
+          "LICEUL TEOLOGIC REFORMAT CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL \"DRAGOS VODA\" SIGHETU MARMATIEI",
+          "COLEGIUL ECONOMIC \"DIONISIE POP MARTIAN\" ALBA IULIA",
+          "LICEUL TEORETIC \"BATHORY ISTVAN\" CLUJ-NAPOCA",
+          "LICEUL PEDAGOGIC \"NICOLAE IORGA\" BOTOSANI",
+          "Liceul Teoretic \"Mikes Kelemen\" SfAntu Gheorghe",
+          "LICEUL TEOLOGIC ROMANO-CATOLIC \"SEGITO M\u00c1RIA\" MIERCUREA CIUC",
+          "COLEGIUL NATIONAL PEDAGOGIC \"CAROL I\" CAMPULUNG",
+          "LICEUL TEORETIC \"TUDOR ARGHEZI\" CRAIOVA",
+          "COLEGIUL NATIONAL \"GIB MIHAESCU\" DRAGASANI",
+          "LICEUL TEORETIC \"DUNAREA\" LOCALITATEA GALATI",
+          "LICEUL GERMAN SEBES",
+          "COLEGIUL NATIONAL \"DINICU GOLESCU\" CAMPULUNG",
+          "COLEGIUL ECONOMIC \"IULIAN POP\" CLUJ-NAPOCA",
+          "LICEUL TEORETIC \"NICOLAE BALCESCU\" MEDGIDIA",
+          "COLEGIUL ECONOMIC \"TRANSILVANIA\" TIRGU MURES",
+          "COLEGIUL NATIONAL \"INOCHENTIE MICU CLAIN\" BLAJ",
+          "COLEGIUL ECONOMIC \"A.D. XENOPOL\"",
+          "COLEGIUL NATIONAL \"MIHAIL SADOVEANU\" PASCANI",
+          "LICEUL TEORETIC \"ALEXANDRU PAPIU ILARIAN\" DEJ",
+          "LICEUL TEORETIC \"TAM\u00c1SI \u00c1RON\" ODORHEIU SECUIESC",
+          "COLEGIUL NATIONAL \"DOAMNA STANCA\" SATU MARE",
+          "COLEGIUL NATIONAL PEDAGOGIC \"STEFAN CEL MARE\" BACAU",
+          "COLEGIUL NATIONAL \"GRIGORE MOISIL\" URZICENI",
+          "LICEUL TEORETIC \"PAVEL DAN\" CAMPIA TURZII",
+          "COLEGIUL ECONOMIC \"COSTIN C. KIRITESCU\"",
+          "LICEUL TEORETIC \"C. A. ROSETTI\"",
+          "LICEUL TEORETIC \"HENRI COANDA\" CRAIOVA",
+          "COLEGIUL NATIONAL \"CALISTRAT HOGAS\" LOCALITATEA TECUCI",
+          "LICEUL DE ARTE \"IONEL PERLEA\" SLOBOZIA",
+          "COLEGIUL NATIONAL \"ALEXANDRU IOAN CUZA\" ALEXANDRIA",
+          "COLEGIUL NATIONAL \"DAVID PRODAN\" CUGIR",
+          "LICEUL TEORETIC \"MIHAI EMINESCU\" CLUJ-NAPOCA",
+          "LICEUL TEORETIC \"MIRCEA ELIADE\" LOCALITATEA GALATI",
+          "LICEUL PEDAGOGIC \"GHEORGHE SINCAI\" ZALAU",
+          "LICEUL TEORETIC \"STEFAN ODOBLEJA\" BUCURESTI",
+          "COLEGIUL NATIONAL \"SIMION BARNUTIU\" SIMLEU SILVANIEI",
+          "COLEGIUL ECONOMIC \"G. BARITIU\" SIBIU",
+          "LICEUL \"VOLTAIRE\" CRAIOVA",
+          "LICEUL TEOLOGIC BAPTIST TIMISOARA",
+          "LICEUL TEORETIC \"VICTOR BABES\" CLUJ-NAPOCA",
+          "LICEUL TEORETIC \"PETRU MAIOR\" GHERLA",
+          "COLEGIUL NATIONAL \"ION MAIORESCU\" GIURGIU",
+          "LICEUL TEORETIC \"DAN BARBILIAN\" CAMPULUNG",
+          "COLEGIUL NATIONAL \"NICOLAE TITULESCU\" PUCIOASA",
+          "COLEGIUL ECONOMIC ADMINISTRATIV IASI",
+          "COLEGIUL ECONOMIC \"OCTAV ONICESCU\" BOTOSANI",
+          "COLEGIUL NATIONAL \"GEORGE COSBUC\" MOTRU",
+          "LICEUL VOCATIONAL REFORMAT TIRGU MURES",
+          "COLEGIUL \"MIHAI EMINESCU\" BACAU",
+          "LICEUL TEORETIC \"SPIRU HARET\" MOINESTI",
+          "COLEGIUL NATIONAL \"VICTOR BABES\"",
+          "LICEUL TEORETIC \"DANTE ALIGHIERI\"",
+          "COLEGIUL NATIONAL \"TRAIAN DODA\" CARANSEBES",
+          "COLEGIUL NATIONAL \"OCTAVIAN GOGA\" MIERCUREA CIUC",
+          "COLEGIUL ECONOMIC \"F. S. NITTI\" TIMISOARA",
+          "LICEUL TEORETIC \"AXENTE SEVER\" MEDIAS",
+          "LICEUL \"RADU PETRESCU\" PRUNDU BIRGAULUI",
+          "Liceul Teoretic \"Mircea Eliade\" Intorsura BuzAului",
+          "COLEGIUL NATIONAL \"PETRU RARES\" BECLEAN",
+          "Colegiul NaTional \"Mihai Viteazul\" SfAntu Gheorghe",
+          "LICEUL VOCATIONAL PEDAGOGIC \"NICOLAE BOLCAS\" BEIUS",
+          "COLEGIUL NATIONAL \"AVRAM IANCU\" CIMPENI",
+          "LICEUL TEORETIC \"ION CANTACUZINO\" PITESTI",
+          "LICEUL TEORETIC \"ANA IPATESCU\" GHERLA",
+          "LICEUL GRECO-CATOLIC \"IULIU MANIU\" ORADEA",
+          "LICEUL TEORETIC \"TRAIAN VUIA\" RESITA",
+          "COLEGIUL NATIONAL PEDAGOGIC \"STEFAN ODOBLEJA\"",
+          "LICEUL TEORETIC \"GEORGE CALINESCU\"",
+          "COLEGIUL NATIONAL \"EMIL RACOVITA\"",
+          "LICEUL TEORETIC \"EUGEN LOVINESCU\"",
+          "LICEUL GRECO-CATOLIC \"INOCHENTIE MICU\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL CATOLIC \"SFANTUL IOSIF\" BACAU",
+          "LICEUL TEORETIC \"SALAMON ERNO\" GHEORGHENI",
+          "LICEUL TEORETIC \"EUGEN PORA\" CLUJ-NAPOCA",
+          "COLEGIUL NATIONAL PEDAGOGIC \"MIHAI EMINESCU\" TARGU MURES",
+          "LICEUL TEOLOGIC ADVENTIST CRAIOVA",
+          "LICEUL TEOLOGIC ROMANO-CATOLIC \"HAM JANOS\" SATU MARE",
+          "LICEUL TEORETIC \"MIHAIL SADOVEANU\"",
+          "COLEGIUL DOBROGEAN \"SPIRU HARET\" TULCEA",
+          "LICEUL TEORETIC \"I. C. DRAGUSANU\" VICTORIA",
+          "COLEGIUL NATIONAL \"BETHLEN GABOR\" AIUD",
+          "COLEGIUL \"NICOLAE TITULESCU\" BRASOV",
+          "LICEUL TEORETIC \"LIVIU REBREANU\" TURDA",
+          "LICEUL TEORETIC \"NEAGOE BASARAB\" OLTENITA",
+          "COLEGIUL ECONOMIC \"VIRGIL MADGEARU\" LOCALITATEA GALATI",
+          "COLEGIUL NATIONAL \"KOLCSEY FERENC\" SATU MARE",
+          "LICEUL TEORETIC \"PANAIT CERNA\" BRAILA",
+          "LICEUL TEORETIC \"GRIGORE ANTIPA\" BOTOSANI",
+          "COLEGIUL NATIONAL \"OCTAV ONICESCU\"",
+          "LICEUL TEHNOLOGIC \"SF. ANTIM IVIREANU\"",
+          "COLEGIUL ECONOMIC \"NICOLAE TITULESCU\" BAIA MARE",
+          "COLEGIUL NATIONAL \"VLADIMIR STREINU\" GAESTI",
+          "COLEGIUL NATIONAL \"STEFAN CEL MARE\" HIRLAU",
+          "LICEUL \"VASILE CONTA\" TARGU NEAMT",
+          "COLEGIUL NATIONAL\"OCTAVIAN GOGA\" MARGHITA",
+          "LICEUL TEORETIC \"MARIN PREDA\"",
+          "LICEUL PEDAGOGIC \"MATEI BASARAB\" SLOBOZIA",
+          "LICEUL TEORETIC \"SOLOMON HALITA\" SINGEORZ-BAI",
+          "LICEUL TEORETIC \"ALEXANDRU MARGHILOMAN\" BUZAU",
+          "COLEGIUL ECONOMIC \"ION GHICA\" TARGOVISTE",
+          "LICEUL ORTODOX \"EPISCOP ROMAN CIOROGARIU\" ORADEA",
+          "LICEUL PEDAGOGIC \"REGELE FERDINAND\" SIGHETU MARMATIEI",
+          "LICEUL TEORETIC GERMAN \"FRIEDRICH SCHILLER\" ORADEA",
+          "LICEUL TEORETIC \"NICHITA STANESCU\" BUCURESTI",
+          "COLEGIUL NATIONAL \"UNIREA\" TURNU MAGURELE",
+          "COLEGIUL ECONOMIC \"MARIA TEIULEANU\" PITESTI",
+          "COLEGIUL NATIONAL \"AVRAM IANCU\" STEI",
+          "COLEGIUL NATIONAL \"DIACONOVICI TIETZ\" RESITA",
+          "LICEUL TEORETIC \"SFANTU NICOLAE\" GHEORGHENI",
+          "COLEGIUL REFORMAT \"BACZKAMADARASI KIS GERGELY\" ODORHEIU SECUIESC",
+          "COLEGIUL NATIONAL DE INFORMATICA \"CARMEN SYLVA\" PETROSANI",
+          "COLEGIUL NATIONAL \"CORIOLAN BREDICEANU\" LUGOJ",
+          "LICEUL TEORETIC \"CAROL I\" FETESTI",
+          "LICEUL TEORETIC \"O.C.TASLAUANU\" TOPLITA",
+          "SEMINARUL TEOLOGIC LICEAL ORTODOX \"SF. IOAN GURA DE AUR\" HUSI",
+          "LICEUL TEORETIC \"MITROPOLIT IOAN METIANU\" ZARNESTI",
+          "COLEGIUL TEHNOLOGIC \"SPIRU HARET\" PIATRA-NEAMT",
+          "COLEGIUL NATIONAL \"DRAGOS VODA\" CAMPULUNG MOLDOVENESC",
+          "Liceul Teoretic \"Nagy Mozes\" TArgu Secuiesc",
+          "Liceul Teologic Reformat TArgu Secuiesc",
+          "LICEUL TEORETIC \"PETRE PANDREA\" BALS",
+          "LICEUL \"ANTIM IVIREANU\" RAMNICU VALCEA",
+          "COLEGIUL NATIONAL \"SAMUIL VULCAN\" BEIUS",
+          "COLEGIUL NATIONAL \"C.D. LOGA\" CARANSEBES",
+          "LICEUL TEORETIC \"ION BARBU\" PITESTI",
+          "LICEUL TEORETIC \"PETRU MAIOR\" OCNA-MURES",
+          "LICEUL TEHNOLOGIC \"LUCIAN BLAGA\" REGHIN",
+          "COLEGIUL NATIONAL \"ANASTASESCU\" ROSIORII DE VEDE",
+          "COLEGIUL NATIONAL \"APRILY LAJOS\" BRASOV",
+          "COLEGIUL COMERCIAL \"CAROL I\" CONSTANTA",
+          "COLEGIUL NATIONAL VOCATIONAL \"NICOLAE TITULESCU\" SLATINA",
+          "LICEUL TEORETIC \"DIMITRIE BOLINTINEANU\"",
+          "LICEUL TEHNOLOGIC ADMINISTRATIV SI DE SERVICII \"VICTOR SLAVESCU\" PLOIESTI",
+          "LICEUL TEORETIC \"RADU VLADESCU\" PATARLAGELE",
+          "LICEUL TEORETIC \"LUCIAN BLAGA\" ORADEA",
+          "LICEUL TEORETIC \"CONSTANTIN SERBAN\" ALESD",
+          "SEMINARUL TEOLOGIC ORTODOX \"SF. IOAN GURA DE AUR\" TARGOVISTE",
+          "COLEGIUL NATIONAL ECONOMIC \"ANDREI BARSEANU\" BRASOV",
+          "COLEGIUL ECONOMIC BUZAU",
+          "LICEUL TEORETIC \"GEORGE EMIL PALADE\" CONSTANTA",
+          "LICEUL TEORETIC \"AUREL VLAICU\" BREAZA",
+          "LICEUL TEORETIC \"KEMENY ZSIGMOND\" GHERLA",
+          "LICEUL TEORETIC \"PETRU CERCEL\" TARGOVISTE",
+          "COLEGIUL NATIONAL DE INFORMATICA \"TRAIAN LALESCU\" HUNEDOARA",
+          "COLEGIUL \"SCOALA NATIONALA DE GAZ\" MEDIAS",
+          "LICEUL TEHNOLOGIC \"VICTOR MIHAILESCU CRAIU\" BELCESTI",
+          "LICEUL TEORETIC \"GRIGORE TOCILESCU\" MIZIL",
+          "COLEGIUL ECONOMIC \"DIMITRIE CANTEMIR\" SUCEAVA",
+          "LICEUL TEOLOGIC PENTICOSTAL LOGOS TIMISOARA",
+          "LICEUL TEORETIC \"ANGHEL SALIGNY\" CERNAVODA",
+          "LICEUL TEORETIC \"ANDREI BARSEANU\" TIRNAVENI",
+          "COLEGIUL \"MIHAIL CANTACUZINO\" SINAIA",
+          "LICEUL TEORETIC \"ADY ENDRE\" ORADEA",
+          "COLEGIUL TEHNIC DE COMUNICATII \"AUGUSTIN MAIOR\" CLUJ-NAPOCA",
+          "LICEUL TEORETIC \"MIHAI EMINESCU\" BARLAD",
+          "COLEGIUL NATIONAL \"EMIL BOTTA\" ADJUD",
+          "LICEUL TEORETIC \"IULIA ZAMFIRESCU\" MIOVENI",
+          "LICEUL TEORETIC \"LUCIAN BLAGA\"",
+          "LICEUL TEHNOLOGIC \"FERDINAND I\" CURTEA DE ARGES",
+          "COLEGIUL NATIONAL \"GRIGORE GHICA\" DOROHOI",
+          "LICEUL TEORETIC \"MIRCEA ELIADE\" LUPENI",
+          "COLEGIUL NATIONAL \"AUREL VLAICU\" ORASTIE",
+          "COLEGIUL NATIONAL DE INFORMATICA \"SPIRU HARET\" SUCEAVA",
+          "LICEUL TEHNOLOGIC ECONOMIC \"VIRGIL MADGEARU\" IASI",
+          "LICEUL TEHNOLOGIC \"IORGU VIRNAV LITEANU\" LITENI",
+          "COLEGIUL ECONOMIC \"VIRGIL MADGEARU\" TG-JIU",
+          "LICEUL TEORETIC \"BENJAMIN FRANKLIN\"",
+          "LICEUL TEORETIC \"OCTAVIAN GOGA\" HUEDIN",
+          "LICEUL TEORETIC \"GHEORGHE MUNTEANU MURGOCI\" MACIN",
+          "LICEUL TEORETIC \"MIHAI VELICIU\" CHISINEU-CRIS",
+          "Liceul Teologic Reformat SfAntu Gheorghe",
+          "LICEUL TEORETIC \"CONSTANTIN BRANCOVEANU\" DABULENI",
+          "COLEGIUL ECONOMIC \"HERMES\"",
+          "LICEUL TEORETIC \"CONSTANTIN ANGELESCU\" IANCA",
+          "LICEUL TEORETIC \"SERBAN VODA\" SLANIC",
+          "LICEUL TEORETIC GHEORGHE SURDU BREZOI",
+          "LICEUL TEORETIC \"IOAN PETRUS\"OTOPENI",
+          "LICEUL TEORETIC BILINGV \"ITA WEGMAN\"",
+          "LICEUL \"REGINA MARIA\" DOROHOI",
+          "COLEGIUL NATIONAL \"MIRCEA ELIADE\" SIGHISOARA",
+          "LICEUL TEORETIC \"BELA BARTOK\" TIMISOARA",
+          "COLEGIUL ECONOMIC \"ANGHEL RUGINA\" VASLUI",
+          "LICEUL TEORETIC NEGRESTI OAS",
+          "LICEUL TEHNOLOGIC \"VASILE SAV\" ROMAN",
+          "LICEUL TEORETIC \"ION LUCA\" VATRA DORNEI",
+          "LICEUL TEORETIC \"C-TIN BRANCOVEANU\"",
+          "COLEGIUL NATIONAL \"ION LUCA CARAGIALE\" MORENI",
+          "LICEUL TEHNOLOGIC \"COSTACHE CONACHI\" PECHEA",
+          "COLEGIUL \"SPIRU HARET\" PLOIESTI",
+          "LICEUL TEORETIC \"ION CREANGA\" TULCEA",
+          "LICEUL TEHNOLOGIC \"PETRU MAIOR\" REGHIN",
+          "LICEUL TEORETIC \"SFANTA MARIA\" LOCALITATEA GALATI",
+          "LICEUL TEORETIC \"GUSTAV GUNDISCH\" CISNADIE",
+          "COLEGIUL TEHNIC DE COMUNICATII \"N.VASILESCU-KARPEN\" BACAU",
+          "COLEGIUL TEHNIC \"ION BORCEA\" BUHUSI",
+          "LICEUL TEHNOLOGIC DE ELECTROTEHNICA SI TELECOMUNICATII CONSTANTA",
+          "LICEUL TEORETIC SANITAR BISTRITA",
+          "COLEGIUL TEHNIC \"ALESANDRU PAPIU ILARIAN\" ZALAU",
+          "LICEUL TEOLOGIC TG-JIU",
+          "LICEUL CU PROGRAM SPORTIV \"MIRCEA ELIADE\"",
+          "LICEUL TEORETIC \"BRANCOVEANU VODA\" URLATI",
+          "COLEGIUL NATIONAL \"AUREL VLAICU\"",
+          "COLEGIUL NATIONAL \"AVRAM IANCU\" BRAD",
+          "COLEGIUL NATIONAL \"C. NEGRI\" TARGU OCNA",
+          "COLEGIUL NATIONAL \"I.C. BRATIANU\" HATEG",
+          "LICEUL TEHNOLOGIC SANITAR \"VASILE VOICULESCU\" ORADEA",
+          "LICEUL TEORETIC \"JOSIKA MIKLOS\" TURDA",
+          "COLEGIUL TEHNIC ENERGETIC CLUJ-NAPOCA",
+          "Liceul \"Korisi Csoma Sandor\" Covasna",
+          "COLEGIUL ECONOMIC ARAD",
+          "COLEGIUL ECONOMIC \"PARTENIE COSMA\" ORADEA",
+          "LICEUL TEORETIC \"TRAIAN LALESCU\"",
+          "LICEUL TEORETIC \"ADAM MULLER GUTTENBRUNN\" ARAD",
+          "LICEUL TEORETIC \"NEMETH LASZLO\" BAIA MARE",
+          "COLEGIUL NATIONAL \"TEODOR NES\" SALONTA",
+          "LICEUL TEHNOLOGIC ENERGETIC CAMPINA",
+          "COLEGIUL TEHNIC \"DIMITRIE GHIKA\" COMANESTI",
+          "COLEGIUL NATIONAL \"DOAMNA STANCA\" FAGARAS",
+          "LICEUL GRECO-CATOLIC \"TIMOTEI CIPARIU\"",
+          "LICEUL TEORETIC \"IOAN PASCU\"CODLEA",
+          "LICEUL TEORETIC \"PETRU RARES\" TARGU LAPUS",
+          "LICEUL TEHNOLOGIC \"GH. RUSET ROZNOVANU\" ROZNOV",
+          "LICEUL TEOLOGIC ORTODOX \"NICOLAE STEINHARDT\" SATU MARE",
+          "LICEUL DE ARTA \"GHEORGHE TATTARESCU\" FOCSANI",
+          "LICEUL TEORETIC \"IOAN SLAVICI\" PANCIU",
+          "LICEUL TEORETIC \"ION NECULCE\" TARGU FRUMOS",
+          "LICEUL TEHNOLOGIC DE SERVICII \"SFANTUL APOSTOL ANDREI\" PLOIESTI",
+          "COLEGIUL TEHNIC \"MIHAI BACESCU\" FALTICENI",
+          "LICEUL TEORETIC \"MIHAI VITEAZUL\" BAILESTI",
+          "LICEUL TEORETIC \"STEFAN CEL MARE\" RAMNICU SARAT",
+          "LICEUL \"SIMION STOLNICU\" COMARNIC",
+          "LICEUL TEORETIC \"SILVIU DRAGOMIR\" ILIA",
+          "LICEUL TEORETIC \"TUDOR VIANU\" GIURGIU",
+          "LICEUL TEHNOLOGIC \"RETEZAT\" URICANI",
+          "COLEGIUL NATIONAL \"A.I.CUZA\" CORABIA",
+          "LICEUL TEHNOLOGIC ECONOMIC DE TURISM IASI",
+          "COLEGIUL TEHNIC \"HENRI COANDA\" TIMISOARA",
+          "LICEUL \"DIMITRIE PACIUREA\"",
+          "LICEUL TEORETIC \"CONSTANTIN ROMANU VIVU\" TEACA",
+          "COLEGIUL TEHNIC \"INFOEL\" BISTRITA",
+          "COLEGIUL ECONOMIC \"ION GHICA\" BRAILA",
+          "LICEUL TEORETIC \"LASCAR ROSETTI\" RADUCANENI",
+          "LICEUL TEORETIC \"DECEBAL\"",
+          "LICEUL TEOLOGIC PENTICOSTAL BAIA MARE",
+          "LICEUL TEORETIC \"ST.L.ROTH\" MEDIAS",
+          "LICEUL TEORETIC \"MIHAIL SEBASTIAN\" BRAILA",
+          "LICEUL TEORETIC \"DAVID VONIGA\" GIROC",
+          "LICEUL TEORETIC \"VASILE ALECSANDRI\" SABAOANI",
+          "COLEGIUL TEHNIC \"PETRU PONI\" ROMAN",
+          "LICEUL \"DR. LAZAR CHIRILA\" BAIA DE ARIES",
+          "LICEUL TEORETIC \"GH.LAZAR\" AVRIG",
+          "LICEUL TEORETIC TEIUS",
+          "COLEGIUL TEHNIC \"ANA ASLAN\" CLUJ-NAPOCA",
+          "LICEUL TEORETIC \"PAUL GEORGESCU \" TANDAREI",
+          "LICEUL TEORETIC GATAIA",
+          "COLEGIUL ECONOMIC \"DELTA DUNARII\" TULCEA",
+          "LICEUL TEORETIC AZUGA",
+          "LICEUL ECONOMIC \"ALEXANDRU IOAN CUZA\", MUNICIPIUL PIATRA-NEAMT",
+          "COLEGIUL NATIONAL \"IONITA ASAN\" CARACAL",
+          "SEMINARUL TEOLOGIC SF NICOLAE RAMNICU VALCEA",
+          "LICEUL TEORETIC \"MIHAIL SAULESCU\" PREDEAL",
+          "COLEGIUL TEHNIC \"MARIA BAIULESCU\" BRASOV",
+          "LICEUL TEORETIC \"BOGDAN VODA\", HALAUCESTI",
+          "LICEUL \"DIMITRIE CANTEMIR\" DARABANI",
+          "LICEUL TEORETIC \"EMIL RACOVITA\" BAIA MARE",
+          "LICEUL TEHNOLOGIC \"MIRCEA VULCANESCU\"",
+          "LICEUL TEORETIC \"IOAN JEBELEAN\" SANNICOLAU MARE",
+          "LICEUL \"HOREA, CLOSCA SI CRISAN\" ABRUD",
+          "LICEUL NATIONAL DE INFORMATICA ARAD",
+          "LICEUL TEORETIC \"TATA OANCEA\" BOCSA",
+          "COLEGIUL TEHNIC RADAUTI",
+          "LICEUL CU PROGRAM SPORTIV SUCEAVA",
+          "COLEGIUL TEHNIC ENERGETIC RAMNICU VALCEA",
+          "COLEGIUL NATIONAL \"MIRCEA ELIADE\" RESITA",
+          "LICEUL TEHNOLOGIC \"JOANNES K\u00c1JONI\" MIERCUREA CIUC",
+          "LICEU TEORETIC \"DOSITEI OBRADOVICI\" TIMISOARA",
+          "COLEGIUL NATIONAL \"IULIA HASDEU\" LUGOJ",
+          "COLEGIUL \"FERDINAND I\", COMUNA MANECIU",
+          "LICEUL TEORETIC \"GEORGE MOROIANU\" SACELE",
+          "LICEUL \"CAROL I\" BICAZ",
+          "COLEGIUL TEHNIC FORESTIER CAMPINA",
+          "COLEGIUL NATIONAL \"TUDOR ARGHEZI\" - TIRGU CARBUNESTI",
+          "COLEGIUL TEHNIC \"A.T.LAURIAN\" AGNITA",
+          "COLEGIUL NATIONAL \"AL. D. GHICA\" ALEXANDRIA",
+          "LICEUL TEORETIC \"IOAN COTOVU\" HARSOVA",
+          "COLEGIUL TEHNIC \"NAPOCA\" CLUJ-NAPOCA",
+          "LICEUL \"CHARLES LAUGIER\" CRAIOVA",
+          "COLEGIUL ECONOMIC \"GHEORGHE DRAGOS\" SATU MARE",
+          "LICEUL BANATEAN OTELU ROSU",
+          "LICEUL TEORETIC \"IOAN BUTEANU\" SOMCUTA MARE",
+          "LICEUL \"STEFAN DIACONESCU\" POTCOAVA",
+          "LICEUL TEORETIC \"GENERAL DRAGALINA\" ORAVITA",
+          "LICEUL TEORETIC \"BRASSAI SAMUEL\" CLUJ-NAPOCA",
+          "COLEGIUL ECONOMIC MANGALIA",
+          "COLEGIUL \"ALEXANDRU CEL BUN\" GURA HUMORULUI",
+          "COLEGIUL TEHNIC \"LATCU VODA\" SIRET",
+          "LICEUL TEHNOLOGIC \"CONSTANTIN CANTACUZINO\" BAICOI",
+          "COLEGIUL NATIONAL MILITAR \"ALEXANDRU IOAN CUZA\" CONSTANTA",
+          "LICEUL TEHNOLOGIC \"DOMOKOS KAZMER\" SOVATA",
+          "LICEUL TEORETIC NOVACI",
+          "COLEGIUL AGRICOL \"D.P.BARCIANU\" SIBIU",
+          "LICEUL \"CONSTANTIN BRANCOVEANU\" HOREZU",
+          "LICEUL CU PROGRAM SPORTIV \"IOLANDA BALAS SOTER\" BUZAU",
+          "LICEUL TEHNOLOGIC \"CAROL I\" VALEA DOFTANEI",
+          "LICEUL TEHNOLOGIC \"LIVIU REBREANU\" BALAN",
+          "LICEUL \"MIHAI VITEAZUL\" INEU",
+          "LICEUL TEORETIC \"IANCU C VISSARION\" TITU",
+          "COLEGIUL ECONOMIC RAMNICU VALCEA",
+          "LICEUL TEORETIC \"SEXTIL PUSCARIU\" BRAN",
+          "LICEUL TEHNOLOGIC \"IOAN LUPAS\" SALISTE",
+          "LICEUL TEORETIC BILINGV ROMANO-CROAT CARASOVA",
+          "LICEUL TEORETIC \"ION AGARBICEANU\" JIBOU",
+          "LICEUL TEHNOLOGIC \"DR. FLORIAN ULMEANU\" ULMENI",
+          "LICEUL TEORETIC \"TRAIAN\"",
+          "LICEUL TEORETIC \" DUILIU ZAMFIRESCU \" ODOBESTI",
+          "COLEGIUL TEHNIC \"G-RAL GHEORGHE MAGHERU\" TIRGU-JIU",
+          "LICEUL TEORETIC \"KEMENY J\u00c1NOS\" TOPLITA",
+          "LICEUL TEHNOLOGIC \"EREMIA GRIGORESCU\" TG.BUJOR",
+          "LICEUL TEORETIC \"GELU VOIEVOD\" GILAU",
+          "COLEGIUL ECONOMIC \"ION GHICA\" BACAU",
+          "LICEUL TEHNOLOGIC \"VIRGIL MADGEARU\" CONSTANTA",
+          "COLEGIUL\"CSIKY GERGELY\" ARAD",
+          "LICEUL TEORETIC \"ORBAN BALAZS\" CRISTURU SECUIESC",
+          "LICEUL TEHNOLOGIC \"KoS K\u00c1ROLY\" ODORHEIU SECUIESC",
+          "LICEUL TEORETIC \"JOSEPH HALTRICH\" SIGHISOARA",
+          "LICEUL TEHNOLOGIC NR.1 LUDUS",
+          "LICEUL TEORETIC COSTESTI",
+          "LICEUL TEORETIC \"DOCTOR MIHAI CIUCA\" SAVENI",
+          "LICEUL TEHNOLOGIC \"CLISURA DUNARII\" MOLDOVA NOUA",
+          "COLEGIUL \"MIHAI VITEAZUL\" BUMBESTI-JIU",
+          "SEMINARUL TEOLOGIC LICEAL ORTODOX \"SF.IOAN IACOB\" DOROHOI",
+          "LICEUL TEORETIC POGOANELE",
+          "COLEGIUL NATIONAL DE AGRICULTURA SI ECONOMIE LOCALITATEA TECUCI",
+          "LICEUL TEORETIC SEBIS",
+          "LICEUL TEORETIC \"BOGDAN VODA\" VISEU DE SUS",
+          "LICEUL CU PROGRAM SPORTIV BISTRITA",
+          "COLEGIUL TEHNIC DE ARHITECTURA SI LUCRARI PUBLICE \"IOAN N. SOCOLESCU\"",
+          "LICEUL TEORETIC PANCOTA",
+          "LICEUL TEORETIC \"ION GH. ROSCA\" OSICA DE SUS",
+          "LICEUL TEORETIC \"TUDOR VLADIMIRESCU\" DRAGANESTI-OLT",
+          "COLEGIUL \"HENRI COANDA\" BACAU",
+          "COLEGIUL \"STEFAN ODOBLEJA\" CRAIOVA",
+          "LICEUL TEORETIC ZIMNICEA",
+          "LICEUL TEORETIC \"JOZEF GREGOR TAJOVSKY\" NADLAC",
+          "LICEUL TEHNOLOGIC \"AUREL RAINU\" FIENI",
+          "COLEGIUL TEHNIC DE CAI FERATE \"UNIREA\" PASCANI",
+          "LICEUL TEHNOLOGIC TASNAD",
+          "LICEUL TEORETIC \"ION HELIADE RADULESCU\" TARGOVISTE",
+          "LICEUL TEORETIC ORAS BUZIAS",
+          "LICEUL TEHNOLOGIC CIORANII DE JOS CIORANI",
+          "LICEUL TEHNOLOGIC \"HARALAMB VASILIU\" PODU ILOAIEI",
+          "LICEUL TEORETIC \"ION MIHALACHE\" TOPOLOVENI",
+          "COLEGIUL TEHNIC \"GHEORGHE ASACHI\" ONESTI",
+          "COLEGIUL TEHNIC \"TRANSILVANIA\" DEVA",
+          "LICEUL TEHNOLOGIC \"TOMSA VODA\" SOLCA",
+          "LICEUL \"MARIN PREDA\" ODORHEIU SECUIESC",
+          "COLEGIUL TEHNIC \"RALUCA RIPAN\" CLUJ-NAPOCA",
+          "LICEUL \"STEFAN CEL MARE\" CODAESTI",
+          "COLEGIUL TEHNIC \"COSTIN D. NENITESCU\" PITESTI",
+          "LICEUL REFORMAT SATU MARE",
+          "LICEUL TEHNOLOGIC \"STEFAN MANCIULEA\" BLAJ",
+          "LICEUL TEHNOLOGIC \"CONSTANTIN BRANCUSI\" DEJ",
+          "LICEUL \"TRAIAN VUIA\" CRAIOVA",
+          "LICEUL PREDA BUZESCU BERBESTI",
+          "LICEUL TEORETIC \"ARANY JANOS\" SALONTA",
+          "COLEGIUL TEHNIC \"CONSTANTIN BRANCUSI\" PETRILA",
+          "COLEGIUL TEHNIC ENERGETIC SIBIU",
+          "LICEUL TEHNOLOGIC \"NICANOR MOROSAN\" PARTESTII DE JOS",
+          "LICEUL TEORETIC \"ION GHICA\" RACARI",
+          "LICEUL TEORETIC \"CARMEN SYLVA\" EFORIE SUD",
+          "LICEUL TEORETIC \"SAMUIL MICU\" SARMASU",
+          "LICEUL TEHNOLOGIC NR.1 POPESTI",
+          "LICEUL TEHNOLOGIC \"ION NISTOR\" VICOVU DE SUS",
+          "LICEUL TEHNOLOGIC AGROMONTAN \"ROMEO CONSTANTINESCU\" VALENII DE MUNTE",
+          "LICEUL REFORMAT \"WESSELENYI\" ZALAU",
+          "LICEUL TEORETIC PERIAM",
+          "LICEUL TEORETIC \"PETOFI SANDOR\" SACUIENI",
+          "COLEGIUL ECONOMIC \"PINTEA VITEAZU\" CAVNIC",
+          "LICEUL \"CORNELIU MEDREA\" ZLATNA",
+          "LICEUL TEHNOLOGIC \"MIHAI EMINESCU\" DUMBRAVENI",
+          "LICEUL TEORETIC \"EFTIMIE MURGU\" BOZOVICI",
+          "LICEUL TEORETIC \"GEORGE VALSAN\" FAUREI",
+          "LICEUL\"DANUBIUS\" CALARASI",
+          "COLEGIUL ECONOMIC \"HERMES\" PETROSANI",
+          "LICEUL TEHNOLOGIC \"ANGHEL SALIGNY\" TURT",
+          "COLEGIUL TEHNIC \"APULUM\" ALBA IULIA",
+          "LICEUL TEORETIC \"TRAIAN VUIA\" FAGET",
+          "COLEGIUL ECONOMIC CALARASI",
+          "LICEUL TEORETIC \"TRAIAN LALESCU\" BRANESTI",
+          "LICEUL \"ATANASIE MARIENESCU\" LIPOVA",
+          "COLEGIUL ECONOMIC \"VIILOR\"",
+          "LICEUL TEHNOLOGIC \"DRAGOMIR HURMUZESCU\" MEDGIDIA",
+          "COLEGIUL AGRICOL SI DE INDUSTRIE ALIMENTARA \"VASILE ADAMACHI\" IASI",
+          "LICEUL \"IOAN BUTEANU\" GURAHONT",
+          "LICEUL TEHNOLOGIC IERNUT",
+          "LICEUL TEORETIC \"MARIN PREDA\" TURNU MAGURELE",
+          "COLEGIUL TEHNIC \"PETRU MAIOR\"",
+          "COLEGIUL TEHNIC TURDA",
+          "LICEUL \"PETRU RARES\" FELDIOARA",
+          "COLEGIUL TEHNIC \"MIRCEA CRISTEA\" BRASOV",
+          "LICEUL TEORETIC \"CONSTANTIN BRATESCU\" ISACCEA",
+          "COLEGIUL TEHNIC \"ARMAND CALINESCU\" PITESTI",
+          "LICEUL TEHNOLOGIC \"ELECTROMURES\" TIRGU MURES",
+          "COLEGIUL TEHNIC \"EMANUIL UNGUREANU\" TIMISOARA",
+          "COLEGIUL NATIONAL ECONOMIC \"THEODOR COSTESCU\"",
+          "LICEUL TEHNOLOGIC \"ALEXANDRU BORZA\" CLUJ-NAPOCA",
+          "COLEGIUL TEHNIC \"GHEORGHE ASACHI\" BOTOSANI",
+          "COLEGIUL TEHNIC \"ELIE RADU\" PLOIESTI",
+          "LICEUL TEHNOLOGIC \"SFANTUL NICOLAE\" DETA",
+          "LICEUL TEORETIC\"ALEXANDRU MOCIONI\" CIACOVA",
+          "COLEGIUL TEHNIC \"GEORGE BARITIU\" BAIA MARE",
+          "LICEUL TEHNOLOGIC \"NICOLAE IORGA\"NEGRESTI",
+          "LICEUL TEHNOLOGIC \"DIMITRIE FILISANU\" FILIASI",
+          "LICEUL \"STEFAN PROCOPIU\" VASLUI",
+          "LICEUL TEHNOLOGIC \"G.G. LONGINESCU\" FOCSANI",
+          "LICEUL TEHNOLOGIC VEDEA",
+          "COLEGIUL TEHNIC BALS",
+          "LICEUL TEHNOLOGIC \"UDREA BALEANU\" BALENI",
+          "LICEUL TEHNOLOGIC NR. 1 CLUJ-NAPOCA",
+          "LICEUL TEHNOLOGIC GHERLA",
+          "LICEUL TEHNOLOGIC SEBES",
+          "LICEUL TEHNOLOGIC \"NICOLAE BALCESCU\" FLAMANZI",
+          "COLEGIUL ECONOMIC \"EMANUIL GOJDU\" HUNEDOARA",
+          "COLEGIUL TEHNIC \"CIBINIUM\" SIBIU",
+          "COLEGIUL TEHNIC \"ION MINCU\" FOCSANI",
+          "LICEUL TEHNOLOGIC \"ION CAIAN ROMANUL\" CAIANU MIC",
+          "COLEGIUL TEHNIC FEROVIAR \"MIHAI I\"",
+          "LICEUL TEHNOLOGIC \"CAROL I\", MUNICIPIUL GALATI",
+          "COLEGIUL TEHNIC \"ANGHEL SALIGNY\" CLUJ-NAPOCA",
+          "LICEUL TEORETIC \"NICOLAE IORGA\" NEHOIU",
+          "LICEUL \"ALEXANDRU ODOBESCU\" LEHLIU GARA",
+          "LICEUL TEOLOGIC UNITARIAN \"BERDE MoZES\" CRISTURU SECUIESC",
+          "LICEUL TEHNOLOGIC CONSTRUCTII SI ARHITECTURA \"CAROL I\" SIBIU",
+          "LICEUL TEHNOLOGIC JIMBOLIA",
+          "LICEUL TEHNOLOGIC RASNOV",
+          "COLEGIUL TEHNIC \"GHEORGHE ASACHI\" IASI",
+          "LICEUL TEHNOLOGIC \"GHEORGHE POP DE BASESTI\" CEHU SILVANIEI",
+          "COLEGIUL SILVIC \"BUCOVINA\" CAMPULUNG MOLDOVENESC",
+          "LICEUL TEORETIC BULGAR \"HRISTO BOTEV\" BUCURESTI",
+          "LICEUL TEHNOLOGIC \"HORIA VINTILA\" SEGARCEA",
+          "LICEUL TEHNOLOGIC \"ION PODARU\" OVIDIU",
+          "SEMINARUL TEOLOGIC LICEAL \"SF. IOSIF MARTURISITORUL\" BAIA MARE",
+          "LICEUL \"MIHAIL SADOVEANU\" BORCA",
+          "COLEGIUL NATIONAL \"KEMAL ATATURK\" MEDGIDIA",
+          "COLEGIUL TEHNIC \"VICTOR UNGUREANU\" CAMPIA TURZII",
+          "LICEUL TEHNOLOGIC BUCECEA",
+          "COLEGIUL ECONOMIC NASAUD",
+          "COLEGIUL TEHNIC DE TRANSPORT FEROVIAR \"ANGHEL SALIGNY\" SIMERIA",
+          "LICEUL TEHNOLOGIC \"JOHANNES LEBEL\" TALMACIU",
+          "COLEGIUL \"ANDRONIC MOTRESCU\" RADAUTI",
+          "COLEGIUL TEHNIC \"ALEXANDRU ROMAN\" ALESD",
+          "LICEUL TEHNOLOGIC \"CSEREY-GOGA\"",
+          "LICEUL TEHNOLOGIC NR.1 DOBRESTI",
+          "LICEUL TEHNOLOGIC \"LAZAR EDELEANU\" NAVODARI",
+          "LICEUL TEOLOGIC ROMANO-CATOLIC \"SZENT LASZLO\" ORADEA",
+          "COLEGIUL NATIONAL ECONOMIC \"GHEORGHE CHITU\" CRAIOVA",
+          "LICEUL REFORMAT \"LORANTFFY ZSUZSANNA\" ORADEA",
+          "LICEUL TEORETIC \"ZAJZONI RAB ISTVAN\" SACELE",
+          "COLEGIUL \"EMIL NEGRUTIU\" TURDA",
+          "LICEUL \"SIMION MEHEDINTI\" VIDRA",
+          "LICEUL TEORETIC FILIPESTII DE PADURE",
+          "LICEUL TEHNOLOGIC \"ROMULUS PARASCHIVOIU\" LOVRIN",
+          "COLEGIUL TEHNIC \"LAZAR EDELEANU\" PLOIESTI",
+          "COLEGIUL TEHNIC \"SIMION MEHEDINTI\" CODLEA",
+          "LICEUL TEHNOLOGIC \"AL.IOAN CUZA\" SLOBOZIA",
+          "LICEUL TEORETIC VIDELE",
+          "LICEUL TEHNOLOGIC CORBU",
+          "LICEUL TEHNOLOGIC \"OLTEA DOAMNA\" DOLHASCA",
+          "LICEUL TEOLOGIC PENTICOSTAL ARAD",
+          "COLEGIUL TEHNIC \"TOMA N. SOCOLESCU\"PLOIESTI",
+          "LICEUL TEHNOLOGIC \"PETRACHE POENARU\" BALCESTI",
+          "COLEGIUL TEHNIC DE TRANSPORTURI \"TRANSILVANIA\" CLUJ-NAPOCA",
+          "COLEGIUL TEHNIC \"I. D. LAZARESCU\" CUGIR",
+          "Liceul Tehnologic Economic - Administrativ \"Berde \u00c1ron\" SfAntu Gheorghe",
+          "LICEUL TEHNOLOGIC \"IONITA G. ANDRON\" NEGRESTI-OAS",
+          "LICEUL TEHNOLOGIC \"AVRAM IANCU\" SIBIU",
+          "LICEUL TEHNOLOGIC \"DUMITRU DUMITRESCU\" BUFTEA",
+          "LICEUL TEORETIC \"HORVATH JANOS\" MARGHITA",
+          "LICEUL TEHNOLOGIC VLADIA",
+          "LICEUL TEORETIC \"ADY ENDRE\"",
+          "LICEUL TEHNOLOGIC DORNA CANDRENILOR",
+          "LICEUL TEHNOLOGIC \"TUDOR VLADIMIRESCU\" TUDOR VLADIMIRESCU",
+          "LICEUL \"VOIEVODUL MIRCEA\" TARGOVISTE",
+          "LICEUL TEHNOLOGIC \"STEFAN CEL MARE\" CAJVANA",
+          "LICEUL TEHNOLOGIC \"PETRE IONESCU MUSCEL\" DOMNESTI",
+          "LICEUL TEORETIC \"TEGLAS GABOR\" DEVA",
+          "LICEUL TEHNOLOGIC TURCENI",
+          "COLEGIUL TEHNIC \"GRIGORE COBALCESCU\" MOINESTI",
+          "LICEUL TEHNOLOGIC VLADENI",
+          "LICEUL TEHNOLOGIC \"I.C. PETRESCU\" STALPENI",
+          "COLEGIUL AGRICOL \"DIMITRIE CANTEMIR\" HUSI",
+          "LICEUL COBADIN",
+          "LICEUL TEHNOLOGIC DARMANESTI",
+          "LICEUL TEHNOLOGIC \"DIMITRIE BOLINTINEANU\" BOLINTIN VALE",
+          "LICEUL TEHNOLOGIC \"REGELE MIHAI I\" SAVARSIN",
+          "LICEUL TEORETIC \"NICOLAE JIGA\" TINCA",
+          "LICEUL TEHNOLOGIC \"ANGHEL SALIGNY\" LOCALITATEA GALATI",
+          "LICEUL TEHNOLOGIC MARMATIA SIGHETU MARMATIEI",
+          "LICEUL TEHNOLOGIC \"NICOLAE TITULESCU\" INSURATEI",
+          "LICEUL TEORETIC \"MIHAIL KOGALNICEANU\" MIHAIL KOGALNICEANU",
+          "COLEGIUL TEHNIC \"PETRU MUSAT\" SUCEAVA",
+          "COLEGIUL TEHNIC \"TRANSILVANIA\" BRASOV",
+          "LICEUL TEHNOLOGIC SILVIC \"DOCTOR NICOLAE RUCAREANU\" BRASOV",
+          "LICEUL TEORETIC RECAS",
+          "COLEGIUL TEHNIC \"COSTIN D. NENITESCU\" BRAILA",
+          "COLEGIUL TEHNIC MOTRU",
+          "LICEUL TEHNOLOGIC \"SFANTA ECATERINA\" URZICENI",
+          "LICEUL ROMANO-CATOLIC \"JOSEPHUS CALASANTIUS\" CAREI",
+          "Liceul Tehnologic \"Baroti Szabo David\" Baraolt",
+          "COLEGIUL TEHNIC \"GHEORGHE CARTIANU\" PIATRA NEAMT",
+          "LICEUL TEHNOLOGIC IANCU JIANU",
+          "COLEGIUL TEHNIC \"IULIU MANIU\" SIMLEU SILVANIEI",
+          "LICEUL \"DEMOSTENE BOTEZ\" TRUSESTI",
+          "LICEUL TEHNOLOGIC \"ELIE RADU\"",
+          "COLEGIUL TEHNIC \"MIHAIL STURDZA\" IASI",
+          "LICEUL TEHNOLOGIC \"STEFAN CEL MARE SI SFANT\" VORONA",
+          "COLEGIUL TEHNIC DE TRANSPORTURI BRASOV",
+          "COLEGIUL TEHNIC \"MIHAI VITEAZU\" VULCAN",
+          "LICEUL TEORETIC NR. 1 PERIS",
+          "LICEUL TEHNOLOGIC \"TRAIAN VUIA\" TAUTII MAGHERAUS",
+          "COLEGIUL TEHNIC DE AERONAUTICA \"HENRI COANDA\"",
+          "LICEUL TEORETIC \"CONSTANTIN NOICA\" ALEXANDRIA",
+          "LICEUL TEHNOLOGIC DE TURISM CALIMANESTI",
+          "LICEUL TEHNOLOGIC \"PETOFI S\u00c1NDOR\" DANESTI",
+          "LICEUL TEORETIC \"JEAN BART\" SULINA",
+          "LICEUL TEORETIC \"DR. VICTOR GOMOIU\"",
+          "COLEGIUL ECONOMIC \"P.S. AURELIAN\" SLATINA",
+          "COLEGIUL TEHNIC MATASARI",
+          "LICEUL TEHNOLOGIC NR.1 COROD",
+          "LICEUL TEORETIC NEGRU VODA",
+          "COLEGIUL TEHNIC AIUD",
+          "COLEGIUL TEHNIC CAMPULUNG",
+          "COLEGIUL TEHNIC \"DINICU GOLESCU\"",
+          "LICEUL TEHNOLOGIC ECONOMIC \"NICOLAE IORGA\" PASCANI",
+          "LICEUL TEHNOLOGIC TOPRAISAR",
+          "LICEUL TEHNOLOGIC \"TRAIAN GROZAVESCU\" NADRAG",
+          "COLEGIUL TEHNOLOGIC \"CONSTANTIN BRANCOVEANU\"",
+          "COLEGIUL TEHNIC \"EDMOND NICOLAU\" BRAILA",
+          "COLEGIUL TEHNIC \"ALEXANDRU IOAN CUZA\" SUCEAVA",
+          "COLEGIUL TEHNIC \"IULIU MANIU\"",
+          "LICEUL TEHNOLOGIC \"HENRI COANDA\" SIBIU",
+          "LICEUL TEORETIC \"JOSEF KOZACEK\" BUDOI",
+          "COLEGIUL \"ION KALINDERU\" BUSTENI",
+          "COLEGIUL TEHNIC \"GHEORGHE ASACHI\"",
+          "LICEUL TEHNOLOGIC \"ION CREANGA\" CURTICI",
+          "COLEGIUL TEHNIC \"AUREL VLAICU\" LOCALITATEA GALATI",
+          "LICEUL TEHNOLOGIC \"CONSTANTIN BRINCOVEANU\" SCORNICESTI",
+          "LICEUL BORSA",
+          "COLEGIUL TEHNIC \"MIRON COSTIN\" ROMAN",
+          "COLEGIUL TEHNIC \"SAMUIL ISOPESCU\" SUCEAVA",
+          "LICEUL TEORETIC \"HORIA HULUBEI\" MAGURELE",
+          "LICEUL TEHNOLOGIC SILVIC CIMPENI",
+          "LICEUL TEHNOLOGIC \"CONSTANTIN DOBRESCU\" CURTEA DE ARGES",
+          "COLEGIUL TEHNIC MECANIC \"GRIVITA\"",
+          "COLEGIUL DE INDUSTRIE ALIMENTARA \"ELENA DOAMNA\" LOCALITATEA GALATI",
+          "LICEUL \"DIMITRIE CANTEMIR\" BABADAG",
+          "LICEUL TEHNOLOGIC \"PETRE P.CARP\" TIBANESTI",
+          "COLEGIUL TEHNIC DE POSTA SI TELECOMUNICATII \"GHEORGHE AIRINEI\"",
+          "LICEUL TEHNOLOGIC CISNADIE",
+          "COLEGIUL TEHNIC \"ION I.C.BRATIANU\" TIMISOARA",
+          "COLEGIUL TEHNIC \"EDMOND NICOLAU\" FOCSANI",
+          "LICEUL TEHNOLOGIC VINGA",
+          "COLEGIUL ECONOMIC AL BANATULUI MONTAN RESITA",
+          "LICEUL \"ST. O. IOSIF\" RUPEA",
+          "LICEUL TEHNOLOGIC\" HENRI COANDA\" BUZAU",
+          "COLEGIUL TEHNIC \"INDEPENDENTA\" SIBIU",
+          "COLEGIUL TEHNIC DE INDUSTRIE ALIMENTARA SUCEAVA",
+          "LICEUL TEHNOLOGIC \"EREMIA GRIGORESCU\" MARASESTI",
+          "COLEGIUL TEHNIC \"ALEXANDRU DOMSA\" ALBA IULIA",
+          "COLEGIUL TEHNIC \"MEDIA\"",
+          "LICEUL TEHNOLOGIC \"IOAN N.ROMAN\" CONSTANTA",
+          "COLEGIUL TEHNIC ENERGETIC \"DRAGOMIR HURMUZESCU\" DEVA",
+          "COLEGIUL NATIONAL \"MIHAI EMINESCU\" TOPLITA",
+          "LICEUL TEHNOLOGIC \"LIVIU REBREANU\" MOZACENI",
+          "COLEGIUL TEHNIC \"STEFAN MILCU\" CALAFAT",
+          "COLEGIUL TEHNIC \"ION HOLBAN\" IASI",
+          "COLEGIUL TEHNIC ENERGETIC CONSTANTA",
+          "LICEUL TEHNOLOGIC \"GHEORGHE MIRON COSTIN\" CONSTANTA",
+          "COLEGIUL TEHNIC \"MIHAI VITEAZUL\" ORADEA",
+          "LICEUL TEHNOLOGIC \"KoS K\u00c1ROLY\" MIERCUREA CIUC",
+          "COLEGIUL TEHNIC \"IULIU MANIU\" CAREI",
+          "LICEUL TEORETIC PECIU NOU",
+          "LICEUL TEORETIC \"GHEORGHE LAZAR\" PECICA",
+          "LICEUL TEHNOLOGIC \"SFANTUL PANTELIMON\"",
+          "LICEUL TEHNOLOGIC \"DACIA\" CARANSEBES",
+          "COLEGIUL \"GHEORGHE TATARESCU\" ROVINARI",
+          "COLEGIUL TEHNIC \"ION CREANGA\" TARGU NEAMT",
+          "COLEGIUL \"STEFAN BANULESCU\" CALARASI",
+          "COLEGIUL TEHNIC \"ANGHEL SALIGNY\" BAIA MARE",
+          "LICEUL TEHNOLOGIC \"NICOLAE ONCESCU\" IANCA",
+          "LICEUL TEHNOLOGIC \"LIVIU REBREANU\" HIDA",
+          "LICEUL TEHNOLOGIC \"VIRGIL MADGEARU\" ROSIORI DE VEDE",
+          "LICEUL TEORETIC \"GEORGE ST. MARINCU\" POIANA MARE",
+          "COLEGIUL AGRICOL \"TRAIAN SAVULESCU\" TIRGU MURES",
+          "COLEGIUL TEHNIC \"DANUBIANA\" ROMAN",
+          "LICEUL TEHNOLOGIC DE INDUSTRIE ALIMENTARA \"GEORGE EMIL PALADE\" SATU MARE",
+          "LICEUL TEHNOLOGIC DE ELECTRONICA SI AUTOMATIZARI \"CAIUS IACOB\" ARAD",
+          "LICEUL TEHNOLOGIC \"VALERIU BRANISTE\" LUGOJ",
+          "LICEUL TEORETIC VIRGIL IERUNCA LADESTI",
+          "COLEGIUL TEHNIC \"VALERIU D. COTEA\" FOCSANI",
+          "LICEUL TEHNOLOGIC \"NICOLAE BALCESCU\" OLTENITA",
+          "LICEUL TEHNOLOGIC \"CONSTANTIN NICOLAESCU-PLOPSOR\" PLENITA",
+          "LICEUL TEHNOLOGIC VALENI",
+          "COLEGIUL TEHNIC DE CONSTRUCTII SI PROTECTIA MEDIULUI ARAD",
+          "COLEGIUL TEHNIC \"COSTIN D. NENITESCU\"",
+          "COLEGIUL TEHNIC \"ANGHEL SALIGNY\"",
+          "COLEGIUL TEHNIC ENERGETIC CRAIOVA",
+          "LICEUL TEHNOLOGIC \"BARBU A. STIRBEY\" BUFTEA",
+          "LICEUL TEHNOLOGIC \"1 MAI\" PLOIESTI",
+          "LICEUL TEHNOLOGIC \"ALEXANDRU VLAHUTA\" PODU TURCULUI",
+          "LICEUL TEHNOLOGIC \"AUREL VLAICU\" CLUJ-NAPOCA",
+          "LICEUL TEHNOLOGIC \"PETRU RARES\" BARLAD",
+          "LICEUL TEHNOLOGIC \"DRAGOMIR HURMUZESCU\"",
+          "LICEUL DE TRANSPORTURI AUTO \"TRAIAN VUIA\", MUNICIPIUL GALATI",
+          "COLEGIUL TEHNIC \"RADU NEGRU\" LOCALITATEA GALATI",
+          "LICEUL TEHNOLOGIC \"CONSTANTIN BURSAN\" HUNEDOARA",
+          "COLEGIUL TEHNIC DE TRANSPORTURI SI TELECOMUNICATII \"ION I. C. BRATIANU\" SATU MARE",
+          "COLEGIUL TEHNIC \"REMUS RADULET\" BRASOV",
+          "LICEUL TEHNOLOGIC DE MESERII SI SERVICII BUZAU",
+          "COLEGIUL TEHNIC \"PAUL DIMO\" LOCALITATEA GALATI",
+          "LICEUL TEHNOLOGIC \"C-TIN BRANCUSI\"- PESTISANI",
+          "COLEGIUL TEHNIC \"MATEI CORVIN\" HUNEDOARA",
+          "COLEGIUL TEHNIC ENERGETIC \"REGELE FERDINAND I \" TIMISOARA",
+          "COLEGIUL TEHNIC \"ALEXANDRU IOAN CUZA\" BARLAD",
+          "LICEUL TEHNOLOGIC \"G-RAL C-TIN SANDRU\" BILTA RUNCU",
+          "LICEUL TEORETIC \"ADRIAN PAUNESCU\" BARCA",
+          "LICEUL \"ALEXANDRU CEL BUN\" BOTOSANI",
+          "COLEGIUL \"VASILE LOVINESCU\" FALTICENI",
+          "LICEUL TEHNOLOGIC \"DR. IOAN SENCHEA\" FAGARAS",
+          "COLEGIUL TEHNIC ENERGETIC",
+          "LICEUL TEHNOLOGIC \"HOREA\" MARGHITA",
+          "COLEGIUL TEHNIC DE ALIMENTATIE SI TURISM \"DUMITRU MOTOC\" LOCALITATEA GALATI",
+          "LICEUL \"UDRISTE NASTUREL\" HOTARELE",
+          "LICEUL TEOLOGIC ROMANO-CATOLIC \"SZENT ERZSEBET\" LUNCA DE SUS",
+          "LICEUL TEORETIC \"LEOWEY KLARA\" SIGHETU MARMATIEI",
+          "LICEUL TEHNOLOGIC \"ION MINCU\" VASLUI",
+          "LICEUL TEORETIC \"GRIGORE GHEBA\" DUMITRESTI",
+          "LICEUL TEHNOLOGIC \"STEFAN HELL\" SANTANA",
+          "LICEUL TEHNOLOGIC REGELE MIHAI I CURTEA DE ARGES",
+          "LICEUL TEHNOLOGIC \"GRIGORE C. MOISIL\" BUZAU",
+          "LICEUL TEHNOLOGIC PUIESTI",
+          "COLEGIUL TEHNIC DE TRANSPORTURI PIATRA-NEAMT",
+          "LICEUL \"HERCULES\" BAILE HERCULANE",
+          "LICEUL TEHNOLOGIC \"VASILE COCEA\" MOLDOVITA",
+          "COLEGIUL TEHNIC BUZAU",
+          "LICEUL TEHNOLOGIC DE INDUSTRIE ALIMENTARA FETESTI",
+          "COLEGIUL TEHNIC FORESTIER PIATRA-NEAMT",
+          "LICEUL TEHNOLOGIC JUSTINIAN MARINA BAILE OLANESTI",
+          "LICEUL TEHNOLOGIC TICLENI",
+          "LICEUL TEORETIC \"ALEXANDRU ROSETTI\" VIDRA",
+          "LICEUL TEHNOLOGIC \"ALEXANDRU MACEDONSKI\" MELINESTI",
+          "LICEUL TEORETIC \"MIHAIL KOGALNICEANU\" SNAGOV",
+          "LICEUL TEHNOLOGIC MARGARITI BECENI",
+          "LICEUL TEHNOLOGIC \"SOMES\" DEJ",
+          "LICEUL TEORETIC \"SFINTII KIRIL SI METODII\" DUDESTII VECHI",
+          "LICEUL TEHNOLOGIC FORESTIER SIGHETU MARMATIEI",
+          "COLEGIUL TEHNIC \"LORIN SALAGEAN\"",
+          "COLEGIUL SILVIC \"TRANSILVANIA\" NASAUD",
+          "LICEUL TEHNOLOGIC \"DIMITRIE FILIPESCU\" BUZAU",
+          "COLEGIUL TEHNIC NR. 2 TG JIU",
+          "LICEUL TEHNOLOGIC DE METROLOGIE \"TRAIAN VUIA\"",
+          "LICEUL TEORETIC \"BOCSKAI ISTVAN\" MIERCUREA NIRAJULUI",
+          "LICEUL TEHNOLOGIC DE SERVICII BISTRITA",
+          "LICEUL TEHNOLOGIC \"MIHAI BUSUIOC\" PASCANI",
+          "LICEUL TEHNOLOGIC FORESTIER, MUN. RM. VALCEA",
+          "LICEUL TEHNOLOGIC BRATIANU DRAGASANI",
+          "LICEUL TEHNOLOGIC CONSTRUCTII DE MASINI MIOVENI",
+          "LICEUL TEHNOLOGIC COGEALAC",
+          "COLEGIUL TEHNIC DE ARTE SI MESERII \"CONSTANTIN BRANCUSI\" CRAIOVA",
+          "LICEUL TEHNOLOGIC BUSTUCHIN",
+          "LICEUL TEHNOLOGIC \"PETRU PONI\" IASI",
+          "COLEGIUL TEHNIC \"GRIGORE MOISIL\" BISTRITA",
+          "COLEGIUL TEHNIC \"EDMOND NICOLAU\"",
+          "LICEUL TEORETIC \"EMIL RACOVITA\" TECHIRGHIOL",
+          "COLEGIUL TEHNOLOGIC DE INDUSTRIE ALIMENTARA ARAD",
+          "LICEUL TEORETIC \"NICOLAE CARTOJAN\" GIURGIU",
+          "LICEUL TEHNOLOGIC \"TIU DUMITRESCU\" MIHAILESTI",
+          "LICEUL TEHNOLOGIC \"GRIGORE MOISIL\" DEVA",
+          "LICEUL TEHNOLOGIC AGRICOL \"ALEXIU BERINDE\" SEINI",
+          "LICEUL TEHNOLOGIC \"MALAXA\"ZARNESTI",
+          "COLEGIUL TEHNIC \"IOAN C. STEFANESCU\" IASI",
+          "LICEUL TEHNOLOGIC NUMARUL 1 SUNCUIUS",
+          "COLEGIUL TEHNIC \"CONSTANTIN BRANCUSI\" ORADEA",
+          "COLEGIUL TEHNOLOGIC \"VIACESLAV HARNAJ\"",
+          "COLEGIUL TEHNIC \"MIHAI BRAVU\"",
+          "COLEGIUL TEHNIC \"CONSTANTIN ISTRATI\" CAMPINA",
+          "LICEUL TEHNOLOGIC \"DACIA\" PITESTI",
+          "LICEUL \"MATHIAS HAMMER\" ANINA",
+          "LICEUL TEHNOLOGIC \"VLADEASA\" HUEDIN",
+          "COLEGIUL TEHNIC \"C.D. NENITESCU\" BAIA MARE",
+          "LICEUL TEORETIC CUJMIR",
+          "LICEUL TEHNOLOGIC \"NICOLAI NANU\" BROSTENI",
+          "COLEGIUL TEHNIC \"DUMITRU MANGERON\" BACAU",
+          "COLEGIUL AGRICOL NR.1 VALEA LUI MIHAI",
+          "COLEGIUL TEHNOLOGIC \"GRIGORE CERCHEZ\"",
+          "Liceul Tehnologic \"Constantin BrAncuSi\" SfAntu Gheorghe",
+          "COLEGIUL AGRICOL \"GHEORGHE IONESCU-SISESTI\" VALEA CALUGAREASCA",
+          "COLEGIUL TEHNIC DE INDUSTRIE ALIMENTARA \"TEREZIANUM\" SIBIU",
+          "LICEUL GEORGE TARNEA BABENI",
+          "LICEUL TEHNOLOGIC \"ION BANESCU\" MANGALIA",
+          "LICEUL TEORETIC MURFATLAR",
+          "LICEUL TEHNOLOGIC PLOPENII MARI",
+          "COLEGIUL TEHNIC \"IOAN CIORDAS\" BEIUS",
+          "COLEGIUL TEHNIC NR.1 VADU CRISULUI",
+          "LICEUL TEORETIC \"MIHAI VITEAZUL\" VISINA",
+          "COLEGIUL TEHNIC \"PANAIT ISTRATI\" BRAILA",
+          "LICEUL TEHNOLOGIC \"NICOLAE STOICA DE HATEG\" MEHADIA",
+          "LICEUL TEHNOLOGIC \"AXIOPOLIS\" CERNAVODA",
+          "LICEUL TEORETIC \"RADU POPESCU\" POPESTI LEORDENI",
+          "LICEUL TEHNOLOGIC \"VICTOR SLAVESCU\" RUCAR",
+          "COLEGIUL TEHNIC \"ANGHEL SALIGNY\" BACAU",
+          "LICEUL TEHNOLOGIC AGRICOL BECLEAN",
+          "LICEUL TEHNOLOGIC HARLAU",
+          "LICEUL TEHNOLOGIC \"MATEI BASARAB\"",
+          "COLEGIUL TEHNIC \"GHEORGHE BALS\" ADJUD",
+          "LICEUL TEHNOLOGIC NR.1 COMANA",
+          "COLEGIUL TEHNIC \"ELISA ZAMFIRESCU\" SATU MARE",
+          "LICEUL TEHNOLOGIC \"PAUL BUJOR\" BERESTI",
+          "LICEUL TEHNOLOGIC \"ASTRA\" PITESTI",
+          "COLEGIUL TEHNIC \"MIRCEA CEL BATRAN\"",
+          "LICEUL TEHNOLOGIC PETROL MORENI",
+          "LICEUL TEHNOLOGIC FIERBINTI-TARG",
+          "LICEUL TEHNOLOGIC AGRICOL \"MIHAIL KOGALNICEANU\" MIROSLAVA",
+          "Liceul Tehnologic \"Puskas Tivadar\" SfAntu Gheorghe",
+          "LICEUL TEHNOLOGIC TOPOLOG",
+          "COLEGIUL TEHNIC \"PETRU PONI\" ONESTI",
+          "LICEUL TEHNOLOGIC \"C.A.ROSETTI\" CONSTANTA",
+          "LICEUL TEHNOLOGIC FERDINAND I",
+          "LICEUL \"SEVER BOCU\" LIPOVA",
+          "LICEUL TEHNOLOGIC TARNA MARE",
+          "COLEGIUL TEHNIC \"ION MINCU\" TG JIU",
+          "COLEGIUL \"BRAD SEGAL\" TULCEA",
+          "COLEGIUL TEHNIC \"CAROL I\"",
+          "LICEUL TEHNOLOGIC \"EOTVOS JoZSEF\" ODORHEIU SECUIESC",
+          "LICEUL TEHNOLOGIC \"IOAN BOJOR\" REGHIN",
+          "LICEUL TEHNOLOGIC AGRICOL SMEENI",
+          "LICEUL TEORETIC BECHET",
+          "LICEUL TEHNOLOGIC \"NICOLAE DUMITRESCU\" CUMPANA",
+          "LICEUL \"MATEI BASARAB\" CRAIOVA",
+          "COLEGIUL TEHNIC \"MEDIENSIS\" MEDIAS",
+          "COLEGIUL TEHNIC DE ELECTRONICA SI TELECOMUNICATII \"GHEORGHE MARZESCU\" IASI",
+          "LICEUL TEHNOLOGIC \"MIHAI VITEAZUL\" ZALAU",
+          "LICEUL TEHNOLOGIC \"ILIE MACELARIU\" MIERCUREA SIBIULUI",
+          "COLEGIUL TEHNIC \"AUREL VLAICU\" ARAD",
+          "LICEUL TEHNOLOGIC \"DIMITRIE GUSTI\"",
+          "LICEUL TEHNOLOGIC ROSIA DE AMARADIA",
+          "LICEUL TEHNOLOGIC NR. 1 CAMPULUNG MOLDOVENESC",
+          "COLEGIUL TEHNIC \"COSTIN D. NENITESCU\" CRAIOVA",
+          "LICEUL TEORETIC \"DR.BOROS FORTUNAT\" ZETEA",
+          "COLEGIUL TEHNIC \"DIMITRIE LEONIDA\" IASI",
+          "LICEUL TEORETIC GRADISTEA",
+          "LICEUL TEHNOLOGIC \"TASE DUMITRESCU\" MIZIL",
+          "LICEUL TEHNOLOGIC CORUND",
+          "LICEUL TEHNOLOGIC \"VASILE NETEA\" DEDA",
+          "LICEUL ENERGETIC TG-JIU",
+          "LICEUL TEHNOLOGIC THEODOR PALLADY",
+          "COLEGIUL TEHNIC \"BATTHY\u00c1NY IGN\u00c1C\" GHEORGHENI",
+          "LICEUL TEHNOLOGIC \"SFANTUL GHEORGHE\" SANGEORGIU DE PADURE",
+          "LICEUL TEHNOLOGIC \"GOGA IONESCU\" TITU",
+          "LICEUL TEHNOLOGIC \"NICOLAE CIORANESCU\" TARGOVISTE",
+          "LICEUL TEHNOLOGIC TUFENI",
+          "LICEUL TEHNOLOGIC \"CONSTANTIN BRANCUSI\" PITESTI",
+          "COLEGIUL PENTRU AGRICULTURA SI INDUSTRIE ALIMENTARA \"TARA BARSEI\" PREJMER",
+          "LICEUL TEHNOLOGIC TELCIU",
+          "COLEGIUL TEHNIC AGRICOL \"ALEXANDRU BORZA\" GEOAGIU",
+          "LICEUL TEHNOLOGIC DE INDUSTRIE ALIMENTARA TIMISOARA",
+          "LICEUL TEHNOLOGIC \"VINTILA BRATIANU\" DRAGOMIRESTI VALE",
+          "COLEGIUL TEHNIC \"DIMITRIE DIMA\" PITESTI",
+          "LICEUL TEHNOLOGIC AGRICOL BISTRITA",
+          "LICEUL TEHNOLOGIC \"VENCZEL JoZSEF\" MIERCUREA CIUC",
+          "LICEUL TEORETIC PIATRA",
+          "LICEUL TEHNOLOGIC \"NIKOLA TESLA\"",
+          "LICEUL TEHNOLOGIC \"GHEORGHE DUCA\" CONSTANTA",
+          "COLEGIUL TEHNIC DE TRANSPORTURI SI CONSTRUCTII IASI",
+          "COLEGIUL TEHNIC ELECTROTIMIS TIMISOARA",
+          "LICEUL TEHNOLOGIC \"MATEI BASARAB\"MAXINENI",
+          "LICEUL TEHNOLOGIC \"ION I. C. BRATIANU\"",
+          "COLEGIUL DE SILVICULTURA SI AGRICULTURA \"CASA VERDE\" TIMISOARA",
+          "COLEGIUL TEHNIC GHEORGHE ASACHI FOCSANI",
+          "LICEUL TEHNOLOGIC \"CONSTANTIN BRANCOVEANU\" TARGOVISTE",
+          "LICEUL TEHNOLOGIC \"ANGHEL SALIGNY\" FETESTI",
+          "LICEUL TEHNOLOGIC \"ELENA CARAGIANI\" LOCALITATEA TECUCI",
+          "LICEUL TEHNOLOGIC \"JACQUES M. ELIAS\" SASCUT",
+          "LICEUL TEHNOLOGIC NUMARUL 1 SALONTA",
+          "COLEGIUL TEHNIC DE INDUSTRIE ALIMENTARA CRAIOVA",
+          "COLEGIUL TEHNIC TARNAVENI",
+          "LICEUL \"TIMOTEI CIPARIU\" DUMBRAVENI",
+          "LICEUL TEHNOLOGIC \"IOACHIM POP\" ILEANDA",
+          "Liceul Tehnologic \"Nicolae BAlcescu\" Intorsura BuzAului",
+          "LICEUL TEHNOLOGIC \"ANGHEL SALIGNY\" BRAILA",
+          "LICEUL TEHNOLOGIC \"DECEBAL\" CARANSEBES",
+          "COLEGIUL TEHNIC \"TRAIAN VUIA\" ORADEA",
+          "COLEGIUL TEHNIC \"DIMITRIE LEONIDA\"",
+          "LICEUL TEHNOLOGIC TRANSPORTURI CAI FERATE CRAIOVA",
+          "COLEGIUL TEHNIC \"AZUR\" TIMISOARA",
+          "LICEUL TEHNOLOGIC BILTENI",
+          "COLEGIUL TEHNIC \"UNIREA\" STEI",
+          "LICEUL TEHNOLOGIC \"GHEORGHE SINCAI\" TIRGU MURES",
+          "LICEUL TEHNOLOGIC \"SIMION LEONESCU\" LUNCAVITA",
+          "COLEGIUL \"GRIGORE ANTIPA\" BACAU",
+          "COLEGIUL AGRICOL \"DR. C-TIN ANGELESCU\" BUZAU",
+          "LICEUL TEHNOLOGIC NR.1 FUNDULEA",
+          "LICEUL TEHNOLOGIC FAGET",
+          "LICEUL TEHNOLOGIC \"PETRU PONI\"",
+          "COLEGIUL TEHNIC \"ALEXE MARIN\" SLATINA",
+          "LICEUL TEHNOLOGIC \"ANGHEL SALIGNY\" PLOIESTI",
+          "LICEUL TEHNOLOGIC BELIU",
+          "LICEUL TEHNOLOGIC \"GHENUTA COMAN\" MURGENI",
+          "LICEUL TEHNOLOGIC \"DINU BRATIANU\" STEFANESTI",
+          "LICEUL \"DIMITRIE NEGREANU\" BOTOSANI",
+          "LICEUL TEHNOLOGIC \"NICOLAE BALCESCU\" VOLUNTARI",
+          "LICEUL TEHNOLOGIC AUTOMECANICA MEDIAS",
+          "COLEGIUL TEHNIC \"B\u00c1NYAI J\u00c1NOS\" ODORHEIU SECUIESC",
+          "COLEGIUL TEHNIC DE TRANSPORTURI AUTO BAIA SPRIE",
+          "COLEGIUL TEHNIC METALURGIC SLATINA",
+          "LICEUL TEHNOLOGIC \"AUREL VLAICU\" LUGOJ",
+          "LICEUL TEHNOLOGIC \"LIVIU REBREANU\" MAIERU",
+          "COLEGIUL AGRICOL \"NICOLAE CORNATEANU\" TULCEA",
+          "LICEUL TEORETIC MACIUCA",
+          "Liceul Tehnologic \"Apor Peter\" TArgu Secuiesc",
+          "LICEUL TEHNOLOGIC \"CRISTOFOR NAKO\" SANNICOLAU MARE",
+          "COLEGIUL TEHNIC \"HENRI COANDA\" TG-JIU",
+          "LICEUL TEORETIC \"GABRIEL TEPELEA\" BOROD",
+          "LICEUL TEHNOLOGIC ROSIA JIU FARCASESTI",
+          "LICEUL TEHNOLOGIC \"CONSTANTIN BRANCUSI\"",
+          "LICEUL \"MIRON CRISTEA\" SUBCETATE",
+          "LICEUL TEHNOLOGIC \"CEZAR NICOLAU\" BRANESTI",
+          "LICEUL TEHNOLOGIC \"VOIEVODUL GELU\" ZALAU",
+          "COLEGIUL TEHNIC \"HENRI COANDA\" TULCEA",
+          "LICEUL TEHNOLOGIC VITOMIRESTI",
+          "LICEUL TEHNOLOGIC \"STEFAN ANGHEL\" BAILESTI",
+          "LICEUL TEHNOLOGIC NUMARUL 1 SUPLACU DE BARCAU",
+          "LICEUL TEHNOLOGIC NR.1 CUDALBI",
+          "LICEUL TEHNOLOGIC \"ION VLASIU\" TIRGU MURES",
+          "LICEUL TEHNOLOGIC VERNESTI",
+          "LICEUL TEHNOLOGIC \"DIMITRIE LEONIDA\" CONSTANTA",
+          "LICEUL\"STEFAN D. LUCHIAN\" STEFANESTI",
+          "LICEUL TEHNOLOGIC FELDRU",
+          "LICEUL TEHNOLOGIC ECONOMIC \"ELINA MATEI BASARAB\" RAMNICU SARAT",
+          "COLEGIUL AGRICOL \"SANDU ALDEA\" CALARASI",
+          "COLEGIUL TEHNIC \"DIERNA\"",
+          "LICEUL \"REGELE CAROL I\" OSTROV",
+          "COLEGIUL TEHNIC \"TOMIS\" CONSTANTA",
+          "LICEUL TEHNOLOGIC \"GEORGE BARITIU\" LIVADA",
+          "COLEGIUL TEHNIC \"MATEI BASARAB\" CARACAL",
+          "COLEGIUL TEHNIC AUTO \"TRAIAN VUIA\" FOCSANI",
+          "LICEUL TEHNOLOGIC \"IORDACHE GOLESCU\" GAESTI",
+          "LICEUL TEHNOLOGIC \"CRISAN\" CRISCIOR",
+          "COLEGIUL TEHNIC \"DIMITRIE LEONIDA\" PETROSANI",
+          "LICEUL TEHNOLOGIC \"AVRAM IANCU\" TIRGU MURES",
+          "COLEGIUL TEHNIC \"DECEBAL\"",
+          "LICEUL TEORETIC BANEASA",
+          "COLEGIUL TEHNIC \"NICOLAE TITULESCU\" MEDGIDIA",
+          "COLEGIUL TEHNIC DE VEST TIMISOARA",
+          "LICEUL TEHNOLOGIC \"SOVER ELEK\" JOSENI",
+          "LICEUL TEHNOLOGIC LUPENI",
+          "COLEGIUL SILVIC GURGHIU",
+          "LICEUL TEHNOLOGIC \"NICOLAE TECLU\" COPSA MICA",
+          "LICEUL TEHNOLOGIC \"FRANCISC NEUMAN\" ARAD",
+          "LICEUL TEHNOLOGIC \"OVID CALEDONIU\" LOCALITATEA TECUCI",
+          "LICEUL TEHNOLOGIC \"NICOLAUS OLAHUS\" ORASTIE",
+          "COLEGIUL \"ANGHEL SALIGNY\" TULCEA",
+          "LICEUL TEHNOLOGIC \"SZEKELY K\u00c1ROLY\" MIERCUREA CIUC",
+          "COLEGIUL TEHNIC \"MARCEL GUGUIANU\" ZORLENI",
+          "COLEGIUL TEHNIC DE INDUSTRIE ALIMENTARA \"DUMITRU MOTOC\"",
+          "LICEUL TEHNOLOGIC NR.1 SIGHISOARA",
+          "LICEUL TEHNOLOGIC \"TEODOR DIAMANT\" BOLDESTI-SCAENI",
+          "Liceul Tehnologic \"Gabor \u00c1ron\" TArgu Secuiesc",
+          "LICEUL TEHNOLOGIC \"PETRU RARES\" BOTOSANI",
+          "LICEUL TEORETIC OLTENI",
+          "LICEUL TEORETIC CERMEI",
+          "LICEUL TEHNOLOGIC \"IULIU MOLDOVAN\" ARAD",
+          "LICEUL TEHNOLOGIC CHISINEU CRIS",
+          "LICEUL TEHNOLOGIC TOPOLOVENI",
+          "LICEUL PEDAGOGIC \"TARAS SEVCENKO\" SIGHETU MARMATIEI",
+          "LICEUL TEHNOLOGIC AUTO CRAIOVA",
+          "LICEUL TEHNOLOGIC DE TRANSPORTURI AUTO TARGOVISTE",
+          "COLEGIUL TEHNIC RESITA",
+          "LICEUL TEHNOLOGIC \"PAMFIL SEICARU\" CIOROGARLA",
+          "LICEUL TEHNOLOGIC \"PETRE BANITA\" CALARASI",
+          "LICEUL TEHNOLOGIC \"OVID DENSUSIANU\" CALAN",
+          "LICEUL TEHNOLOGIC NR. 1 ALEXANDRIA",
+          "LICEUL TEHNOLOGIC \"SAVA BRANCOVICI\" INEU",
+          "LICEUL TEORETIC NR.1 BRATCA",
+          "LICEUL TEHNOLOGIC DE TRANSPORTURI PLOIESTI",
+          "LICEUL TEHNOLOGIC \"AL.VLAHUTA\" SENDRICENI",
+          "LICEUL TEHNOLOGIC DE MECATRONICA SI AUTOMATIZARI IASI",
+          "LICEUL TEHNOLOGIC \"MOGA VOIEVOD\" HALMAGIU",
+          "COLEGIUL TEHNIC \"DOMNUL TUDOR\"",
+          "LICEUL TEHNOLOGIC \"MIHAI EMINESCU\" SLOBOZIA",
+          "LICEUL TEHNOLOGIC \"OCTAVIAN GOGA\" JIBOU",
+          "LICEUL TEORETIC AMARASTII DE JOS",
+          "LICEUL TEHNOLOGIC TRANSPORTURI AUTO TIMISOARA",
+          "COLEGIUL TEHNIC \"PONTICA\" CONSTANTA",
+          "LICEUL TEHNOLOGIC \"DOAMNA CHIAJNA\" ROSU",
+          "LICEUL TEHNOLOGIC \"DACIA\"",
+          "LICEUL DE AGRICULTURA SI INDUSTRIE ALIMENTARA ODOBESTI",
+          "COLEGIUL AUTO \"TRAIAN VUIA\" TG-JIU",
+          "COLEGIUL TEHNIC \"NICOLAE BALCESCU\" BALS",
+          "LICEUL TEHNOLOGIC LECHINTA",
+          "LICEUL TEHNOLOGIC MACIN",
+          "LICEUL TEHNOLOGIC BAIA DE FIER",
+          "LICEUL TEHNOLOGIC COTUSCA",
+          "LICEUL TEHNOLOGIC \"MIHAI NOVAC\" ORAVITA",
+          "LICEUL TEHNOLOGIC\"ION BARBU\" GIURGIU",
+          "LICEUL TEHNOLOGIC \"GRIGORE MOISIL\" TARGU LAPUS",
+          "COLEGIUL TEHNIC \"ANGHEL SALIGNY\" ROSIORI DE VEDE",
+          "LICEUL TEHNOLOGIC \"IOAN CORIVAN\" HUSI",
+          "LICEUL TEHNOLOGIC \"GEORGE BIBESCU\" CRAIOVA",
+          "LICEUL TEHNOLOGIC \"MARIN GRIGORE NASTASE\" TARTASESTI",
+          "LICEUL TEHNOLOGIC PIATRA-OLT",
+          "COLEGIUL TEHNIC \"DANUBIUS\" CORABIA",
+          "LICEUL TEHNOLOGIC \"MIHAI VITEAZUL\" CALUGARENI",
+          "LICEUL TEHNOLOGIC \"FOGARASY MIH\u00c1LY\" GHEORGHENI",
+          "LICEUL TEORETIC \"GHEORGHE IONESCU SISESTI\"",
+          "LICEUL TEHNOLOGIC AUTO CAMPULUNG",
+          "LICEUL TEHNOLOGIC \"TRAIAN VUIA\" TIRGU MURES",
+          "LICEUL TEHNOLOGIC \"SF. HARALAMBIE\" TURNU MAGURELE",
+          "LICEUL TEHNOLOGIC BAILE GOVORA",
+          "COLEGIUL TEHNIC \"GHEORGHE LAZAR\", ORASUL PLOPENI",
+          "LICEUL TEHNOLOGIC \"IOAN OSSIAN\" SIMLEU SILVANIEI",
+          "LICEUL TEHNOLOGIC TISMANA",
+          "LICEUL TEHNOLOGIC DE TRANSPORTURI AUTO CALARASI",
+          "LICEUL TEHNOLOGIC NR. 1 MARACINENI",
+          "LICEUL TEHNOLOGIC COSTESTI",
+          "LICEUL TEHNOLOGIC TANDAREI",
+          "COLEGIUL SILVIC \"THEODOR PIETRARU\" BRANESTI",
+          "LICEUL TEHNOLOGIC DRAGANESTI-VLASCA",
+          "LICEUL TEHNOLOGIC AGRICOL BARCANESTI",
+          "LICEUL TEHNOLOGIC \"TUDOR VLADIMIRESCU\"",
+          "LICEUL TEORETIC \"ANASTASIE BASOTA\" POMIRLA",
+          "COLEGIUL AGRICOL \"DIMITRIE PETRESCU\" CARACAL",
+          "LICEUL TEHNOLOGIC \"NICOLAE BALCESCU\" ALEXANDRIA",
+          "LICEUL TEHNOLOGIC PUCIOASA",
+          "LICEUL TEHNOLOGIC \"CARSIUM\" HARSOVA",
+          "LICEUL TEHNOLOGIC \"ALEXANDRU IOAN CUZA\" PANCIU",
+          "LICEUL TEHNOLOGIC DE TRANSPORTURI AUTO \"HENRI COANDA\" ARAD",
+          "LICEUL TEHNOLOGIC BIRSESTI",
+          "LICEUL TEHNOLOGIC \"TRANDAFIR COCARLA\" CARANSEBES",
+          "LICEUL TEHNOLOGIC NR.1 PRUNDU",
+          "COLEGIUL TEHNIC \"G-RAL D. PRAPORGESCU\" TURNU MAGURELE",
+          "LICEUL TEHNOLOGIC \"ION IONESCU DE LA BRAD\" HORIA",
+          "LICEUL TEHNOLOGIC DE TRANSPORTURI AUTO CRAIOVA",
+          "LICEUL TEHNOLOGIC \"ION GHICA\" OLTENITA",
+          "COLEGIUL AGRICOL POARTA ALBA",
+          "LICEUL TEHNOLOGIC \"DR.C. ANGELESCU\" GAESTI",
+          "LICEUL TEHNOLOGIC \"VICTOR FRUNZA\" RIMNICU SARAT",
+          "LICEUL TEHNOLOGIC HALANGA",
+          "Colegiul National Militar \"Dimitrie Cantemir\" Breaza",
+          "Colegiul National Militar \"Tudor Vladimirescu\" Craiova",
+          "Colegiul National Militar \"Stefan cel Mare\" Campulung Moldovenesc",
+          "Colegiul National Militar \"Mihai Viteazul\" Alba Iulia",
+          "ICHB - LICEUL TEORETIC INTERNATIONAL DE INFORAMTICA BUCURESTI",
+          "Scoala de Instruire pentru Comunicatii, Tehnologia Informatiei si Aparare Cibernetica",
+          "Complexul Educational Lauder-Reut",
+          "Liceul Teoretic \"Hyperion\""
+        ],
+        "created_at": {
+          "date": "2024-01-31 14:53:04",
+          "timestamp": 1706712784,
+          "for_humans": "1 month ago"
+        },
+        "updated_at": {
+          "date": "2024-01-31 14:53:04",
+          "timestamp": 1706712784,
+          "for_humans": "1 month ago"
+        }
+      },
+      {
+        "id": 862,
+        "name": "Universitate",
+        "slug": "universitate_1",
+        "type": {
+          "value": "CyberEdu\\Contest\\SubmissionFormAttributes\\Select",
+          "key": "Select",
+          "description": "Select"
+        },
+        "url": null,
+        "source": null,
+        "placeholder": "Universitate",
+        "show": true,
+        "validation_rules": ["required", "string"],
+        "values": [
+          "N/A",
+          "ACADEMIA DE POLITIE ALEXANDRU IOAN CUZA DIN BUCURESTI",
+          "ACADEMIA FORTELOR AERIENE HENRI COANDA DIN BRASOV",
+          "ACADEMIA DE STUDII ECONOMICE DIN BUCURESTI",
+          "ACADEMIA NAVALA MIRCEA CEL BATRAN DIN CONSTANTA",
+          "ACADEMIA FORTELOR TERESTRE NICOLAE BALCESCU DIN SIBIU",
+          "ACADEMIA TEHNICA MILITARA DIN BUCURESTI",
+          "FUNDATIA ACADEMIA COMERCIALA DIN SATU MARE",
+          "FUNDATIA GAUDEAMUS - UNIVERSITATEA TOMIS DIN CONSTANTA",
+          "FUNDATIA LUMINA - INSTITUTII DE \u00ceNVATAMANT - UNIVERSITATEA EUROPEI DE SUD-EST - LUMINA",
+          "FUNDATIA PENTRU CULTURA SI \u00ceNVATAMANT IOAN SLAVICI - UNIVERSITATEA IOAN SLAVICI DIN TIMISOARA",
+          "FUNDATIA UNIVERSITARA ALMA MATER - UNIVERSITATEA ALMA MATER DIN SIBIU",
+          "FUNDATIA STEFAN LUPASCU - INSTITUTUL DE STUDII EUROPENE DIN IASI",
+          "INSTITUTUL DE ADMINISTRARE A AFACERILOR DIN BUCURESTI",
+          "INSTITUTUL TEOLOGIC BAPTIST DIN BUCURESTI",
+          "INSTITUTUL TEOLOGIC CRESTIN DUPA EVANGHELIE TIMOTHEUS DIN BUCURESTI",
+          "INSTITUTUL TEOLOGIC PENTICOSTAL DIN BUCURESTI",
+          "INSTITUTUL TEOLOGIC ROMANO-CATOLIC DIN BUCURESTI",
+          "INSTITUTUL TEOLOGIC ROMANO-CATOLIC FRANCISCAN DIN ROMAN",
+          "UNIVERSITATEA ARTIFEX DIN BUCURESTI",
+          "UNIVERSITATEA ATHENAEUM DIN BUCURESTI",
+          "UNIVERSITATEA CRESTINA DIMITRIE CANTEMIR DIN BUCURESTI",
+          "UNIVERSITATEA TITU MAIORESCU DIN BUCURESTI",
+          "UNIVERSITATEA CRESTINA PARTIUM DIN ORADEA",
+          "UNIVERSITATEA CONSTANTIN BRANCOVEANU DIN PITESTI",
+          "UNIVERSITATEA DE ARHITECTURA SI URBANISM ION MINCU DIN BUCURESTI",
+          "UNIVERSITATEA DE STIINTE AGRONOMICE SI MEDICINA VETERINARA DIN BUCURESTI",
+          "UNIVERSITATEA DIN BUCURESTI",
+          "UNIVERSITATEA DE MEDICINA SI FARMACIE CAROL DAVILA DIN BUCURESTI",
+          "UNIVERSITATEA DE ARTA SI DESIGN DIN CLUJ-NAPOCA",
+          "UNIVERSITATEA DE MEDICINA SI FARMACIE IULIU HATIEGANU DIN CLUJ-NAPOCA",
+          "ACADEMIA DE MUZICA GHEORGHE DIMA DIN CLUJ-NAPOCA",
+          "UNIVERSITATEA DE VEST VASILE GOLDIS DIN ARAD",
+          "UNIVERSITATEA GEORGE BACOVIA DIN BACAU",
+          "UNIVERSITATEA FINANCIAR-BANCARA DIN BUCURESTI",
+          "UNIVERSITATEA NATIONALA DE APARARE CAROL I DIN BUCURESTI",
+          "ACADEMIA NATIONALA DE INFORMATII MIHAI VITEAZUL DIN BUCURESTI",
+          "UNIVERSITATEA NATIONALA DE ARTE DIN BUCURESTI",
+          "UNIVERSITATEA NATIONALA DE ARTA TEATRALA SI CINEMATOGRAFICA I.L.CARAGIALE DIN BUCURESTI",
+          "UNIVERSITATEA NATIONALA DE EDUCATIE FIZICA SI SPORT DIN BUCURESTI",
+          "SCOALA NATIONALA DE STUDII POLITICE SI ADMINISTRATIVE DIN BUCURESTI",
+          "UNIVERSITATEA 1 DECEMBRIE 1918 DIN ALBA IULIA",
+          "UNIVERSITATEA AUREL VLAICU DIN ARAD",
+          "UNIVERSITATEA VASILE ALECSANDRI DIN BACAU",
+          "UNIVERSITATEA TRANSILVANIA DIN BRASOV",
+          "UNIVERSITATEA TEHNICA DIN CLUJ-NAPOCA",
+          "UNIVERSITATEA DE STIINTE AGRICOLE SI MEDICINA VETERINARA DIN CLUJ-NAPOCA",
+          "UNIVERSITATEA BABES-BOLYAI DIN CLUJ-NAPOCA",
+          "UNIVERSITATEA NATIONALA DE MUZICA DIN BUCURESTI",
+          "UNIVERSITATEA POLITEHNICA DIN BUCURESTI",
+          "UNIVERSITATEA TEHNICA DE CONSTRUCTII DIN BUCURESTI",
+          "UNIVERSITATEA TEHNICA GHEORGHE ASACHI DIN IASI",
+          "UNIVERSITATEA DE STIINTE AGRICOLE SI MEDICINA VETERINARA ION IONESCU DE LA BRAD DIN IASI",
+          "UNIVERSITATEA ALEXANDRU IOAN CUZA DIN IASI",
+          "UNIVERSITATEA DE MEDICINA SI FARMACIE GRIGORE T. POPA DIN IASI",
+          "UNIVERSITATEA NATIONALA DE ARTE GEORGE ENESCU DIN IASI",
+          "UNIVERSITATEA DIN ORADEA",
+          "UNIVERSITATEA DIN PETROSANI",
+          "UNIVERSITATEA DIN PITESTI",
+          "UNIVERSITATEA PETROL-GAZE DIN PLOIESTI",
+          "UNIVERSITATEA EFTIMIE MURGU DIN RESITA",
+          "UNIVERSITATEA LUCIAN BLAGA DIN SIBIU",
+          "UNIVERSITATEA STEFAN CEL MARE DIN SUCEAVA",
+          "UNIVERSITATEA VALAHIA DIN TARGOVISTE",
+          "UNIVERSITATEA BOGDAN VODA DIN CLUJ-NAPOCA",
+          "INSTITUTUL TEOLOGIC PROTESTANT DIN CLUJ-NAPOCA",
+          "UNIVERSITATEA SAPIENTIA DIN CLUJ-NAPOCA",
+          "UNIVERSITATEA ANDREI SAGUNA DIN CONSTANTA",
+          "UNIVERSITATEA DANUBIUS DIN GALATI",
+          "UNIVERSITATEA MIHAIL KOGALNICEANU DIN IASI",
+          "UNIVERSITATEA PETRE ANDREI DIN IASI",
+          "UNIVERSITATEA APOLLONIA DIN IASI",
+          "UNIVERSITATEA EUROPEANA DRAGAN DIN LUGOJ",
+          "UNIVERSITATEA AGORA DIN ORADEA",
+          "UNIVERSITATEA EMANUEL DIN ORADEA",
+          "UNIVERSITATEA CONSTANTIN BRANCUSI DIN TARGU JIU",
+          "UNIVERSITATEA DE MEDICINA, FARMACIE, STIIN\u021aE SI TEHNOLOGIE DIN TARGU MURES",
+          "UNIVERSITATEA DE ARTE DIN TARGU MURES",
+          "UNIVERSITATEA POLITEHNICA TIMISOARA",
+          "UNIVERSITATEA DE STIINTE AGRICOLE SI MEDICINA VETERINARA A BANATULUI REGELE MIHAI I AL ROMANIEI DIN TIMISOARA",
+          "UNIVERSITATEA DE VEST DIN TIMISOARA",
+          "UNIVERSITATEA DE MEDICINA SI FARMACIE VICTOR BABES DIN TIMISOARA",
+          "UNIVERSITATEA GEORGE BARITIU DIN BRASOV",
+          "UNIVERSITATEA AVRAM IANCU DIN CLUJ-NAPOCA",
+          "UNIVERSITATEA MIHAI EMINESCU DIN TIMISOARA",
+          "UNIVERSITATEA TIBISCUS DIN TIMISOARA",
+          "UNIVERSITATEA ADVENTUS DIN CERNICA",
+          "UNIVERSITATEA NICOLAE TITULESCU DIN BUCURESTI",
+          "UNIVERSITATEA ROMANO-AMERICANA DIN BUCURESTI",
+          "UNIVERSITATEA HYPERION DIN BUCURESTI",
+          "UNIVERSITATEA OVIDIUS DIN CONSTANTA",
+          "UNIVERSITATEA MARITIMA DIN CONSTANTA",
+          "UNIVERSITATEA DIN CRAIOVA",
+          "UNIVERSITATEA DE MEDICINA SI FARMACIE DIN CRAIOVA",
+          "UNIVERSITATEA DUNAREA DE JOS DIN GALATI",
+          "UNIVERSITATEA ROMANO-GERMANA DIN SIBIU",
+          "UNIVERSITATEA DIMITRIE CANTEMIR DIN TARGU MURES",
+          "UNIVERSITATEA SPIRU HARET DIN BUCURESTI",
+          "UNIVERSITATEA BIOTERRA DIN BUCURESTI",
+          "UNIVERSITATEA ECOLOGICA DIN BUCURESTI",
+          "UNIVERSITATEA ROMANA DE STIINTE SI ARTE GHEORGHE CRISTEA DIN BUCURESTI",
+          "SCOALA MILITARA DE MAISTRI MILITARI SI SUBOFITERI PENTRU COMUNICATII, TEHNOLOGIA INFORMATIEI SI APARARE CIBERNETICA - SIBIU",
+          "UNIVERSITATEA TEHNICA A MOLDOVEI"
+        ],
+        "created_at": {
+          "date": "2024-01-31 14:54:19",
+          "timestamp": 1706712859,
+          "for_humans": "1 month ago"
+        },
+        "updated_at": {
+          "date": "2024-01-31 14:54:19",
+          "timestamp": 1706712859,
+          "for_humans": "1 month ago"
+        }
+      },
+      {
+        "id": 863,
+        "name": "Termeni si conditii",
+        "slug": "termeni_si_conditii_5",
+        "type": {
+          "value": "CyberEdu\\Contest\\SubmissionFormAttributes\\Checkbox",
+          "key": "Checkbox",
+          "description": "Checkbox"
+        },
+        "url": "https://cyber-edu.co/terms-and-conditions",
+        "source": null,
+        "placeholder": "Am citit si sunt de acord cu Termenii si conditiile de utilizare ale platformei CyberEDU.",
+        "show": false,
+        "validation_rules": ["accepted"],
+        "values": null,
+        "created_at": {
+          "date": "2023-03-03 12:13:47",
+          "timestamp": 1677845627,
+          "for_humans": "1 year ago"
+        },
+        "updated_at": {
+          "date": "2023-03-03 12:13:47",
+          "timestamp": 1677845627,
+          "for_humans": "1 year ago"
+        }
       }
     ],
-    "counts": {
-      "owned": 21
+    "created_at": {
+      "date": "2024-01-31 14:47:32",
+      "timestamp": 1706712452,
+      "for_humans": "1 month ago"
+    },
+    "updated_at": {
+      "date": "2024-01-31 14:47:32",
+      "timestamp": 1706712452,
+      "for_humans": "1 month ago"
     }
   },
-  {
-    "id": "5bec97e0-0813-11ed-b91b-ed3ab3c38114",
-    "title": "networkaround",
-    "description": "A fost descoperita infrastructura unui atacator: vps-357f002c.vps.ovh.net (54.37.153.147) si incercam sa obtinem acces la ea pentru a ne proteja de atacurile sale. \n\nFlag Format: ROCSC{message}",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 450,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
-      "name": "Nytro",
-      "name_acronym": "N",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
+  "created_at": {
+    "date": "2024-01-31 14:47:32",
+    "timestamp": 1706712452,
+    "for_humans": "1 month ago"
+  },
+  "updated_at": {
+    "date": "2024-03-08 10:10:46",
+    "timestamp": 1709892646,
+    "for_humans": "1 week ago"
+  },
+  "statistics": {
+    "total_players": 397,
+    "total_flags": 1007,
+    "total_wrong_attempts": 13087,
+    "total_players_with_flags": 120
+  },
+  "attributes": [
+    {
+      "name": "Categorie",
+      "slug": "categorie_4"
+    },
+    {
+      "name": "Liceu",
+      "slug": "liceu_1"
+    },
+    {
+      "name": "Universitate",
+      "slug": "universitate_1"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 14271178,
+      "description": "the flag for the-harmonica have been changed",
+      "type": "default",
+      "user": {
+        "id": "53a7efa0-7f21-11ea-804b-cd066a53b9e6",
+        "name": "Andrei Avadanei",
+        "name_acronym": "AA",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-18 16:23:08",
+          "timestamp": 1582042988,
+          "for_humans": "4 years ago"
+        }
+      },
       "created_at": {
-        "date": "2021-09-14 11:27:59",
-        "timestamp": 1631618879,
-        "for_humans": "10 months ago"
+        "date": "2024-03-09 09:00:37",
+        "timestamp": 1709974837,
+        "for_humans": "1 week ago"
       }
     },
-    "tags": [
-      {
-        "id": 2,
-        "name": "Network",
-        "type": "default"
+    {
+      "id": 14271172,
+      "description": "Hint for joker and batman: A word from the letter may help you to open the  secret from bat-logo",
+      "type": "default",
+      "user": {
+        "id": "53a7efa0-7f21-11ea-804b-cd066a53b9e6",
+        "name": "Andrei Avadanei",
+        "name_acronym": "AA",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-18 16:23:08",
+          "timestamp": 1582042988,
+          "for_humans": "4 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-08 16:28:06",
+        "timestamp": 1709915286,
+        "for_humans": "1 week ago"
       }
-    ],
-    "counts": {
-      "owned": 6
+    },
+    {
+      "id": 14271171,
+      "description": "hint for \"joker-and-batman-story\": cat rockyou.txt | grep Joker>> crack.txt",
+      "type": "default",
+      "user": {
+        "id": "53a7efa0-7f21-11ea-804b-cd066a53b9e6",
+        "name": "Andrei Avadanei",
+        "name_acronym": "AA",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-18 16:23:08",
+          "timestamp": 1582042988,
+          "for_humans": "4 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-08 15:16:59",
+        "timestamp": 1709911019,
+        "for_humans": "1 week ago"
+      }
+    },
+    {
+      "id": 14271170,
+      "description": "decryptor task have been updated, good luck",
+      "type": "default",
+      "user": {
+        "id": "53a7efa0-7f21-11ea-804b-cd066a53b9e6",
+        "name": "Andrei Avadanei",
+        "name_acronym": "AA",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-18 16:23:08",
+          "timestamp": 1582042988,
+          "for_humans": "4 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-08 13:46:55",
+        "timestamp": 1709905615,
+        "for_humans": "1 week ago"
+      }
+    },
+    {
+      "id": 14271169,
+      "description": "Update friendly-colabs: The flag from index.php  test-version repository isn't correct, ignore it. Find the real one, will be obvious when you'll find it.",
+      "type": "default",
+      "user": {
+        "id": "53a7efa0-7f21-11ea-804b-cd066a53b9e6",
+        "name": "Andrei Avadanei",
+        "name_acronym": "AA",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-18 16:23:08",
+          "timestamp": 1582042988,
+          "for_humans": "4 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-08 10:51:52",
+        "timestamp": 1709895112,
+        "for_humans": "1 week ago"
+      }
+    },
+    {
+      "id": 14271168,
+      "description": "ROCSC 2024 Quals have started! Good luck & have fun!",
+      "type": "default",
+      "user": {
+        "id": "53a7efa0-7f21-11ea-804b-cd066a53b9e6",
+        "name": "Andrei Avadanei",
+        "name_acronym": "AA",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-18 16:23:08",
+          "timestamp": 1582042988,
+          "for_humans": "4 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-08 10:45:52",
+        "timestamp": 1709894752,
+        "for_humans": "1 week ago"
+      }
+    }
+  ],
+  "challenges": [
+    {
+      "id": "9b8164ff-b7fe-4f6b-b947-e29e9ba09825",
+      "title": "bin-diving",
+      "description": "It's a dumpster dive like no other, where the trash talk is just as valuable as the treasures you uncover. Get ready to rummage for the ultimate prize!\r\n\r\nFlag format: CTF{sha256}",
+      "difficulty": "Hard",
+      "difficulty_score": 3,
+      "type": "deployment",
+      "infrastructure": "kubernetes",
+      "is_owned": true,
+      "points": 250,
+      "author": {
+        "id": "9a9e3dcc-2885-4265-91b5-799e31afcc86",
+        "name": "matter1",
+        "name_acronym": "M",
+        "country": "",
+        "roles": ["challenge-author", "challenge-editor"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-11-15 10:32:03",
+          "timestamp": 1700044323,
+          "for_humans": "4 months ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 11,
+          "name": "Misc",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 51,
+        "review_score": "5.00"
+      }
+    },
+    {
+      "id": "9b81786c-ecd6-4580-b495-39e44ad00d76",
+      "title": "friendly-colabs",
+      "description": "Find the hidden secrets and get the flag.\r\n\r\nFlag format CTF{sha256}\r\n\r\nResource: https://github.com/b3taflash/friendly-colabs\r\n\r\n*PS: The flag from index.php test-version repository isn't correct, ignore it. Find the real one, will be obvious when you'll find it.*",
+      "difficulty": "Medium",
+      "difficulty_score": 2,
+      "type": "standalone",
+      "infrastructure": null,
+      "is_owned": true,
+      "points": 205,
+      "author": {
+        "id": "53b6d7d0-7f21-11ea-8730-a36e60fdfc85",
+        "name": "Betaflash",
+        "name_acronym": "B",
+        "country": "Romania",
+        "roles": ["challenge-author", "challenge-editor"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-03-11 10:18:57",
+          "timestamp": 1583921937,
+          "for_humans": "4 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 10,
+          "name": "OSINT",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 60,
+        "review_score": "4.00"
+      }
+    },
+    {
+      "id": "9b817af7-1605-456e-b367-a25fbc54ca66",
+      "title": "rtfm",
+      "description": "Let me tell you this..... you really need to read the manual.",
+      "difficulty": "Medium",
+      "difficulty_score": 2,
+      "type": "deployment",
+      "infrastructure": "kubernetes",
+      "is_owned": true,
+      "points": 315,
+      "author": {
+        "id": "80c59370-3f40-11ed-8d6e-4bc9b4a12b30",
+        "name": "Mal",
+        "name_acronym": "M",
+        "country": "",
+        "roles": ["challenge-author"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2022-09-28 15:16:18",
+          "timestamp": 1664378178,
+          "for_humans": "1 year ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 11,
+          "name": "Misc",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 38,
+        "review_score": "0.00"
+      }
+    },
+    {
+      "id": "9b817c12-0ba3-4c34-8e6e-00dcef28affe",
+      "title": "java-eval",
+      "description": "Eval stuff everywhere. What is going on?",
+      "difficulty": "Medium",
+      "difficulty_score": 2,
+      "type": "deployment",
+      "infrastructure": "kubernetes",
+      "is_owned": true,
+      "points": 410,
+      "author": {
+        "id": "80c59370-3f40-11ed-8d6e-4bc9b4a12b30",
+        "name": "Mal",
+        "name_acronym": "M",
+        "country": "",
+        "roles": ["challenge-author"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2022-09-28 15:16:18",
+          "timestamp": 1664378178,
+          "for_humans": "1 year ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 1,
+          "name": "Web",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 19,
+        "review_score": "5.00"
+      }
+    },
+    {
+      "id": "9b817d8a-4ca4-4a35-a7e6-599ea4dd8733",
+      "title": "grocery-list",
+      "description": "\"Ehm...milk...eggs...what else? WHAT ELSE?!\"\r\n\r\nDay after day i just could not remember all the stuff i was planning to buy.\r\n\r\nNo more! Now I've made myself my own grocery list website! And wait, there's more: IT'S HACKER PROOF\r\n\r\nIs you memory as volatile as mine? Maybe you should use the my web app...",
+      "difficulty": "Medium",
+      "difficulty_score": 2,
+      "type": "deployment",
+      "infrastructure": "kubernetes",
+      "is_owned": true,
+      "points": 280,
+      "author": {
+        "id": "f5e70a10-0657-11ec-a00b-c3def6968822",
+        "name": "Joker",
+        "name_acronym": "J",
+        "country": "",
+        "roles": ["challenge-author"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2021-08-26 10:25:39",
+          "timestamp": 1629973539,
+          "for_humans": "2 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 1,
+          "name": "Web",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 45,
+        "review_score": "4.67"
+      }
+    },
+    {
+      "id": "9b81804f-a934-43bd-bff2-8d54497a07a0",
+      "title": "binary-illusions",
+      "description": "Uncover the deceptive veil of binary interactions where hidden vulnerabilities lie in wait. Dissect the digital fabric, discerning subtle patterns that lead to the heart of system control. Navigate the blurred boundaries of trust and deception to secure the elusive flag.",
+      "difficulty": "Medium",
+      "difficulty_score": 2,
+      "type": "standalone",
+      "infrastructure": null,
+      "is_owned": true,
+      "points": 266,
+      "author": {
+        "id": "9a9e3ef8-238b-4f3b-8ab0-0242aefb2285",
+        "name": "Adrian Croitoru",
+        "name_acronym": "AC",
+        "country": "",
+        "roles": ["challenge-author", "challenge-editor"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-11-15 10:35:19",
+          "timestamp": 1700044519,
+          "for_humans": "4 months ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 8,
+          "name": "Reverse Engineering",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 33,
+        "review_score": "5.00"
+      }
+    },
+    {
+      "id": "9b819d58-55e0-47d5-953d-08543a53c4a7",
+      "title": "from-memory",
+      "description": "Do you rember this .. from memory?",
+      "difficulty": "Medium",
+      "difficulty_score": 2,
+      "type": "standalone",
+      "infrastructure": null,
+      "is_owned": true,
+      "points": 103,
+      "author": {
+        "id": "53b0ccb0-7f21-11ea-9207-e5b2776fa6ac",
+        "name": "Volf",
+        "name_acronym": "V",
+        "country": "Romania",
+        "roles": ["challenge-author", "challenge-manager", "challenge-editor"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-24 16:05:25",
+          "timestamp": 1582560325,
+          "for_humans": "4 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 7,
+          "name": "Forensics",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 63,
+        "review_score": "4.43"
+      }
+    },
+    {
+      "id": "9b81a3a4-3a52-466f-ad0e-53edede0fd04",
+      "title": "crackinator",
+      "description": "Participants need to reverse engineer a serial key generation process implemented in a Windows program for the specified user, \"crack@rocsc.ro.\"\r\nBy analyzing the program's code and behavior, participants will need to got the secret key and understand the underlying cryptographic mechanisms.\r\n\r\nDon't forget to use crack@rocsc.ro for validating the serial key.\r\n\r\nFlag format : XXXXXX-XXXXXX-XXXXXX-XXXXXX-XXXXXX\r\n\r\n![key](https://unbreakable.ro/wp-content/uploads/2024/03/key.jpg)",
+      "difficulty": "Hard",
+      "difficulty_score": 3,
+      "type": "standalone",
+      "infrastructure": null,
+      "is_owned": true,
+      "points": 449,
+      "author": {
+        "id": "a21ad8b0-03d7-11eb-bcac-95ba23dd33d8",
+        "name": "T3jv1l",
+        "name_acronym": "T",
+        "country": "Romania",
+        "roles": ["challenge-author", "challenge-manager", "challenge-editor"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-10-01 11:17:03",
+          "timestamp": 1601551023,
+          "for_humans": "3 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 8,
+          "name": "Reverse Engineering",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 11,
+        "review_score": "5.00"
+      }
+    },
+    {
+      "id": "9b81e63e-2114-4a57-91a8-89cae04de1dd",
+      "title": "the-harmonica",
+      "description": "To steal data from the record company, hacker Gheorghe Gheorghescu hid data in the files produced by the record company. We need to find out what data he stole.",
+      "difficulty": "Easy",
+      "difficulty_score": 1,
+      "type": "standalone",
+      "infrastructure": null,
+      "is_owned": true,
+      "points": 445,
+      "author": {
+        "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
+        "name": "Nytro",
+        "name_acronym": "N",
+        "country": "",
+        "roles": ["challenge-author"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2021-09-14 11:27:59",
+          "timestamp": 1631618879,
+          "for_humans": "2 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 24,
+          "name": "Steganography",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 12,
+        "review_score": "5.00"
+      }
+    },
+    {
+      "id": "9b81e63e-5307-431a-be92-a850a724444f",
+      "title": "ui-crack",
+      "description": "Can you crack-me?",
+      "difficulty": "Easy",
+      "difficulty_score": 1,
+      "type": "standalone",
+      "infrastructure": null,
+      "is_owned": true,
+      "points": 435,
+      "author": {
+        "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
+        "name": "Nytro",
+        "name_acronym": "N",
+        "country": "",
+        "roles": ["challenge-author"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2021-09-14 11:27:59",
+          "timestamp": 1631618879,
+          "for_humans": "2 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 8,
+          "name": "Reverse Engineering",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 14,
+        "review_score": "5.00"
+      }
+    },
+    {
+      "id": "9b81e63e-7c57-4f5a-80d0-418eab693f5b",
+      "title": "decryptor",
+      "description": "You have managed to get away with an app and some data encrypted with it. All you know is that there is a passphrase, it starts with R and on the keyboard last used, the CapsLock key was stuck. Can you get the valuable info inside this file?",
+      "difficulty": "Medium",
+      "difficulty_score": 2,
+      "type": "standalone",
+      "infrastructure": null,
+      "is_owned": true,
+      "points": 435,
+      "author": {
+        "id": "53ae7220-7f21-11ea-968c-993283711138",
+        "name": "CertSIGN",
+        "name_acronym": "C",
+        "country": "",
+        "roles": ["challenge-author"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-23 10:28:08",
+          "timestamp": 1582453688,
+          "for_humans": "4 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 8,
+          "name": "Reverse Engineering",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 14,
+        "review_score": "0.00"
+      }
+    },
+    {
+      "id": "9b81e63e-a506-4a6f-adc5-4b7ce17a5913",
+      "title": "counting",
+      "description": "Decode this and it will tell you what to do.",
+      "difficulty": "Medium",
+      "difficulty_score": 2,
+      "type": "standalone",
+      "infrastructure": null,
+      "is_owned": true,
+      "points": 430,
+      "author": {
+        "id": "53ae7220-7f21-11ea-968c-993283711138",
+        "name": "CertSIGN",
+        "name_acronym": "C",
+        "country": "",
+        "roles": ["challenge-author"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-23 10:28:08",
+          "timestamp": 1582453688,
+          "for_humans": "4 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 12,
+          "name": "Cryptography",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 15,
+        "review_score": "3.67"
+      }
+    },
+    {
+      "id": "9b81e63e-f27b-44fc-876d-c7be3db83287",
+      "title": "special-waffle",
+      "description": "In the year 2021, as you were on the cusp of drifting into slumber, the abrupt intrusion of a ringing telephone jolted you awake. This disruption signaled the emergence of a cybersecurity incident demanding your immediate attention and expertise across various critical aspects. \r\n\r\nYou should access the 1* index , events are logged from 3 years ago.",
+      "difficulty": "Medium",
+      "difficulty_score": 2,
+      "type": "deployment",
+      "infrastructure": "kubernetes",
+      "is_owned": true,
+      "points": 282,
+      "author": {
+        "id": "53b0ccb0-7f21-11ea-9207-e5b2776fa6ac",
+        "name": "Volf",
+        "name_acronym": "V",
+        "country": "Romania",
+        "roles": ["challenge-author", "challenge-manager", "challenge-editor"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-24 16:05:25",
+          "timestamp": 1582560325,
+          "for_humans": "4 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 1425,
+          "name": "Threat hunting",
+          "type": "default"
+        },
+        {
+          "id": 1427,
+          "name": "Threat intelligence",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 21,
+        "review_score": "5.00"
+      }
+    },
+    {
+      "id": "9b81e63e-f7f5-4a7f-bf48-f9a3d986134f",
+      "title": "android-echoes",
+      "description": "Someone has sent you a mysterious message, containing an Android mobile application. \r\nYou set an emulated environment, make a coffee and start to analyze the application to find the secrets inside it.",
+      "difficulty": "Medium",
+      "difficulty_score": 2,
+      "type": "standalone",
+      "infrastructure": null,
+      "is_owned": true,
+      "points": 255,
+      "author": {
+        "id": "53b0ccb0-7f21-11ea-9207-e5b2776fa6ac",
+        "name": "Volf",
+        "name_acronym": "V",
+        "country": "Romania",
+        "roles": ["challenge-author", "challenge-manager", "challenge-editor"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-02-24 16:05:25",
+          "timestamp": 1582560325,
+          "for_humans": "4 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 26,
+          "name": "Mobile",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 50,
+        "review_score": "5.00"
+      }
+    },
+    {
+      "id": "9b81e900-d866-4d37-af13-881758d78485",
+      "title": "joker-and-batman-story",
+      "description": "Batman receives a secret letter from Joker. Taking into consideration their past, for sure something is stinky in there. Can you find what? It seems that a photo with a bat is the problem.\r\n\r\n\r\nFlag format: CTF{sha256(message)}",
+      "difficulty": "Hard",
+      "difficulty_score": 3,
+      "type": "standalone",
+      "infrastructure": null,
+      "is_owned": true,
+      "points": 180,
+      "author": {
+        "id": "f5e70a10-0657-11ec-a00b-c3def6968822",
+        "name": "Joker",
+        "name_acronym": "J",
+        "country": "",
+        "roles": ["challenge-author"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2021-08-26 10:25:39",
+          "timestamp": 1629973539,
+          "for_humans": "2 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 11,
+          "name": "Misc",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 65,
+        "review_score": "4.33"
+      }
+    },
+    {
+      "id": "9b81eaee-1a55-4a23-b728-ed7a1720acc2",
+      "title": "cool-upload",
+      "description": "Cool upload server which allows you to report interesting files to the admin, but as he wanted\r\nsome fancy javascript animations on the site he missed something.\r\nFind what's wrong coded and steal the secrets.",
+      "difficulty": "Hard",
+      "difficulty_score": 3,
+      "type": "deployment",
+      "infrastructure": "kubernetes",
+      "is_owned": true,
+      "points": 400,
+      "author": {
+        "id": "3e5ffb30-c609-11eb-a2d4-d9ba33d5137a",
+        "name": "skyv3il",
+        "name_acronym": "S",
+        "country": "",
+        "roles": ["challenge-author"],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2021-06-05 14:20:56",
+          "timestamp": 1622902856,
+          "for_humans": "2 years ago"
+        }
+      },
+      "tags": [
+        {
+          "id": 1,
+          "name": "Web",
+          "type": "default"
+        }
+      ],
+      "counts": {
+        "owned": 21,
+        "review_score": "5.00"
+      }
+    }
+  ],
+  "permissions": {
+    "user": true,
+    "register": false,
+    "actions": false,
+    "view": true,
+    "ranks": true,
+    "insights": true
+  },
+  "submission": {
+    "status": {
+      "value": "approved",
+      "key": "Approved",
+      "description": "Approved"
+    },
+    "created_at": {
+      "date": "2024-02-19 18:39:28",
+      "timestamp": 1708367968,
+      "for_humans": "1 month ago"
+    },
+    "updated_at": {
+      "date": "2024-02-19 18:39:31",
+      "timestamp": 1708367971,
+      "for_humans": "1 month ago"
+    },
+    "approved_at": {
+      "date": "2024-02-19 18:39:31",
+      "timestamp": 1708367971,
+      "for_humans": "1 month ago"
     }
   },
-  {
-    "id": "1012e5a0-0814-11ed-9a59-fb1e84a667e0",
-    "title": "cover-the-basics",
-    "description": "Maybe it's malware, maybe not!\n\nFlag format: CTF{sha256}",
-    "difficulty": "Easy",
-    "difficulty_score": 1,
-    "points": 410,
-    "type": "standalone",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "f5e70a10-0657-11ec-a00b-c3def6968822",
-      "name": "Joker",
-      "name_acronym": "J",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
+  "attempts": [
+    {
+      "points": "265",
+      "user": {
+        "id": "989ff714-5705-4ea9-b288-da4c2ce0d354",
+        "name": "Rata Darius",
+        "name_acronym": "RD",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-03-06 18:42:05",
+          "timestamp": 1678128125,
+          "for_humans": "1 year ago"
+        }
+      },
       "created_at": {
-        "date": "2021-08-26 10:25:39",
-        "timestamp": 1629973539,
-        "for_humans": "10 months ago"
+        "date": "2024-03-10 09:59:16",
+        "timestamp": 1710064756,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81804f-a934-43bd-bff2-8d54497a07a0",
+        "title": "binary-illusions",
+        "description": "Uncover the deceptive veil of binary interactions where hidden vulnerabilities lie in wait. Dissect the digital fabric, discerning subtle patterns that lead to the heart of system control. Navigate the blurred boundaries of trust and deception to secure the elusive flag.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
       }
     },
-    "tags": [
-      {
-        "id": 8,
-        "name": "Reverse Engineering",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 10
-    }
-  },
-  {
-    "id": "b6536dd0-0814-11ed-9b02-69bd955ac335",
-    "title": "rubies",
-    "description": "If you like jewelry you will be okay\n\nFlag format: CTF{sha256}",
-    "difficulty": "Medium",
-    "difficulty_score": 2,
-    "points": 290,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "df2d31a0-e8be-11ea-a95c-afd09515493e",
-      "name": "trollzorftw",
-      "name_acronym": "T",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
+    {
+      "points": "255",
+      "user": {
+        "id": "989ff3d6-ebda-46c4-aaf0-b9cf283f89db",
+        "name": "Mucea Silviu",
+        "name_acronym": "MS",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-03-06 18:33:01",
+          "timestamp": 1678127581,
+          "for_humans": "1 year ago"
+        }
+      },
       "created_at": {
-        "date": "2020-08-27 23:41:47",
-        "timestamp": 1598571707,
-        "for_humans": "1 year ago"
+        "date": "2024-03-10 09:52:55",
+        "timestamp": 1710064375,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81e63e-f7f5-4a7f-bf48-f9a3d986134f",
+        "title": "android-echoes",
+        "description": "Someone has sent you a mysterious message, containing an Android mobile application. \r\nYou set an emulated environment, make a coffee and start to analyze the application to find the secrets inside it.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
       }
     },
-    "tags": [
-      {
-        "id": 1,
-        "name": "Web",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 22
-    }
-  },
-  {
-    "id": "10402060-0816-11ed-93a1-1ba68952facf",
-    "title": "minipwn",
-    "description": "Desi pare o aplicatie simpla suspectam ca autorul a introdus un backdoor. Trebuie sa aflam daca acesta exista si daca il putem exploata pentru a obtine acces la steag (/flag.txt).\n\nFlag format: ROCSC{sha256}",
-    "difficulty": "Easy",
-    "difficulty_score": 1,
-    "points": 50,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
-      "name": "Nytro",
-      "name_acronym": "N",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
+    {
+      "points": "315",
+      "user": {
+        "id": "fbdbd840-af8f-11ec-8bfe-2fd4f6ff6cf6",
+        "name": "jim",
+        "name_acronym": "J",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2022-03-29 18:42:28",
+          "timestamp": 1648579348,
+          "for_humans": "1 year ago"
+        }
+      },
       "created_at": {
-        "date": "2021-09-14 11:27:59",
-        "timestamp": 1631618879,
-        "for_humans": "10 months ago"
+        "date": "2024-03-10 09:51:56",
+        "timestamp": 1710064316,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b817af7-1605-456e-b367-a25fbc54ca66",
+        "title": "rtfm",
+        "description": "Let me tell you this..... you really need to read the manual.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "deployment",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
       }
     },
-    "tags": [
-      {
-        "id": 9,
-        "name": "Pwn",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 46
-    }
-  },
-  {
-    "id": "73d52170-08ee-11ed-aead-910f77583309",
-    "title": "echo",
-    "description": "Just an echo server!\n\nFlag Format: CTF{sha256}",
-    "difficulty": "Hard",
-    "difficulty_score": 3,
-    "points": 410,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "a21ad8b0-03d7-11eb-bcac-95ba23dd33d8",
-      "name": "T3jv1l",
-      "name_acronym": "T",
-      "country": "Romania",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
+    {
+      "points": "180",
+      "user": {
+        "id": "989ff3d6-ebda-46c4-aaf0-b9cf283f89db",
+        "name": "Mucea Silviu",
+        "name_acronym": "MS",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-03-06 18:33:01",
+          "timestamp": 1678127581,
+          "for_humans": "1 year ago"
+        }
+      },
       "created_at": {
-        "date": "2020-10-01 11:17:03",
-        "timestamp": 1601551023,
-        "for_humans": "1 year ago"
+        "date": "2024-03-10 09:51:40",
+        "timestamp": 1710064300,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81e900-d866-4d37-af13-881758d78485",
+        "title": "joker-and-batman-story",
+        "description": "Batman receives a secret letter from Joker. Taking into consideration their past, for sure something is stinky in there. Can you find what? It seems that a photo with a bat is the problem.\r\n\r\n\r\nFlag format: CTF{sha256(message)}",
+        "difficulty": "Hard",
+        "difficulty_score": 3,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
       }
     },
-    "tags": [
-      {
-        "id": 9,
-        "name": "Pwn",
-        "type": "default"
-      }
-    ],
-    "counts": {
-      "owned": 10
-    }
-  },
-  {
-    "id": "923a5860-099f-11ed-aaf6-eb70a2a382b9",
-    "title": "minipwn2",
-    "description": "Just a regular pwn!\n\nFlag Format: ROCSC{sha256}",
-    "difficulty": "Easy",
-    "difficulty_score": 1,
-    "points": 370,
-    "type": "one-to-many",
-    "status": "hidden",
-    "is_owned": true,
-    "author": {
-      "id": "d0cebbb0-154e-11ec-b0ec-af9c851d4556",
-      "name": "Nytro",
-      "name_acronym": "N",
-      "country": "",
-      "roles": ["challenges_author", "player"],
-      "type": "user",
-      "trashed": false,
+    {
+      "points": "265",
+      "user": {
+        "id": "989ff3d6-ebda-46c4-aaf0-b9cf283f89db",
+        "name": "Mucea Silviu",
+        "name_acronym": "MS",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-03-06 18:33:01",
+          "timestamp": 1678127581,
+          "for_humans": "1 year ago"
+        }
+      },
       "created_at": {
-        "date": "2021-09-14 11:27:59",
-        "timestamp": 1631618879,
-        "for_humans": "10 months ago"
+        "date": "2024-03-10 09:50:36",
+        "timestamp": 1710064236,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81804f-a934-43bd-bff2-8d54497a07a0",
+        "title": "binary-illusions",
+        "description": "Uncover the deceptive veil of binary interactions where hidden vulnerabilities lie in wait. Dissect the digital fabric, discerning subtle patterns that lead to the heart of system control. Navigate the blurred boundaries of trust and deception to secure the elusive flag.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
       }
     },
-    "tags": [
-      {
-        "id": 9,
-        "name": "Pwn",
-        "type": "default"
+    {
+      "points": "315",
+      "user": {
+        "id": "98a00552-3133-417e-92bd-880e14d3868f",
+        "name": "Anghel Cristian",
+        "name_acronym": "AC",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-03-06 19:21:54",
+          "timestamp": 1678130514,
+          "for_humans": "1 year ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 09:50:20",
+        "timestamp": 1710064220,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b817af7-1605-456e-b367-a25fbc54ca66",
+        "title": "rtfm",
+        "description": "Let me tell you this..... you really need to read the manual.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "deployment",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
       }
-    ],
-    "counts": {
-      "owned": 14
+    },
+    {
+      "points": "265",
+      "user": {
+        "id": "b5ff2ba0-3257-11ec-abf2-f5e110f71481",
+        "name": "Pligonstein",
+        "name_acronym": "P",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2021-10-21 10:14:43",
+          "timestamp": 1634811283,
+          "for_humans": "2 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 09:41:13",
+        "timestamp": 1710063673,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81804f-a934-43bd-bff2-8d54497a07a0",
+        "title": "binary-illusions",
+        "description": "Uncover the deceptive veil of binary interactions where hidden vulnerabilities lie in wait. Dissect the digital fabric, discerning subtle patterns that lead to the heart of system control. Navigate the blurred boundaries of trust and deception to secure the elusive flag.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "315",
+      "user": {
+        "id": "5532fae0-04e8-11ed-8ba9-fb85fcf3e2a6",
+        "name": "Ghica Alexandru Darius",
+        "name_acronym": "GA",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2022-07-16 09:19:02",
+          "timestamp": 1657963142,
+          "for_humans": "1 year ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 09:40:28",
+        "timestamp": 1710063628,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b817af7-1605-456e-b367-a25fbc54ca66",
+        "title": "rtfm",
+        "description": "Let me tell you this..... you really need to read the manual.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "deployment",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "255",
+      "user": {
+        "id": "98a20583-bf09-4751-8d03-be676cdb88a7",
+        "name": "Matteo Verzotti",
+        "name_acronym": "MV",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-03-07 19:14:06",
+          "timestamp": 1678216446,
+          "for_humans": "1 year ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 09:39:56",
+        "timestamp": 1710063596,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81e63e-f7f5-4a7f-bf48-f9a3d986134f",
+        "title": "android-echoes",
+        "description": "Someone has sent you a mysterious message, containing an Android mobile application. \r\nYou set an emulated environment, make a coffee and start to analyze the application to find the secrets inside it.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "315",
+      "user": {
+        "id": "a3b0a080-8faa-11ea-9be2-4dfb932af95c",
+        "name": "Hikari",
+        "name_acronym": "H",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-05-06 15:02:44",
+          "timestamp": 1588777364,
+          "for_humans": "3 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 09:36:05",
+        "timestamp": 1710063365,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b817af7-1605-456e-b367-a25fbc54ca66",
+        "title": "rtfm",
+        "description": "Let me tell you this..... you really need to read the manual.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "deployment",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "281",
+      "user": {
+        "id": "98d9e331-5f8c-425b-9689-f7f9183ae525",
+        "name": "P Maria",
+        "name_acronym": "PM",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-04-04 13:44:29",
+          "timestamp": 1680615869,
+          "for_humans": "11 months ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 09:32:07",
+        "timestamp": 1710063127,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81e63e-f27b-44fc-876d-c7be3db83287",
+        "title": "special-waffle",
+        "description": "In the year 2021, as you were on the cusp of drifting into slumber, the abrupt intrusion of a ringing telephone jolted you awake. This disruption signaled the emergence of a cybersecurity incident demanding your immediate attention and expertise across various critical aspects. \r\n\r\nYou should access the 1* index , events are logged from 3 years ago.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "deployment",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "447",
+      "user": {
+        "id": "e2ddff80-0551-11eb-9fd7-b3f5989f5b41",
+        "name": "vektor",
+        "name_acronym": "V",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-10-03 08:24:42",
+          "timestamp": 1601713482,
+          "for_humans": "3 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 09:25:29",
+        "timestamp": 1710062729,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81a3a4-3a52-466f-ad0e-53edede0fd04",
+        "title": "crackinator",
+        "description": "Participants need to reverse engineer a serial key generation process implemented in a Windows program for the specified user, \"crack@rocsc.ro.\"\r\nBy analyzing the program's code and behavior, participants will need to got the secret key and understand the underlying cryptographic mechanisms.\r\n\r\nDon't forget to use crack@rocsc.ro for validating the serial key.\r\n\r\nFlag format : XXXXXX-XXXXXX-XXXXXX-XXXXXX-XXXXXX\r\n\r\n![key](https://unbreakable.ro/wp-content/uploads/2024/03/key.jpg)",
+        "difficulty": "Hard",
+        "difficulty_score": 3,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "265",
+      "user": {
+        "id": "98a00552-3133-417e-92bd-880e14d3868f",
+        "name": "Anghel Cristian",
+        "name_acronym": "AC",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-03-06 19:21:54",
+          "timestamp": 1678130514,
+          "for_humans": "1 year ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 09:20:19",
+        "timestamp": 1710062419,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81804f-a934-43bd-bff2-8d54497a07a0",
+        "title": "binary-illusions",
+        "description": "Uncover the deceptive veil of binary interactions where hidden vulnerabilities lie in wait. Dissect the digital fabric, discerning subtle patterns that lead to the heart of system control. Navigate the blurred boundaries of trust and deception to secure the elusive flag.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "430",
+      "user": {
+        "id": "98de8666-f701-483a-be10-2bc2c97b5750",
+        "name": "Sorin Octavian Furdui",
+        "name_acronym": "SO",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-04-06 21:04:10",
+          "timestamp": 1680815050,
+          "for_humans": "11 months ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 09:19:09",
+        "timestamp": 1710062349,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81e63e-a506-4a6f-adc5-4b7ce17a5913",
+        "title": "counting",
+        "description": "Decode this and it will tell you what to do.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "255",
+      "user": {
+        "id": "98d9e331-5f8c-425b-9689-f7f9183ae525",
+        "name": "P Maria",
+        "name_acronym": "PM",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-04-04 13:44:29",
+          "timestamp": 1680615869,
+          "for_humans": "11 months ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 09:02:37",
+        "timestamp": 1710061357,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81e63e-f7f5-4a7f-bf48-f9a3d986134f",
+        "title": "android-echoes",
+        "description": "Someone has sent you a mysterious message, containing an Android mobile application. \r\nYou set an emulated environment, make a coffee and start to analyze the application to find the secrets inside it.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "103",
+      "user": {
+        "id": "3532a710-81e6-11eb-b58f-75aaa0ef7261",
+        "name": "Prejban Mircea",
+        "name_acronym": "PM",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2021-03-10 21:18:49",
+          "timestamp": 1615411129,
+          "for_humans": "3 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 08:46:54",
+        "timestamp": 1710060414,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b819d58-55e0-47d5-953d-08543a53c4a7",
+        "title": "from-memory",
+        "description": "Do you rember this .. from memory?",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "315",
+      "user": {
+        "id": "47f96c30-cab3-11ec-a4ae-5b7806764503",
+        "name": "UserName",
+        "name_acronym": "U",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2022-05-03 07:33:09",
+          "timestamp": 1651563189,
+          "for_humans": "1 year ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 08:43:49",
+        "timestamp": 1710060229,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b817af7-1605-456e-b367-a25fbc54ca66",
+        "title": "rtfm",
+        "description": "Let me tell you this..... you really need to read the manual.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "deployment",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "205",
+      "user": {
+        "id": "9b59901e-6202-4bd0-af9c-aee0da388c5f",
+        "name": "Morariu Tudor",
+        "name_acronym": "MT",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2024-02-16 13:22:03",
+          "timestamp": 1708089723,
+          "for_humans": "1 month ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 08:32:58",
+        "timestamp": 1710059578,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81786c-ecd6-4580-b495-39e44ad00d76",
+        "title": "friendly-colabs",
+        "description": "Find the hidden secrets and get the flag.\r\n\r\nFlag format CTF{sha256}\r\n\r\nResource: https://github.com/b3taflash/friendly-colabs\r\n\r\n*PS: The flag from index.php test-version repository isn't correct, ignore it. Find the real one, will be obvious when you'll find it.*",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "445",
+      "user": {
+        "id": "9b6fa9c2-77c0-4068-a03f-5ff5dd35f84f",
+        "name": "Rares Riscanu",
+        "name_acronym": "RR",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2024-02-27 13:01:57",
+          "timestamp": 1709038917,
+          "for_humans": "3 weeks ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 08:24:22",
+        "timestamp": 1710059062,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81e63e-2114-4a57-91a8-89cae04de1dd",
+        "title": "the-harmonica",
+        "description": "To steal data from the record company, hacker Gheorghe Gheorghescu hid data in the files produced by the record company. We need to find out what data he stole.",
+        "difficulty": "Easy",
+        "difficulty_score": 1,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "400",
+      "user": {
+        "id": "0c3f77e0-f0c6-11ec-9e8b-6144be5809e6",
+        "name": "Luca Coratu",
+        "name_acronym": "LC",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2022-06-20 18:23:14",
+          "timestamp": 1655749394,
+          "for_humans": "1 year ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 08:11:57",
+        "timestamp": 1710058317,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81eaee-1a55-4a23-b728-ed7a1720acc2",
+        "title": "cool-upload",
+        "description": "Cool upload server which allows you to report interesting files to the admin, but as he wanted\r\nsome fancy javascript animations on the site he missed something.\r\nFind what's wrong coded and steal the secrets.",
+        "difficulty": "Hard",
+        "difficulty_score": 3,
+        "points": null,
+        "type": "deployment",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "400",
+      "user": {
+        "id": "3b4ce4e0-32ce-11ed-9878-efed59640498",
+        "name": "thek0der",
+        "name_acronym": "T",
+        "country": "Romania",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2022-09-12 19:08:05",
+          "timestamp": 1663009685,
+          "for_humans": "1 year ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 07:11:52",
+        "timestamp": 1710054712,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81eaee-1a55-4a23-b728-ed7a1720acc2",
+        "title": "cool-upload",
+        "description": "Cool upload server which allows you to report interesting files to the admin, but as he wanted\r\nsome fancy javascript animations on the site he missed something.\r\nFind what's wrong coded and steal the secrets.",
+        "difficulty": "Hard",
+        "difficulty_score": 3,
+        "points": null,
+        "type": "deployment",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "180",
+      "user": {
+        "id": "99c0b1ca-8a34-4728-a513-c30a1cabbfeb",
+        "name": "TheMujdii",
+        "name_acronym": "T",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-07-28 07:22:36",
+          "timestamp": 1690528956,
+          "for_humans": "7 months ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 07:08:14",
+        "timestamp": 1710054494,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81e900-d866-4d37-af13-881758d78485",
+        "title": "joker-and-batman-story",
+        "description": "Batman receives a secret letter from Joker. Taking into consideration their past, for sure something is stinky in there. Can you find what? It seems that a photo with a bat is the problem.\r\n\r\n\r\nFlag format: CTF{sha256(message)}",
+        "difficulty": "Hard",
+        "difficulty_score": 3,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "103",
+      "user": {
+        "id": "ae09e340-42a2-11ec-b3f3-9d56683a5aff",
+        "name": "fzhshzh",
+        "name_acronym": "F",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2021-11-11 03:51:41",
+          "timestamp": 1636602701,
+          "for_humans": "2 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 06:44:11",
+        "timestamp": 1710053051,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b819d58-55e0-47d5-953d-08543a53c4a7",
+        "title": "from-memory",
+        "description": "Do you rember this .. from memory?",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "103",
+      "user": {
+        "id": "9926702b-b939-4ab2-b3cc-7dd55d73290c",
+        "name": "GeorgeBanu",
+        "name_acronym": "G",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-05-12 15:01:37",
+          "timestamp": 1683903697,
+          "for_humans": "10 months ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 06:41:51",
+        "timestamp": 1710052911,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b819d58-55e0-47d5-953d-08543a53c4a7",
+        "title": "from-memory",
+        "description": "Do you rember this .. from memory?",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "103",
+      "user": {
+        "id": "9a107c48-c2d6-4cb8-8455-b8466098b2a9",
+        "name": "shugy0sha",
+        "name_acronym": "S",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-09-05 23:19:12",
+          "timestamp": 1693955952,
+          "for_humans": "6 months ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 05:44:50",
+        "timestamp": 1710049490,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b819d58-55e0-47d5-953d-08543a53c4a7",
+        "title": "from-memory",
+        "description": "Do you rember this .. from memory?",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "410",
+      "user": {
+        "id": "98d8959d-b241-408d-9119-9115181e064c",
+        "name": "Darius Pavelescu",
+        "name_acronym": "DP",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2023-04-03 22:11:44",
+          "timestamp": 1680559904,
+          "for_humans": "11 months ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 04:30:52",
+        "timestamp": 1710045052,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b817c12-0ba3-4c34-8e6e-00dcef28affe",
+        "title": "java-eval",
+        "description": "Eval stuff everywhere. What is going on?",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "deployment",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "430",
+      "user": {
+        "id": "4e964ee0-44c2-11ed-ac4f-1929f6a9e5ea",
+        "name": "Caramelia",
+        "name_acronym": "C",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2022-10-05 15:28:05",
+          "timestamp": 1664983685,
+          "for_humans": "1 year ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 03:51:37",
+        "timestamp": 1710042697,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81e63e-a506-4a6f-adc5-4b7ce17a5913",
+        "title": "counting",
+        "description": "Decode this and it will tell you what to do.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "265",
+      "user": {
+        "id": "56c33bc0-c521-11ea-b70f-7557cc6490ff",
+        "name": "PinkiePie1189",
+        "name_acronym": "P",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-07-13 15:55:56",
+          "timestamp": 1594655756,
+          "for_humans": "3 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 02:59:00",
+        "timestamp": 1710039540,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81804f-a934-43bd-bff2-8d54497a07a0",
+        "title": "binary-illusions",
+        "description": "Uncover the deceptive veil of binary interactions where hidden vulnerabilities lie in wait. Dissect the digital fabric, discerning subtle patterns that lead to the heart of system control. Navigate the blurred boundaries of trust and deception to secure the elusive flag.",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "435",
+      "user": {
+        "id": "e8db10e0-068d-11ec-879b-8b4f83d3081b",
+        "name": "Vasile DoE",
+        "name_acronym": "VD",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2021-08-26 16:51:50",
+          "timestamp": 1629996710,
+          "for_humans": "2 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 02:36:45",
+        "timestamp": 1710038205,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b81e63e-5307-431a-be92-a850a724444f",
+        "title": "ui-crack",
+        "description": "Can you crack-me?",
+        "difficulty": "Easy",
+        "difficulty_score": 1,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
+    },
+    {
+      "points": "103",
+      "user": {
+        "id": "32edb9b0-8fab-11ea-a5f7-275960f1aca8",
+        "name": "cshark3008",
+        "name_acronym": "C",
+        "country": "",
+        "roles": [],
+        "type": "user",
+        "trashed": false,
+        "created_at": {
+          "date": "2020-05-06 15:06:44",
+          "timestamp": 1588777604,
+          "for_humans": "3 years ago"
+        }
+      },
+      "created_at": {
+        "date": "2024-03-10 02:28:49",
+        "timestamp": 1710037729,
+        "for_humans": "1 day after"
+      },
+      "challenge": {
+        "id": "9b819d58-55e0-47d5-953d-08543a53c4a7",
+        "title": "from-memory",
+        "description": "Do you rember this .. from memory?",
+        "difficulty": "Medium",
+        "difficulty_score": 2,
+        "points": null,
+        "type": "standalone",
+        "section": null,
+        "is_subscribed": false,
+        "is_owned": false,
+        "status": "hidden"
+      }
     }
-  }
-]
+  ]
+}

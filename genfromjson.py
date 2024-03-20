@@ -2,6 +2,7 @@ import json
 from unicodedata import category
 
 data = json.load(open('cyberedu.json'))
+data = data['challenges']
 
 # transform a title into urlsafe title
 def title_to_url(title):
