@@ -9,6 +9,9 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 ## 2024
 
 * 🐛 [#6 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🥈 2nd place openECSC 2024 Round 1
+* 🌐 6th place Line CTF 2024 (cleared all web challs)
+* 🥇 1st place RoCSC Qualifiers 🇷🇴 (online)
 * 🏆 1st place Attack, 3rd place Defense @ [LLM CTF - SaTML 2024](https://ctf.spylab.ai/leaderboard)
 * 🐉 7th place Real World CTF
 
