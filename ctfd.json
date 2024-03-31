@@ -1,0 +1,309 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 19,
+      "type": "standard",
+      "name": "Welcome",
+      "value": 1,
+      "solves": 821,
+      "solved_by_me": true,
+      "category": "misc",
+      "tags": [
+        {
+          "value": "misc"
+        }
+      ],
+      "template": "/plugins/challenges/assets/view.html",
+      "script": "/plugins/challenges/assets/view.js"
+    },
+    {
+      "id": 13,
+      "type": "dynamic",
+      "name": "jalyboy-baby",
+      "value": 100,
+      "solves": 428,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 14,
+      "type": "dynamic",
+      "name": "jalyboy-jalygirl",
+      "value": 100,
+      "solves": 189,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 7,
+      "type": "dynamic",
+      "name": "zipviewer-version-citizen",
+      "value": 110,
+      "solves": 81,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "Web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 23,
+      "type": "dynamic",
+      "name": "G0tcha-G0tcha-doggy",
+      "value": 124,
+      "solves": 62,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "Web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 16,
+      "type": "dynamic",
+      "name": "haki-tako-game",
+      "value": 138,
+      "solves": 48,
+      "solved_by_me": true,
+      "category": "Crypto",
+      "tags": [
+        {
+          "value": "Crypto"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 10,
+      "type": "dynamic",
+      "name": "This message will self-destruct in...",
+      "value": 145,
+      "solves": 43,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "Web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 9,
+      "type": "dynamic",
+      "name": "zipviewer-version-clown",
+      "value": 149,
+      "solves": 41,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "Web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 3,
+      "type": "dynamic",
+      "name": "graphql-101",
+      "value": 176,
+      "solves": 28,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "Web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 4,
+      "type": "dynamic",
+      "name": "Boom Boom Hell*",
+      "value": 176,
+      "solves": 28,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "Web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 22,
+      "type": "dynamic",
+      "name": "IINE VoIP ~mistake~",
+      "value": 193,
+      "solves": 23,
+      "solved_by_me": true,
+      "category": "Misc",
+      "tags": [
+        {
+          "value": "Misc"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 15,
+      "type": "dynamic",
+      "name": "rum-runners-ruse",
+      "value": 221,
+      "solves": 17,
+      "solved_by_me": true,
+      "category": "Misc",
+      "tags": [
+        {
+          "value": "Misc"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 17,
+      "type": "dynamic",
+      "name": "BrownFlagChecker",
+      "value": 221,
+      "solves": 17,
+      "solved_by_me": false,
+      "category": "Rev",
+      "tags": [
+        {
+          "value": "Rev"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 6,
+      "type": "dynamic",
+      "name": "Heritage",
+      "value": 233,
+      "solves": 15,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "Web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 20,
+      "type": "dynamic",
+      "name": "hhhhhhhref",
+      "value": 257,
+      "solves": 12,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 11,
+      "type": "dynamic",
+      "name": "one-time-read",
+      "value": 305,
+      "solves": 8,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "Web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 18,
+      "type": "dynamic",
+      "name": "HackLoLo",
+      "value": 305,
+      "solves": 8,
+      "solved_by_me": false,
+      "category": "Pwn",
+      "tags": [
+        {
+          "value": "Pwn"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 21,
+      "type": "dynamic",
+      "name": "IINE VoIP ~mailbox~",
+      "value": 322,
+      "solves": 7,
+      "solved_by_me": false,
+      "category": "Pwn",
+      "tags": [
+        {
+          "value": "Pwn"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    },
+    {
+      "id": 12,
+      "type": "dynamic",
+      "name": "auth-internal",
+      "value": 341,
+      "solves": 6,
+      "solved_by_me": true,
+      "category": "Web",
+      "tags": [
+        {
+          "value": "Web"
+        }
+      ],
+      "template": "/plugins/dynamic_challenges/assets/view.html",
+      "script": "/plugins/dynamic_challenges/assets/view.js"
+    }
+  ]
+}
