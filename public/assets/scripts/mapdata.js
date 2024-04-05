@@ -250,7 +250,7 @@ var simplemaps_worldmap_mapdata={
     CA: {
       name: "Canada",
       description: "default",
-      color: "default",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
