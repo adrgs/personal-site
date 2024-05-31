@@ -8,7 +8,8 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2024
 
-* 🐛 [#7 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🐛 [#13 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
+* 🥇 1st place RoCSC finals 🇷🇴
 * 🥉 3rd place Midnight Sun CTF 2024 Quals
 * 🥈 2nd place openECSC 2024 Round 1
 * 🌐 6th place Line CTF 2024 (cleared all web challs)
@@ -18,7 +19,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2023
 
-* 🐛 [#11 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🐛 [#11 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
 * 🚩 8th place on CTFtime.org leaderboard with team WreckTheLine
 * 🎄 5th place ASIS CTF Finals 2023
 * 🥉 3rd place saarCTF 2023
@@ -43,7 +44,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2022
 
-* 🐛 [#16 Meta Bug Bounty leaderboard](https://www.facebook.com/whitehat/thanks)
+* 🐛 [#16 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
 * 🥇 1st place NahamCon EU 2022 CTF
 * 🥇 1st place Hacker Things CTF 2022
 * 🥇 1st place DefCamp CTF Finals
