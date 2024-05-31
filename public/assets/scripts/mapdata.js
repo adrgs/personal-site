@@ -1202,7 +1202,7 @@ var simplemaps_worldmap_mapdata={
     ZA: {
       name: "South Africa",
       description: "default",
-      color: "default",
+      color: "#dd54b1",
       hover_color: "default",
       url: "default"
     },
