@@ -9,7 +9,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 ## 2024
 
 * 🐛 [#13 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
-* 🥇 1st place RoCSC finals 🇷🇴
+* 🥇 1st place RoCSC finals 🇷🇴 (1st place Jeopardy, 1st place A/D)
 * 🥉 3rd place openECSC 2024 Round 2
 * 🥉 3rd place Midnight Sun CTF 2024 Quals
 * 🥈 2nd place openECSC 2024 Round 1
