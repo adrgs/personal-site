@@ -9,6 +9,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 ## 2024
 
 * 🐛 [#13 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
+* 🥈 2nd place Red Team CTF @ DEF CON 32 ☠️
 * 🥉 3rd place Google CTF 2024
 * 🇸🇪 4th place Midnight Sun CTF 2024 Finals
 * 🥇 1st place RoCSC finals 🇷🇴 (1st place Jeopardy, 1st place A/D)
