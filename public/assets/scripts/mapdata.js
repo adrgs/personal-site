@@ -264,7 +264,7 @@ var simplemaps_worldmap_mapdata={
     CL: {
       name: "Chile",
       description: "default",
-      color: "default",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },

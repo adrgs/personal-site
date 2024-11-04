@@ -9,6 +9,9 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 ## 2024
 
 * 🐛 [#13 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
+* 🏆 [1st place International Cybersecurity Challenge @ Team Europe 🇪🇺](https://icc.ecsc.eu/)
+* 🥈 [2nd place Google CTF Finals Hackceler8](https://www.youtube.com/watch?v=LEm1UEjIWpc)
+* 🇷🇴 8th place European Cyber Security Challenge (Team Captain)
 * 🥈 2nd place Red Team CTF @ DEF CON 32 ☠️
 * 🥉 3rd place Google CTF 2024
 * 🇸🇪 4th place Midnight Sun CTF 2024 Finals
