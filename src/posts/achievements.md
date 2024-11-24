@@ -9,6 +9,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 ## 2024
 
 * 🐛 [#13 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
+* 🐙 Cyber Excellence Award (Cloud & WhiteBox Jeopardy) - The 7th "Qiangwang" International Elite Challenge on Cyber Mimic Defense
 * 🏆 [1st place International Cybersecurity Challenge @ Team Europe 🇪🇺](https://icc.ecsc.eu/)
 * 🥈 [2nd place Google CTF Finals Hackceler8](https://www.youtube.com/watch?v=LEm1UEjIWpc)
 * 🇷🇴 8th place European Cyber Security Challenge (Team Captain)
