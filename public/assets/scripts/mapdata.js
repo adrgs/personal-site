@@ -271,7 +271,7 @@ var simplemaps_worldmap_mapdata={
     CN: {
       name: "China",
       description: "default",
-      color: "#dd54b1",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
@@ -978,7 +978,7 @@ var simplemaps_worldmap_mapdata={
     SA: {
       name: "Saudi Arabia",
       description: "default",
-      color: "default",
+      color: "#00aa00",
       hover_color: "default",
       url: "default"
     },
