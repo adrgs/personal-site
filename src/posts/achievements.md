@@ -8,7 +8,9 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 
 ## 2024
 
-* 🐛 [#13 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
+* 🐛 [#25 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
+* 🥇 1st place Mine the matrix @ Bending Spoons
+* 🎩 5th place BlackHat MEA CTF Final 2024
 * 🐙 Cyber Excellence Award (Cloud & WhiteBox Jeopardy) - The 7th "Qiangwang" International Elite Challenge on Cyber Mimic Defense
 * 🏆 [1st place International Cybersecurity Challenge @ Team Europe 🇪🇺](https://icc.ecsc.eu/)
 * 🥈 [2nd place Google CTF Finals Hackceler8](https://www.youtube.com/watch?v=LEm1UEjIWpc)
