@@ -173,12 +173,9 @@ layout: base.ejs
         localStorage.setItem('theme', 'light');
       }
       
-      // Force logo to reload with the correct theme
-      const logoSvg = document.getElementById('logo-svg');
-      if (logoSvg) {
-        const originalSrc = logoSvg.getAttribute('data');
-        logoSvg.setAttribute('data', originalSrc.split('?')[0] + '?refresh=' + new Date().getTime());
-      }
+      // Note: We no longer need to force the logo to reload here
+      // The MutationObserver in base.ejs will detect the class change
+      // and update the logo SVG accordingly
     });
     
     // Mobile TOC toggle
