@@ -23,7 +23,32 @@ export default function (eleventyConfig) {
   eleventyConfig.addGlobalData('dateFns', dateFns);
 
   // Passthrough file copy
-  eleventyConfig.addPassthroughCopy({ 'public/assets': 'assets' });
+  // Fix for the double dot issue in image filenames
+  eleventyConfig.addPassthroughCopy({
+    'src/assets/images/posts': 'assets/images/posts',
+  });
+
+  // Add a custom file copy transform to fix the double dot issue
+  eleventyConfig.addExtension('png,jpg,jpeg,gif,svg', {
+    outputFileExtension: '',
+    read: false,
+    getData: false,
+    compile: function (inputContent, inputPath) {
+      return async (data) => {
+        // Get the filename without double dots
+        const outputPath = inputPath
+          .replace('src/assets/images/posts/', 'assets/images/posts/')
+          .replace(/\.([^.]+)$/, (match, p1) => `.${p1}`);
+
+        return {
+          content: inputContent,
+          permalink: outputPath,
+        };
+      };
+    },
+  });
+
+  eleventyConfig.addPassthroughCopy('public/assets');
   eleventyConfig.addPassthroughCopy('robots.txt');
   eleventyConfig.addPassthroughCopy('favicon.ico');
   eleventyConfig.addPassthroughCopy('apple-touch-icon.png');

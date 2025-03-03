@@ -73,16 +73,26 @@
       } else {
         document.documentElement.classList.remove('dark');
       }
+
+      // Force SVG reload when theme changes to ensure proper inversion
+      document.addEventListener('DOMContentLoaded', function() {
+        const logoSvg = document.getElementById('logo-svg');
+        if (logoSvg) {
+          // Force SVG reload by updating the data attribute
+          const originalSrc = logoSvg.getAttribute('data');
+          logoSvg.setAttribute('data', originalSrc + '?refresh=' + new Date().getTime());
+        }
+      });
     </script>
   </head>
 
   <body class="antialiased w-full transition-colors duration-200">
-    <div class="<% if (page.url === '/') { %>max-w-screen-lg<% } else { %>max-w-screen-xl<% } %> mx-auto px-4">
-      <div class="border-b border-gray-700 dark:border-gray-700 border-gray-200 <% if (page.url !== '/') { %>relative with-sidebar<% } %>" id="top-site">
+    <div class="<% if (page.url === '/' || page.url === '/page2/' || page.url === '/page3/') { %>max-w-screen-lg<% } else { %>max-w-screen-xl<% } %> mx-auto px-4">
+      <div class="border-b border-gray-700 dark:border-gray-700 border-gray-200 <% if (page.url !== '/' && page.url !== '/page2/' && page.url !== '/page3/') { %>relative with-sidebar<% } %>" id="top-site">
         <div class="pt-8 pb-6 site-header">
           <div class="logo-container">
-            <a href="/" class="inline-block"> 
-              <object type="image/svg+xml" data="/assets/images/logo-main.svg" class="h-20"></object> 
+            <a href="/" class="inline-block">
+              <object type="image/svg+xml" data="/assets/images/logo-main.svg" class="h-20 dark:invert" id="logo-svg"></object>
             </a>
           </div>
           <div class="site-info">
@@ -106,6 +116,7 @@
       </div>
 
       <div class="py-8"><%- content %></div>
+      <script>console.log('<%= page.url %>');</script>
 
       <div class="border-t border-gray-700 dark:border-gray-700 border-gray-200 text-center py-8 <% if (page.url !== '/' && page.url !== '/page2/' && page.url !== '/page3/') { %>relative with-sidebar<% } %>" id="bottom-site">
         <div class="flex justify-center space-x-6">

@@ -172,6 +172,13 @@ layout: base.ejs
         sunIcon.classList.add('hidden');
         localStorage.setItem('theme', 'light');
       }
+      
+      // Force logo to reload with the correct theme
+      const logoSvg = document.getElementById('logo-svg');
+      if (logoSvg) {
+        const originalSrc = logoSvg.getAttribute('data');
+        logoSvg.setAttribute('data', originalSrc.split('?')[0] + '?refresh=' + new Date().getTime());
+      }
     });
     
     // Mobile TOC toggle
