@@ -67,67 +67,19 @@
     <script>
       // Apply theme immediately to prevent flashing
       const storedTheme = localStorage.getItem('theme');
-      if (storedTheme === 'dark' || 
-          (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      // Chosen theme ALWAYS overrides system preference
+      if (storedTheme === 'dark') {
         document.documentElement.classList.add('dark');
-      } else {
+      } else if (storedTheme === 'light') {
         document.documentElement.classList.remove('dark');
-      }
-
-      // Function to update logo based on current theme
-      function updateLogoForTheme() {
-        const isDarkMode = document.documentElement.classList.contains('dark');
-        const logoSvg = document.getElementById('logo-svg');
-        
-        if (logoSvg) {
-          // For SVG objects, we need to wait for the SVG to load
-          logoSvg.onload = function() {
-            try {
-              const svgDoc = logoSvg.contentDocument;
-              if (svgDoc && svgDoc.documentElement) {
-                if (isDarkMode) {
-                  svgDoc.documentElement.style.filter = 'invert(1)';
-                } else {
-                  svgDoc.documentElement.style.filter = 'none';
-                }
-              }
-            } catch (e) {
-              console.error('Error updating SVG:', e);
-            }
-          };
-          
-          // If SVG is already loaded, update it immediately
-          if (logoSvg.contentDocument && logoSvg.contentDocument.documentElement) {
-            try {
-              if (isDarkMode) {
-                logoSvg.contentDocument.documentElement.style.filter = 'invert(1)';
-              } else {
-                logoSvg.contentDocument.documentElement.style.filter = 'none';
-              }
-            } catch (e) {
-              console.error('Error updating SVG:', e);
-            }
-          }
+      } else {
+        // Only use system preference if no localStorage value exists
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
         }
       }
-      
-      // Update logo immediately and after DOM is fully loaded
-      updateLogoForTheme();
-      document.addEventListener('DOMContentLoaded', updateLogoForTheme);
-      
-      // Create a MutationObserver to watch for theme changes
-      const observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-          if (mutation.attributeName === 'class') {
-            updateLogoForTheme();
-          }
-        });
-      });
-      
-      // Start observing the document element for class changes
-      document.addEventListener('DOMContentLoaded', function() {
-        observer.observe(document.documentElement, { attributes: true });
-      });
     </script>
   </head>
 
@@ -137,7 +89,7 @@
         <div class="pt-8 pb-6 site-header">
           <div class="logo-container">
             <a href="/" class="inline-block">
-              <object type="image/svg+xml" data="/assets/images/logo-main.svg" class="h-20" id="logo-svg"></object>
+              <object type="image/svg+xml" data="/assets/images/logo-main.svg" class="h-20 dark:invert" id="logo-svg"></object>
             </a>
           </div>
           <div class="site-info">

@@ -172,10 +172,6 @@ layout: base.ejs
         sunIcon.classList.add('hidden');
         localStorage.setItem('theme', 'light');
       }
-      
-      // Note: We no longer need to force the logo to reload here
-      // The MutationObserver in base.ejs will detect the class change
-      // and update the logo SVG accordingly
     });
     
     // Mobile TOC toggle
