@@ -48,7 +48,9 @@
         "@context": "http://schema.org"
       }
     </script>
-    <% } %> <%- include('webpack.ejs') %> <% if (page.url=="/" ) { %>
+    <% } %> 
+    <%- include('webpack.ejs') %> 
+    <% if (page.url=="/" ) { %>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       if (window.netlifyIdentity) {
@@ -62,65 +64,58 @@
       }
     </script>
     <% } %>
+    <script>
+      // Apply theme immediately to prevent flashing
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme === 'dark' || 
+          (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
   </head>
 
-  <body class="antialiased w-full text-gray-700">
-    <div class="max-w-screen-md mx-auto">
-      <div class="border-b border-gray-300">
-        <div class="pt-8 pb-8">
-          <a href="/"> <%- include('/logo-main.svg') %> </a>
-          <h1 class="font-semibold text-2xl" style="margin-top: 1rem"><%= site.title %></h1>
-          <div><%- site.description -%></div>
+  <body class="antialiased w-full transition-colors duration-200">
+    <div class="<% if (page.url === '/') { %>max-w-screen-lg<% } else { %>max-w-screen-xl<% } %> mx-auto px-4">
+      <div class="border-b border-gray-700 dark:border-gray-700 border-gray-200 <% if (page.url !== '/') { %>relative with-sidebar<% } %>" id="top-site">
+        <div class="pt-8 pb-6 site-header">
+          <div class="logo-container">
+            <a href="/" class="inline-block"> 
+              <object type="image/svg+xml" data="/assets/images/logo-main.svg" class="h-20"></object> 
+            </a>
+          </div>
+          <div class="site-info">
+            <h1 class="font-semibold text-2xl"><%= site.title %></h1>
+            <div class="text-gray-700 dark:text-gray-300"><%- site.description -%></div>
+          </div>
         </div>
-        <nav>
-          <ul class="flex flex-wrap">
+        <nav class="pb-4">
+          <ul class="flex flex-wrap justify-start">
             <li class="mr-6">
-              <a class="nav-link" href="/"
-                >Blog</a
-              >
+              <a class="nav-link <%= page.url === '/' ? 'font-bold' : '' %>" href="/">Blog</a>
             </li>
             <li class="mr-6">
-              <a
-                class="nav-link"
-                href="/about"
-                >About me</a
-              >
+              <a class="nav-link <%= page.url === '/about/' ? 'font-bold' : '' %>" href="/about">About me</a>
             </li>
             <li class="mr-6">
-              <a
-                class="nav-link"
-                href="/achievements"
-                >Achievements</a
-              >
-            </li>
-            <li class="mr-6">
-              <a
-                class="nav-link"
-                href="/projects"
-                >Projects</a
-              >
-            </li>
-            <li class="mr-6">
-              <a
-                class="nav-link"
-                href="/map"
-                >Map</a
-              >
+              <a class="nav-link <%= page.url === '/projects/' ? 'font-bold' : '' %>" href="/projects">Projects</a>
             </li>
           </ul>
         </nav>
       </div>
 
-      <div class="py-5"><%- content %></div>
+      <div class="py-8"><%- content %></div>
 
-      <div class="border-t border-gray-300 text-center py-8">
-        <a href="https://twitter.com/adragos_" style="padding-right: 2em">Twitter</a>
-        <a href="https://github.com/adrgs" style="padding-right: 2em">GitHub</a>
-        <a href="https://www.linkedin.com/in/dragosalbastroiu/" style="padding-right: 2em"
-          >LinkedIn</a
-        >
+      <div class="border-t border-gray-700 dark:border-gray-700 border-gray-200 text-center py-8 <% if (page.url !== '/') { %>relative with-sidebar<% } %>" id="bottom-site">
+        <div class="flex justify-center space-x-6">
+          <a href="https://twitter.com/adragos_" class="hover:text-gray-400 transition-colors duration-200">Twitter</a>
+          <a href="https://github.com/adrgs" class="hover:text-gray-400 transition-colors duration-200">GitHub</a>
+          <a href="https://www.linkedin.com/in/dragosalbastroiu/" class="hover:text-gray-400 transition-colors duration-200">LinkedIn</a>
+        </div>
       </div>
     </div>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GMP9LRRV1"></script>
     <script>

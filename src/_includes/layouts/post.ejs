@@ -1,16 +1,354 @@
 ---
-layout: layouts/base.ejs
+layout: base.ejs
 ---
 
-<article>
+<div class="mobile-toggle" id="mobile-toggle">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="3" y1="12" x2="21" y2="12"></line>
+    <line x1="3" y1="6" x2="21" y2="6"></line>
+    <line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</div>
+
+<div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+<aside class="toc flex flex-col" id="toc">
+  <div class="toc-header">
+    <div class="toc-title">Contents</div>
+    <div class="toc-toggle" id="toc-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </div>
+  </div>
+  <div class="toc-content flex-grow overflow-y-auto">
+    <div id="tocContent" class="toc-list"></div>
+  </div>
+  
+  <!-- Buttons at bottom of TOC -->
+  <div class="theme-toggle-container flex justify-between px-2 py-2 mt-auto">
+    <button class="w-1/2 ml-1 flex justify-center items-center cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 rounded p-2 transition-colors duration-200" id="theme-toggle">
+      <svg id="sun-icon" class="hidden w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+      <svg id="moon-icon" class="hidden w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+      </svg>
+    </button>
+    <button class="w-1/2 mr-1 flex justify-center items-center cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 rounded p-2 transition-colors duration-200" id="scroll-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Visible when collapsed -->
+  <div class="toc-collapsed-toggle" id="toc-uncollapse">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </div>
+</aside>
+
+<article class="relative with-sidebar" id="main-content">
   <header>
-    <h1 class="text-center font-bold text-3xl"><%= title %></h1>
+    <h1 class="text-center font-bold text-3xl mb-2"><%= title %></h1>
     <% if (typeof date !== 'undefined') { %>
-    <div class="text-center text-sm mb-8">
-      <%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %>
+    <div class="text-center text-sm mb-8 text-gray-600 dark:text-gray-400">
+      <%= dateFns.format(new Date(date), 'LLLL d, yyyy') %>
     </div>
     <% } %>
   </header>
 
   <section class="content"><%- content %></section>
 </article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add macOS style buttons to code blocks
+    const codeBlocks = document.querySelectorAll('pre');
+    codeBlocks.forEach(pre => {
+      // No need to add extra mac buttons div since we're using ::after for all three buttons
+      
+      // Add language labels
+      const code = pre.querySelector('code');
+      if (code && code.className) {
+        const lang = code.className.match(/language-(\w+)/);
+        if (lang) {
+          pre.setAttribute('data-language', lang[1].toUpperCase());
+        } else {
+          pre.setAttribute('data-language', 'CODE');
+        }
+      } else {
+        pre.setAttribute('data-language', 'CODE');
+      }
+    });
+    
+    // TOC Toggle Functionality
+    const toc = document.getElementById('toc');
+    const tocToggle = document.getElementById('toc-toggle');
+    const tocUncollapse = document.getElementById('toc-uncollapse');
+    const mainContent = document.getElementById('main-content');
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileOverlay = document.getElementById('mobile-overlay');
+    const topSite = document.getElementById('top-site');
+    const bottomSite = document.getElementById('bottom-site');
+    
+    // Function to toggle sidebar collapse state
+    function toggleSidebarCollapse() {
+      toc.classList.toggle('collapsed');
+      mainContent.classList.toggle('sidebar-collapsed');
+      topSite.classList.toggle('sidebar-collapsed');
+      bottomSite.classList.toggle('sidebar-collapsed');
+      
+      // Removed localStorage saving as per user request
+    }
+    
+    // Removed localStorage checking for sidebar state - always expanded by default
+    
+    // Desktop TOC toggle (collapse)
+    tocToggle.addEventListener('click', toggleSidebarCollapse);
+    
+    // Uncollapse button (when sidebar is collapsed)
+    tocUncollapse.addEventListener('click', toggleSidebarCollapse);
+    
+    // Initialize theme toggle
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+    
+    // Initialize scroll to top functionality
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    scrollToTopBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // First check localStorage for theme preference
+    const storedTheme = localStorage.getItem('theme');
+    
+    // Apply the theme based on localStorage or system preference
+    function applyTheme() {
+      // ALWAYS check localStorage first
+      if (storedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      } else if (storedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+        moonIcon.classList.remove('hidden');
+        sunIcon.classList.add('hidden');
+      } else {
+        // Only use system preference if no localStorage value exists
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDark) {
+          document.documentElement.classList.add('dark');
+          sunIcon.classList.remove('hidden');
+          moonIcon.classList.add('hidden');
+        } else {
+          document.documentElement.classList.remove('dark');
+          moonIcon.classList.remove('hidden');
+          sunIcon.classList.add('hidden');
+        }
+      }
+    }
+    
+    // Initialize theme
+    applyTheme();
+    
+    // Toggle theme on button click
+    themeToggleBtn.addEventListener('click', function() {
+      document.documentElement.classList.toggle('dark');
+      
+      // Update icons and save preference
+      if (document.documentElement.classList.contains('dark')) {
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        moonIcon.classList.remove('hidden');
+        sunIcon.classList.add('hidden');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+    
+    // Mobile TOC toggle
+    mobileToggle.addEventListener('click', function() {
+      toc.classList.toggle('mobile-visible');
+      mobileOverlay.classList.toggle('active');
+    });
+    
+    // Close mobile TOC when clicking overlay
+    mobileOverlay.addEventListener('click', function() {
+      toc.classList.remove('mobile-visible');
+      mobileOverlay.classList.remove('active');
+    });
+    
+    // Generate table of contents
+    const headings = document.querySelectorAll('.content h1, .content h2, .content h3, .content h4');
+    const tocContent = document.getElementById('tocContent');
+
+    if (headings.length === 0) {
+      tocContent.innerHTML = '<div class="p-2 text-sm opacity-70">No headings found</div>';
+    } else {
+      // Add IDs to headings if they don't exist
+      headings.forEach((heading, index) => {
+        if (!heading.id) {
+          heading.id = `heading-${index}`;
+        }
+      });
+
+      // Build TOC
+      const tocFragment = document.createDocumentFragment();
+      let currentLevel = 0;
+      let currentContainer = tocFragment;
+      let containers = [tocFragment];
+
+      headings.forEach(heading => {
+        const level = parseInt(heading.tagName.charAt(1));
+        
+        const listItem = document.createElement('div');
+        
+        const link = document.createElement('a');
+        link.textContent = heading.textContent;
+        link.href = `#${heading.id}`;
+        link.classList.add('toc-link');
+        link.dataset.target = heading.id;
+        
+        listItem.appendChild(link);
+        
+        // Handle nesting
+        if (level > currentLevel) {
+          const newContainer = document.createElement('div');
+          newContainer.classList.add('toc-list');
+          containers[containers.length - 1].appendChild(newContainer);
+          containers.push(newContainer);
+          currentContainer = newContainer;
+        } else if (level < currentLevel) {
+          const diff = currentLevel - level;
+          containers = containers.slice(0, containers.length - diff);
+          currentContainer = containers[containers.length - 1];
+        }
+        
+        currentContainer.appendChild(listItem);
+        currentLevel = level;
+      });
+
+      tocContent.appendChild(tocFragment);
+
+      // Function to set active TOC link
+      function setActiveTocLink(id) {
+        // Remove active class from all links
+        tocLinks.forEach(link => link.classList.remove('active'));
+        
+        // Add active class to current section link
+        const activeLink = document.querySelector(`.toc-link[data-target="${id}"]`);
+        if (activeLink) {
+          activeLink.classList.add('active');
+        }
+      }
+
+      // To track if we're currently scrolling from a click
+      let isScrollingFromClick = false;
+      let userSelectedHeadingId = null;
+
+      // Intersection Observer for detecting current section
+      const tocLinks = document.querySelectorAll('.toc-link');
+      
+      // Create a variable to store the timeout ID so we can clear it if needed
+      let scrollEndTimeoutId = null;
+      
+      const observer = new IntersectionObserver((entries) => {
+        // Skip intersection updates if we're scrolling from a click
+        if (isScrollingFromClick) return;
+        
+        // Only process intersections when we're not in a TOC-initiated scroll
+        if (!userSelectedHeadingId) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              setActiveTocLink(entry.target.id);
+            }
+          });
+        }
+      }, {
+        rootMargin: '-5px 0px -95% 0px',
+        threshold: 0
+      });
+      
+      // Observe all headings
+      headings.forEach(heading => {
+        observer.observe(heading);
+      });
+
+      // Check if URL has a hash on page load and set active TOC link
+      if (window.location.hash) {
+        const targetId = window.location.hash.substring(1);
+        setActiveTocLink(targetId);
+      }
+
+      // Function to detect when scrolling has completely stopped
+      function handleScrollEnd() {
+        // Clear any existing timeout
+        if (scrollEndTimeoutId) {
+          clearTimeout(scrollEndTimeoutId);
+        }
+        
+        // Set a new timeout
+        scrollEndTimeoutId = setTimeout(() => {
+          // If we were scrolling from a click, ensure the user's selection remains active
+          if (isScrollingFromClick && userSelectedHeadingId) {
+            // Make sure the selected link is still active
+            setActiveTocLink(userSelectedHeadingId);
+            
+            // Now we can allow the observer to work normally again
+            // Reset both flags to allow normal observer behavior to resume
+            setTimeout(() => {
+              isScrollingFromClick = false;
+              userSelectedHeadingId = null; // Clear this so observer works normally again
+            }, 100);
+          }
+        }, 200); // Short delay to ensure scrolling has completely stopped
+      }
+      
+      // Listen for scroll events to detect when scrolling stops
+      window.addEventListener('scroll', handleScrollEnd, { passive: true });
+
+      // Smooth scroll to section when clicking TOC links
+      tocLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            // Set active state immediately when clicking
+            setActiveTocLink(targetId);
+            
+            // Set flag to prevent observer from changing active link during scroll
+            isScrollingFromClick = true;
+            userSelectedHeadingId = targetId;
+            
+            // Get the height of the top-site element to adjust scroll position
+            const topSiteHeight = document.getElementById('top-site').offsetHeight + 10;
+            
+            window.scrollTo({
+              top: targetElement.offsetTop + topSiteHeight,
+              behavior: 'smooth'
+            });
+            
+            // Update URL hash without scrolling
+            history.pushState(null, null, `#${targetId}`);
+            
+            // Close mobile TOC after clicking a link
+            if (window.innerWidth <= 1024) {
+              toc.classList.remove('mobile-visible');
+              mobileOverlay.classList.remove('active');
+            }
+          }
+        });
+      });
+    }
+  });
+</script>

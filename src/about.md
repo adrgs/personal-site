@@ -1,12 +1,27 @@
 ---
-title: 'Achievements'
-description: Achievements
+title: 'About me'
+description: About me
+layout: "post.ejs"
 eleventyExcludeFromCollections: true
 ---
 
+## About me
+
+Hello, my name is Dragoș Albăstroiu.
+
+At the moment I'm a student at ETH Zürich, doing my Master's in Cyber Security with a minor in Machine Intelligence.
+
+Doing bug bounty on Meta products in my free time.
+
+I enjoy playing the guitar, video games, travelling and of course participating in CTF competitions with my awesome team, [WreckTheLine](https://twitter.com/WreckTheLine).
+
+You can contact me at adragos [@] protonmail.com
+
+## Achievements
+
 A mix of CTFs, Hackathons, Bug Bounties and Olympiads 
 
-## 2024
+### 2024
 
 * 🐛 [#25 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
 * 🥇 1st place Mine the matrix @ Bending Spoons
@@ -27,7 +42,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🏆 1st place Attack, 3rd place Defense @ [LLM CTF - SaTML 2024](https://ctf.spylab.ai/leaderboard)
 * 🐉 7th place Real World CTF
 
-## 2023
+### 2023
 
 * 🐛 [#11 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
 * 🚩 8th place on CTFtime.org leaderboard with team WreckTheLine
@@ -52,7 +67,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 💀 6th place Insomni'hack teaser 2023
 * 🐉 7th place Real World CTF
 
-## 2022
+### 2022
 
 * 🐛 [#16 Meta Bug Bounty leaderboard](https://bugbounty.meta.com/leaderboard/)
 * 🥇 1st place NahamCon EU 2022 CTF
@@ -78,7 +93,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🥇 1st place Intigriti 1337UP LIVE CTF
 * 🥇 1st place DefCamp CTF 21-22 
 
-## 2021
+### 2021
 
 * ☠️ 8th place DEFCON CTF Finals
 * 🥈 2nd place Google CTF Finals (Hackceler8)
@@ -89,7 +104,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🥇 1st place RoCSC Finals 🇷🇴 
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 
-## 2020
+### 2020
 
 * 🥈 2nd place CSAW CTF Finals (Europe)
 * 🥈 2nd place DefCamp CTF
@@ -101,7 +116,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🥈 2nd place CDDC Cyber Defenders Discovery Camp - DSTA
 * 🇷🇴 No ECSC in 2020
 
-## 2019
+### 2019
 
 * 🏆 European Cyber Security Challenge champion 🇷🇴
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
@@ -117,7 +132,7 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🥇 1st place SmartHack - ING Tech Romania
 * 🏅 Hall of Fame - FireEye Flare-On
 
-## 2018
+### 2018
 
 * 🏅 4th place DefCamp CTF
 * 🥇 1st place BSides Bucharest
@@ -127,3 +142,14 @@ A mix of CTFs, Hackathons, Bug Bounties and Olympiads
 * 🇷🇴 Member of Team Romania @ European Cyber Security Challenge
 * 🥇 1st place Timisoara CTF
 * 🥇 Gold Medal, National Olympiad of Information Technology - C#
+
+## Map
+
+<div id="map"></div>
+
+A map of places I've been able to go to just because of CTF competitions
+
+Places colored in <span style="color:#dd54b1">magenta</span> are places that we qualified for, but couldn't go to (mostly because of the pandemic)
+
+<script src="/assets/scripts/mapdata.js"></script>
+<script src="/assets/scripts/worldmap.js"></script>

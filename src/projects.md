@@ -1,6 +1,7 @@
 ---
 title: 'Projects'
 description: Projects
+layout: "post.ejs"
 eleventyExcludeFromCollections: true
 ---
 

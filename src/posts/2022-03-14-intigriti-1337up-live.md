@@ -1,6 +1,7 @@
 ---
 title: 'Intigriti 1337UP LIVE CTF'
 description: My write-ups for the Intigriti 1337UP LIVE, finished in 1st place with team WreckTheLine
+layout: "post.ejs"
 date: 2022-03-14T00:00:00Z
 ---
 

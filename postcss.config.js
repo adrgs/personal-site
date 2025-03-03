@@ -1,9 +1,13 @@
-/* eslint-disable import/no-extraneous-dependencies, global-require */
-const plugins = [require('tailwindcss'), require('autoprefixer')];
+/* eslint-disable import/no-extraneous-dependencies */
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
+
+const plugins = [tailwindcss, autoprefixer];
 
 if (process.env.NODE_ENV === 'production') {
   plugins.push(
-    require('cssnano')({
+    cssnano({
       preset: [
         'default',
         {
@@ -16,4 +20,6 @@ if (process.env.NODE_ENV === 'production') {
   );
 }
 
-module.exports = { plugins };
+export default {
+  plugins,
+};

@@ -1,7 +1,10 @@
 ---
-permalink: robots.txt
-eleventyExcludeFromCollections: true
 layout: null
+title: "Robots"
+permalink: "/robots.txt"
+eleventyExcludeFromCollections: true
 ---
+User-agent: *
+Allow: /
 
-Sitemap: <%= `${site.url}/sitemap.xml` %>
+Sitemap: <%= site.url %>/sitemap.xml

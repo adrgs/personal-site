@@ -1,13 +1,16 @@
 {
   "name": "my-blog",
   "version": "1.0.0",
+  "type": "module",
   "description": "My blog",
   "scripts": {
-    "build-dev:webpack": "webpack",
+    "build-tailwind": "tailwindcss -i src/assets/styles/main.css -o src/assets/styles/tailwind-compiled.css",
+    "build-dev:webpack": "npm run build-tailwind && webpack",
     "watch:webpack": "webpack --watch",
+    "watch:tailwind": "tailwindcss -i src/assets/styles/main.css -o src/assets/styles/tailwind-compiled.css --watch",
     "watch:eleventy": "cross-env ELEVENTY_ENV=development eleventy --serve",
-    "dev": "npm-run-all clean build-dev:webpack --parallel watch:*",
-    "build:webpack": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "npm run clean && npm run build-tailwind && npm-run-all --parallel watch:*",
+    "build:webpack": "cross-env NODE_ENV=production npm run build-tailwind && cross-env NODE_ENV=production webpack --mode production",
     "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
     "build": "run-s clean build:*",
     "serve:local": "serve _site",
@@ -20,9 +23,9 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "^10.4.15",
     "copy-webpack-plugin": "^9.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.6",
@@ -37,15 +40,16 @@
     "html-minifier": "^4.0.0",
     "html-webpack-plugin": "^5.3.1",
     "husky": "^4.3.8",
-    "image-webpack-loader": "^7.0.1",
+    "image-webpack-loader": "^8.0.1",
     "lint-staged": "^11.0.0",
     "mini-css-extract-plugin": "^1.6.0",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.28",
     "postcss-loader": "^5.3.0",
     "prettier": "^2.3.0",
     "rimraf": "^3.0.2",
-    "serve": "^11.3.2",
-    "tailwindcss": "^2.1.2",
+    "serve": "^14.2.4",
+    "tailwindcss": "^3.3.3",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0"
   },
@@ -63,5 +67,12 @@
     "*.json": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-ejs": "^1.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.3",
+    "ejs": "^3.1.10",
+    "markdown-it-anchor": "^9.2.0"
   }
 }

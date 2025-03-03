@@ -2,6 +2,7 @@
 title: 'Delete highlight cover IDOR bug in Instagram'
 description: $3,000 bug found for Meta Bug Bounty Conference 2023
 date: 2023-08-05T00:00:00Z
+layout: "post.ejs"
 ---
 
 **Description:**
