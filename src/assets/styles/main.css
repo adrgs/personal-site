@@ -597,10 +597,6 @@ pre:not([class*="language-"])::after {
   filter: brightness(0);
 }
 
-.dark .logo-container object {
-  filter: brightness(1);
-}
-
 .toc-list {
   margin-bottom: 1.5rem;
 }
