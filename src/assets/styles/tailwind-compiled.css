@@ -1638,14 +1638,14 @@ pre:not([class*="language-"])::after {
   text-align: left;
 }
 
-.logo-container object {
+.logo-container a svg {
   max-width: 100%;
   height: 5rem;
-  filter: brightness(1);
+  fill: black;
 }
 
-:root:not(.dark) .logo-container object {
-  filter: brightness(0);
+.dark .logo-container a svg {
+  fill: white;
 }
 
 .toc-list {
@@ -1716,11 +1716,6 @@ pre:not([class*="language-"])::after {
 .dark\:text-gray-400:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
-}
-
-.dark\:invert:is(.dark *) {
-  --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .dark\:hover\:bg-gray-700:hover:is(.dark *) {
