@@ -193,11 +193,87 @@ layout: base.ejs
     if (headings.length === 0) {
       tocContent.innerHTML = '<div class="p-2 text-sm opacity-70">No headings found</div>';
     } else {
+      // Function to create a slug from text
+      function slugify(text) {
+        return text
+          .toString()
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, '-')        // Replace spaces with -
+          .replace(/&/g, '-and-')      // Replace & with '-and-'
+          .replace(/[^\w\-]+/g, '')    // Remove all non-word characters
+          .replace(/\-\-+/g, '-');     // Replace multiple - with single -
+      }
+
       // Add IDs to headings if they don't exist
-      headings.forEach((heading, index) => {
+      const usedSlugs = {};
+      
+      headings.forEach(heading => {
         if (!heading.id) {
-          heading.id = `heading-${index}`;
+          const baseSlug = slugify(heading.textContent);
+          
+          // Handle duplicate slugs
+          if (usedSlugs[baseSlug]) {
+            usedSlugs[baseSlug]++;
+            heading.id = `${baseSlug}-${usedSlugs[baseSlug]}`;
+          } else {
+            usedSlugs[baseSlug] = 1;
+            heading.id = baseSlug;
+          }
         }
+        
+        // Make heading clickable by wrapping it with an anchor - safely
+        const headingContent = heading.textContent;
+        const headingId = heading.id;
+        
+        // Clear the heading content
+        heading.textContent = '';
+        
+        // Create anchor element
+        const anchor = document.createElement('a');
+        anchor.href = `#${headingId}`;
+        anchor.classList.add('heading-anchor');
+        anchor.textContent = headingContent;
+        
+        // Create icon span
+        const iconSpan = document.createElement('span');
+        iconSpan.classList.add('heading-anchor-symbol');
+        iconSpan.setAttribute('aria-hidden', 'true');
+        
+        // Create SVG for the link icon (using DOM methods instead of innerHTML)
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('width', '16');
+        svg.setAttribute('height', '16');
+        svg.setAttribute('viewBox', '0 0 24 24');
+        svg.setAttribute('fill', 'none');
+        svg.setAttribute('stroke', 'currentColor');
+        svg.setAttribute('stroke-width', '2');
+        svg.setAttribute('stroke-linecap', 'round');
+        svg.setAttribute('stroke-linejoin', 'round');
+        svg.classList.add('inline-block', 'ml-1', 'opacity-0', 'group-hover:opacity-100', 'transition-opacity');
+        
+        // Create the SVG paths
+        const path1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path1.setAttribute('d', 'M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71');
+        
+        const path2 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path2.setAttribute('d', 'M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71');
+        
+        // Append paths to SVG
+        svg.appendChild(path1);
+        svg.appendChild(path2);
+        
+        // Append SVG to icon span
+        iconSpan.appendChild(svg);
+        
+        // Append icon span to anchor
+        anchor.appendChild(iconSpan);
+        
+        // Append anchor to heading
+        heading.appendChild(anchor);
+        
+        // Add group class to heading for hover effects
+        heading.classList.add('group');
       });
 
       // Build TOC
