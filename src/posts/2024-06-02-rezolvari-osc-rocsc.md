@@ -3,6 +3,7 @@ title: '🇷🇴 Rezolvări Olimpiada de Securitate Cibernetică 2024'
 Enunt: 'Rezolvări pentru problemele de Jeopardy si Attack/Defense de la Olimpiada de Securitate Cibernetică 2024 / finala ROCSC 2024'
 date: 2024-06-02T00:00:00Z
 layout: "post.ejs"
+permalink: "/rezolvari-osc-rocsc/"
 ---
 
 În acest blog voi prezenta rezolvările pentru problemele de Jeopardy și Attack/Defense de la faza națională a Olimpiadei de Securitate Cibernetică / finala RoCSC 2024. Voi încerca să prezint atât rezolvările, cât și metodologia prin care am ajuns la acestea.

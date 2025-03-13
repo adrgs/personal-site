@@ -2,6 +2,7 @@
 title: 'Codegate CTF 2022 Preliminary'
 description: Codegate CTF 2022 Preliminary write-ups
 layout: "post.ejs"
+permalink: "/codegate-2022-preliminary/"
 date: 2022-02-28T00:00:00Z
 ---
 
