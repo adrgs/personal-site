@@ -2,8 +2,7 @@
   "name": "my-blog",
   "version": "1.0.0",
   "engines": {
-    "node": ">=23.8.0",
-    "npm": ">=10.9.2"
+    "node": ">=23.8.0"
   },
   "type": "module",
   "description": "My blog",
