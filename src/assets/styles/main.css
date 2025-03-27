@@ -378,7 +378,6 @@ h4 .heading-anchor-symbol svg {
   overflow-x: hidden;
   transition: all 0.3s ease;
   z-index: 50;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .dark .toc {
@@ -386,7 +385,7 @@ h4 .heading-anchor-symbol svg {
 }
 
 :root:not(.dark) .toc {
-  background-color: rgba(245, 245, 245, 0.95);
+  background-color: rgba(250, 250, 250, 0.95);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 

@@ -93,9 +93,9 @@
 
 <body class="antialiased w-full transition-colors duration-200">
   <div
-    class="<% if (page.url === '/' || page.url === '/page2/' || page.url === '/page3/') { %>max-w-screen-lg<% } else { %>max-w-screen-xl<% } %> mx-auto px-4">
+    class="<% if (page.url === '/' || /^\/page\d+\/$/.test(page.url)) { %>max-w-screen-lg<% } else { %>max-w-screen-xl<% } %> mx-auto px-4" id="main-container">
     <div
-      class="border-b border-gray-700 dark:border-gray-700 border-gray-200 <% if (page.url !== '/' && page.url !== '/page2/' && page.url !== '/page3/') { %>relative with-sidebar<% } %>"
+      class="border-b dark:border-gray-700 border-gray-200 <% if (page.url !== '/' && !/^\/page\d+\/$/.test(page.url)) { %>relative with-sidebar<% } %>"
       id="top-site">
       <div class="pt-8 pb-6 site-header">
         <div class="logo-container">
@@ -153,29 +153,17 @@
     <div class="py-8"><%- content %></div>
 
     <div
-      class="border-t border-gray-700 dark:border-gray-700 border-gray-200 text-center py-8 <% if (page.url !== '/' && page.url !== '/page2/' && page.url !== '/page3/') { %>relative with-sidebar<% } %>"
+      class="border-t dark:border-gray-700 border-gray-200 text-center py-8 <% if (page.url !== '/' && !/^\/page\d+\/$/.test(page.url)) { %>relative with-sidebar<% } %>"
       id="bottom-site">
-      <div class="flex justify-center space-x-6">
-        <a href="https://twitter.com/adragos_" class="hover:text-gray-400 transition-colors duration-200">Twitter</a>
-        <a href="https://github.com/adrgs" class="hover:text-gray-400 transition-colors duration-200">GitHub</a>
-        <a href="https://www.linkedin.com/in/dragosalbastroiu/"
-          class="hover:text-gray-400 transition-colors duration-200">LinkedIn</a>
+      <div class="flex justify-center items-center">
+        <div class="flex space-x-6 w-fit">
+          <a href="https://twitter.com/adragos_" class="hover:text-gray-400 transition-colors duration-200">Twitter</a>
+          <a href="https://github.com/adrgs" class="hover:text-gray-400 transition-colors duration-200">GitHub</a>
+          <a href="https://www.linkedin.com/in/dragosalbastroiu/" class="hover:text-gray-400 transition-colors duration-200">LinkedIn</a>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GMP9LRRV1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-6GMP9LRRV1');
-  </script>
-  <script async src="https://rasp.go.ro/adragos.php"></script>
 </body>
 
 </html>
