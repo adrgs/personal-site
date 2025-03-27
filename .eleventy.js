@@ -55,8 +55,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('favicon-32x32.png');
   eleventyConfig.addPassthroughCopy('favicon-16x16.png');
   eleventyConfig.addPassthroughCopy('site.webmanifest');
-  eleventyConfig.addPassthroughCopy('netlify.toml');
-  eleventyConfig.addPassthroughCopy('admin');
 
   // Add date filter
   eleventyConfig.addFilter('readableDate', (dateObj) => {
